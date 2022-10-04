@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="867856f0-013f-4852-b0f1-1ecf452cb8ba" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +14,15 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/HelloApplication.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/HelloController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa/hello-view.fxml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2FgKRkOz99W6oc8EpH8D2VH8RD9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -38,8 +45,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664908284860</updated>
-      <workItem from="1664908286073" duration="2000" />
+      <workItem from="1664908286073" duration="997000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial Project Commit">
+      <created>1664908358832</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664908358832</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Project Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Project Commit" />
   </component>
 </project>
