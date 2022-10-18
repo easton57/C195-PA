@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="867856f0-013f-4852-b0f1-1ecf452cb8ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa/login-view.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="867856f0-013f-4852-b0f1-1ecf452cb8ba" name="Changes" comment="Some GUI Views" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +33,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/eseid/Nextcloud/Code/GitHub/C195-Performance-Assessment/README.md"
+    "last_opened_file_path": "/home/eseidel/Nextcloud/Code/GitHub/C195-PA"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -48,6 +46,7 @@
       <updated>1664908284860</updated>
       <workItem from="1664908286073" duration="997000" />
       <workItem from="1664909700262" duration="749000" />
+      <workItem from="1665444563521" duration="150000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Project Commit">
       <created>1664908358832</created>
@@ -63,15 +62,34 @@
       <option name="project" value="LOCAL" />
       <updated>1664909794630</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Some GUI Views">
+      <created>1665444630300</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665444630300</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Project Commit" />
     <MESSAGE value="Added project description to README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added project description to README.md" />
+    <MESSAGE value="Some GUI Views" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some GUI Views" />
   </component>
 </project>
