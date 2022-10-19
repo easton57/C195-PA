@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="867856f0-013f-4852-b0f1-1ecf452cb8ba" name="Changes" comment="Some GUI Views" />
+    <list default="true" id="867856f0-013f-4852-b0f1-1ecf452cb8ba" name="Changes" comment="More Views uploaded" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,14 +28,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/eseidel/Nextcloud/Code/GitHub/C195-PA"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/eseidel/Nextcloud/Code/GitHub/C195-PA&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -47,6 +47,7 @@
       <workItem from="1664908286073" duration="997000" />
       <workItem from="1664909700262" duration="749000" />
       <workItem from="1665444563521" duration="150000" />
+      <workItem from="1666130795166" duration="82000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Project Commit">
       <created>1664908358832</created>
@@ -69,7 +70,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665444630300</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="More Views uploaded">
+      <created>1666130864641</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666130864641</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,6 +98,7 @@
     <MESSAGE value="Initial Project Commit" />
     <MESSAGE value="Added project description to README.md" />
     <MESSAGE value="Some GUI Views" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some GUI Views" />
+    <MESSAGE value="More Views uploaded" />
+    <option name="LAST_COMMIT_MESSAGE" value="More Views uploaded" />
   </component>
 </project>

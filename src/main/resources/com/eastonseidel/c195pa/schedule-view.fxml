@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Text?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <TableView layoutX="60.0" layoutY="80.0" prefHeight="300.0" prefWidth="600.0" />
@@ -14,8 +13,8 @@
       <RadioButton layoutX="136.0" layoutY="51.0" mnemonicParsing="false" text="Month" />
       <Text layoutX="60.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View Schedule By:" />
       <Text layoutX="60.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appointment Actions:" />
-      <Button layoutX="56.0" layoutY="418.0" mnemonicParsing="false" prefWidth="65.0" text="Add" />
-      <Button layoutX="196.0" layoutY="418.0" mnemonicParsing="false" prefWidth="65.0" text="Delete" />
-      <Button layoutX="126.0" layoutY="418.0" mnemonicParsing="false" prefWidth="65.0" text="Update" />
+      <Button layoutX="56.0" layoutY="420.0" mnemonicParsing="false" prefWidth="65.0" text="Add" />
+      <Button layoutX="196.0" layoutY="420.0" mnemonicParsing="false" prefWidth="65.0" text="Delete" />
+      <Button layoutX="126.0" layoutY="420.0" mnemonicParsing="false" prefWidth="65.0" text="Update" />
    </children>
 </Pane>
