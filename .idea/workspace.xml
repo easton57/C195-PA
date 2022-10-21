@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="867856f0-013f-4852-b0f1-1ecf452cb8ba" name="Changes" comment="More Views uploaded and added a cute little 420 easter-egg">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="867856f0-013f-4852-b0f1-1ecf452cb8ba" name="Changes" comment="Uhhh don't know why this is here but why not have consistency between my editors?" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +32,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/eseidel/Nextcloud/Code/GitHub/C195-PA",
+    "last_opened_file_path": "C:/Users/eseidel/Nextcloud/Code/GitHub/C195-PA",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
@@ -50,7 +48,9 @@
       <workItem from="1664909700262" duration="749000" />
       <workItem from="1665444563521" duration="150000" />
       <workItem from="1666130795166" duration="82000" />
-      <workItem from="1666143984824" duration="132000" />
+      <workItem from="1666143984824" duration="216000" />
+      <workItem from="1666369688543" duration="34000" />
+      <workItem from="1666370837898" duration="47000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Project Commit">
       <created>1664908358832</created>
@@ -87,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666144033654</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Uhhh don't know why this is here but why not have consistency between my editors?">
+      <created>1666144190925</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666144190925</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,7 +117,8 @@
     <MESSAGE value="Some GUI Views" />
     <MESSAGE value="More Views uploaded" />
     <MESSAGE value="More Views uploaded and added a cute little 420 easter-egg" />
-    <option name="LAST_COMMIT_MESSAGE" value="More Views uploaded and added a cute little 420 easter-egg" />
+    <MESSAGE value="Uhhh don't know why this is here but why not have consistency between my editors?" />
+    <option name="LAST_COMMIT_MESSAGE" value="Uhhh don't know why this is here but why not have consistency between my editors?" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
