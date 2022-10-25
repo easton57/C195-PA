@@ -6,13 +6,11 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="256.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <Button layoutX="146.0" layoutY="200.0" mnemonicParsing="false" prefWidth="60.0" text="Login" />
-      <Button layoutX="314.0" layoutY="200.0" mnemonicParsing="false" prefWidth="60.0" text="Cancel" />
-      <Label alignment="CENTER_RIGHT" layoutX="54.0" layoutY="68.0" prefHeight="18.0" prefWidth="101.0" text="Username:" textAlignment="RIGHT" />
-      <PasswordField layoutX="182.0" layoutY="128.0" prefHeight="25.0" prefWidth="250.0" />
-      <TextField layoutX="182.0" layoutY="64.0" prefHeight="25.0" prefWidth="250.0" />
-      <Label alignment="CENTER_RIGHT" layoutX="60.0" layoutY="132.0" prefHeight="18.0" prefWidth="101.0" text="Password:" textAlignment="RIGHT" />
-   </children>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="256.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.eastonseidel.c195pa.LoginController">
+   <Button layoutX="146.0" fx:id="loginButton" layoutY="200.0" mnemonicParsing="false" prefWidth="60.0" text="Login" onAction="#onLoginButtonClick"/>
+   <Button layoutX="314.0" layoutY="200.0" mnemonicParsing="false" prefWidth="60.0" text="Cancel" onAction="#onCancelButtonClick"/>
+   <TextField fx:id="username" layoutX="182.0" layoutY="64.0" prefHeight="25.0" prefWidth="250.0" />
+   <PasswordField fx:id="password" layoutX="182.0" layoutY="128.0" prefHeight="25.0" prefWidth="250.0" />
+   <Label alignment="CENTER_RIGHT" layoutX="54.0" layoutY="68.0" prefHeight="18.0" prefWidth="101.0" text="Username:" textAlignment="RIGHT" />
+   <Label alignment="CENTER_RIGHT" layoutX="60.0" layoutY="132.0" prefHeight="18.0" prefWidth="101.0" text="Password:" textAlignment="RIGHT" />
 </Pane>

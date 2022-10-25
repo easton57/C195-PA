@@ -19,6 +19,7 @@ public class LoginApplication extends Application {
     }
 
     public static void main(String[] args) {
+        // Launch our GUI
         launch(args);
     }
 
