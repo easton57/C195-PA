@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="867856f0-013f-4852-b0f1-1ecf452cb8ba" name="Changes" comment="Created Login Files">
+    <list default="true" id="867856f0-013f-4852-b0f1-1ecf452cb8ba" name="Changes" comment="Created login page functions and actions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/LoginApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/LoginApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa/login-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa/login-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,13 +41,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Program Files (x86)/MySQL/Connector J 8.0/mysql-connector-j-8.0.31.jar",
     "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.30804598",
     "settings.editor.selected.configurable": "Groovy compiler"
   },
   "keyToStringList": {
@@ -108,7 +110,8 @@
       <workItem from="1666369688543" duration="34000" />
       <workItem from="1666370837898" duration="47000" />
       <workItem from="1666460133247" duration="2725000" />
-      <workItem from="1666654580420" duration="2715000" />
+      <workItem from="1666654580420" duration="3604000" />
+      <workItem from="1666749709259" duration="2699000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Project Commit">
       <created>1664908358832</created>
@@ -166,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666381489936</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Created login page functions and actions">
+      <created>1666657511598</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666657511598</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +202,8 @@
     <MESSAGE value="Uhhh don't know why this is here but why not have consistency between my editors?" />
     <MESSAGE value="Created Login Files" />
     <MESSAGE value="Started the code for login controller and app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started the code for login controller and app" />
+    <MESSAGE value="Created login page functions and actions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created login page functions and actions" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

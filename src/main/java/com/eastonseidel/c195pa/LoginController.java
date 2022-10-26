@@ -55,15 +55,21 @@ public class LoginController {
             resultSet.close();
             statement.close();
             localDb.close();
+
+            // Log connecting to the DB
+            logger.addToLog("Successfully connected to DB", "info");
         }
         catch (Exception exception) {
+            String errorString = "Please verify the local database is running and accessible!\n" + exception;
+
             // Log the error
+            logger.addToLog(errorString, "fatal");
 
             // Alert that an error occured
             // Create a popup
             Alert errorAlert = new Alert(Alert.AlertType.ERROR);
             errorAlert.setHeaderText("Database Error!");
-            errorAlert.setContentText("Please verify the local database is running and accessible!\n" + exception);
+            errorAlert.setContentText(errorString);
             errorAlert.showAndWait();
         }
 
@@ -71,9 +77,10 @@ public class LoginController {
         try {
             // Check the password
             if (creds.get(username.getText()).equals(password.getText())) {
-                // Next part of the app
                 // Log the success
+                logger.addToLog("Log in successful by: " + username.getText(), "info");
 
+                // Next part of the app
                 // Wrong Password
                 Alert incorrectPassword = new Alert(Alert.AlertType.WARNING);
                 incorrectPassword.setHeaderText("Made it!");
@@ -82,6 +89,7 @@ public class LoginController {
             }
             else {
                 // log failed password
+                logger.addToLog("Log in failed: Invalid Password", "error");
 
                 // Wrong Password
                 Alert incorrectPassword = new Alert(Alert.AlertType.WARNING);
@@ -92,6 +100,7 @@ public class LoginController {
         }
         catch (Exception exception) {
             // log invalid username
+            logger.addToLog("Log in failed: Invalid Username", "error");
 
             // Print a username failure
             Alert invalidUser = new Alert(Alert.AlertType.WARNING);
