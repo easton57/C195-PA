@@ -2,3 +2,5 @@
 [2022-10-26 17:20:21] [INFO] Successfully connected to DB 
 [2022-10-26 17:20:21] [WARNING] Log in failed: Invalid Username 
 [2022-10-26 17:20:27] [INFO] App closed 
+[2022-10-27 15:12:11] [INFO] App launched successfully! 
+[2022-10-27 15:12:13] [INFO] App closed 

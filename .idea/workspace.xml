@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="867856f0-013f-4852-b0f1-1ecf452cb8ba" name="Changes" comment="Created login page functions and actions">
+    <list default="true" id="867856f0-013f-4852-b0f1-1ecf452cb8ba" name="Changes" comment="Created and started implementing logger.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login_activity.txt" beforeDir="false" afterPath="$PROJECT_DIR$/login_activity.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa/main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa/home-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,11 +48,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Program Files (x86)/MySQL/Connector J 8.0/mysql-connector-j-8.0.31.jar",
+    "last_opened_file_path": "/home/eseidel/Nextcloud/Code/GitHub/CA482_PA_FX",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.30804598",
-    "settings.editor.selected.configurable": "Groovy compiler"
+    "settings.editor.selected.configurable": "MavenSettings"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -60,6 +61,18 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/target/classes/com/eastonseidel/c195pa" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/main" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.LoginApplication">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.eastonseidel.c195pa.HelloApplication" />
@@ -87,10 +100,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.HelloApplication" />
+      <item itemvalue="Application.LoginApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.LoginApplication" />
-        <item itemvalue="Application.HelloApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -112,6 +128,17 @@
       <workItem from="1666460133247" duration="2725000" />
       <workItem from="1666654580420" duration="3604000" />
       <workItem from="1666749709259" duration="2699000" />
+      <workItem from="1666753973830" duration="34000" />
+      <workItem from="1666758282272" duration="200000" />
+      <workItem from="1666758487872" duration="839000" />
+      <workItem from="1666759331666" duration="124000" />
+      <workItem from="1666759686511" duration="132000" />
+      <workItem from="1666760193187" duration="35000" />
+      <workItem from="1666760264754" duration="11000" />
+      <workItem from="1666760341889" duration="2449000" />
+      <workItem from="1666901982532" duration="25000" />
+      <workItem from="1666902755991" duration="168000" />
+      <workItem from="1666902961272" duration="2158000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Project Commit">
       <created>1664908358832</created>
@@ -176,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666657511598</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Created and started implementing logger.">
+      <created>1666754000405</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666754000405</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,7 +237,8 @@
     <MESSAGE value="Created Login Files" />
     <MESSAGE value="Started the code for login controller and app" />
     <MESSAGE value="Created login page functions and actions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created login page functions and actions" />
+    <MESSAGE value="Created and started implementing logger." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created and started implementing logger." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
