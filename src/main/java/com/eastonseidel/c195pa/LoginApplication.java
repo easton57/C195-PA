@@ -16,6 +16,9 @@ public class LoginApplication extends Application {
         stage.setTitle("Login");
         stage.setScene(scene);
         stage.show();
+
+        // Send a log that the login screen made it
+        ScheduleLogger.addToLog("App launched successfully!", "info");
     }
 
     public static void main(String[] args) {
