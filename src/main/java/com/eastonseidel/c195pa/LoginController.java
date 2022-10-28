@@ -1,10 +1,14 @@
 package com.eastonseidel.c195pa;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.Node;
+import javafx.stage.Stage;
+
 import java.sql.*;
 import java.util.Dictionary;
 import java.util.Hashtable;
@@ -30,7 +34,7 @@ public class LoginController {
      * Method for the login button
      */
     @FXML
-    protected void onLoginButtonClick() {
+    protected void onLoginButtonClick(ActionEvent event) {
         // Set the enter button as default here for convenience
         loginButton.setDefaultButton(true);
 
@@ -82,12 +86,13 @@ public class LoginController {
                 // Log the success
                 ScheduleLogger.addToLog("Log in successful by: " + username.getText(), "info");
 
+                // close the active window
+                Node node = (Node) event.getSource();
+                Stage active = (Stage) node.getScene().getWindow();
+                active.close();
+
                 // Next part of the app
-                // Wrong Password
-                Alert incorrectPassword = new Alert(Alert.AlertType.WARNING);
-                incorrectPassword.setHeaderText("Made it!");
-                incorrectPassword.setContentText("You made it!");
-                incorrectPassword.showAndWait();
+                HomeController.HomeWindow();
             }
             else {
                 // log failed password

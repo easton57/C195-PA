@@ -4,3 +4,10 @@
 [2022-10-26 17:20:27] [INFO] App closed 
 [2022-10-27 15:12:11] [INFO] App launched successfully! 
 [2022-10-27 15:12:13] [INFO] App closed 
+[2022-10-27 17:33:10] [INFO] App launched successfully! 
+[2022-10-27 17:33:15] [INFO] Successfully connected to DB 
+[2022-10-27 17:33:15] [INFO] Log in successful by: admin 
+[2022-10-27 17:33:19] [INFO] App closed 
+[2022-10-27 17:33:37] [INFO] App launched successfully! 
+[2022-10-27 17:33:43] [INFO] Successfully connected to DB 
+[2022-10-27 17:33:43] [INFO] Log in successful by: admin 
