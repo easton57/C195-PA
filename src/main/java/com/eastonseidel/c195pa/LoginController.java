@@ -25,7 +25,7 @@ public class LoginController {
     @FXML
     protected void onCancelButtonClick() {
         // Log the app closing
-        ScheduleLogger.addToLog("App closed", "info");
+        ScheduleLogger.addToLog("Login Cancelled", "info");
 
         System.exit(-1);
     }
