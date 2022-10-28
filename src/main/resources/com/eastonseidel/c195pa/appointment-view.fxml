@@ -6,15 +6,13 @@
 <?import javafx.scene.layout.Pane?>
 
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <Button layoutX="220.0" layoutY="400.0" mnemonicParsing="false" prefWidth="60.0" text="Save" />
-      <Button layoutX="420.0" layoutY="400.0" mnemonicParsing="false" prefWidth="60.0" text="Cancel" />
-      <TableView layoutX="50.0" layoutY="50.0" prefHeight="300.0" prefWidth="600.0">
-        <columns>
-          <TableColumn prefWidth="175.0" text="Field" />
-          <TableColumn prefWidth="425.0" text="Appointment Info" />
-        </columns>
-      </TableView>
-   </children>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+  <Button layoutX="220.0" layoutY="400.0" mnemonicParsing="false" prefWidth="60.0" text="Save" />
+  <Button layoutX="420.0" layoutY="400.0" mnemonicParsing="false" prefWidth="60.0" text="Cancel" />
+  <TableView layoutX="50.0" layoutY="50.0" prefHeight="300.0" prefWidth="600.0">
+    <columns>
+      <TableColumn prefWidth="175.0" text="Field" />
+      <TableColumn prefWidth="425.0" text="Appointment Info" />
+    </columns>
+  </TableView>
 </Pane>

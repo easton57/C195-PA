@@ -6,17 +6,15 @@
 <?import javafx.scene.text.Text?>
 
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <Text layoutX="299.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reports">
-         <font>
-            <Font size="28.0" />
-         </font>
-      </Text>
-      <Button layoutX="100.0" layoutY="125.0" mnemonicParsing="false" prefWidth="175.0" text="Total Appt. By Type" />
-      <Button layoutX="425.0" layoutY="200.0" mnemonicParsing="false" prefWidth="175.0" text="Average Appt. Time" />
-      <Button layoutX="100.0" layoutY="200.0" mnemonicParsing="false" prefWidth="175.0" text="Schedule By Contact" />
-      <Button layoutX="425.0" layoutY="125.0" mnemonicParsing="false" prefWidth="175.0" text="Total Appt. Per Month" />
-      <Button layoutX="320.0" layoutY="400.0" mnemonicParsing="false" prefWidth="60.0" text="Cancel" />
-   </children>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+   <Text layoutX="299.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reports">
+      <font>
+         <Font size="28.0" />
+      </font>
+   </Text>
+   <Button layoutX="100.0" layoutY="125.0" mnemonicParsing="false" prefWidth="175.0" text="Total Appt. By Type" />
+   <Button layoutX="425.0" layoutY="200.0" mnemonicParsing="false" prefWidth="175.0" text="Average Appt. Time" />
+   <Button layoutX="100.0" layoutY="200.0" mnemonicParsing="false" prefWidth="175.0" text="Schedule By Contact" />
+   <Button layoutX="425.0" layoutY="125.0" mnemonicParsing="false" prefWidth="175.0" text="Total Appt. Per Month" />
+   <Button layoutX="320.0" layoutY="400.0" mnemonicParsing="false" prefWidth="60.0" text="Cancel" />
 </Pane>
