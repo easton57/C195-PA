@@ -4,9 +4,9 @@ Perforamnce Assessment for Software II at WGU
 <H2>To Do:</H2>
 1.  Create a log-in form with the following capabilities:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  accepts a user ID and password and provides an appropriate error message
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  accepts a user ID and password and provides an appropriate error message~~
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  determines the user’s location (i.e., ZoneId) and displays it in a label on the log-in form
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  determines the user’s location (i.e., ZoneId) and displays it in a label on the log-in form~~
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  displays the log-in form in English or French based on the user’s computer language setting to translate all the text, labels, buttons, and errors on the form
 

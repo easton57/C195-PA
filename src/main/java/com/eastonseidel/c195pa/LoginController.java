@@ -2,22 +2,46 @@ package com.eastonseidel.c195pa;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 
-import java.sql.*;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.time.ZoneId;
 import java.util.Dictionary;
 import java.util.Hashtable;
 
 public class LoginController {
-    @FXML private TextField username;
+    @FXML
+    private TextField username;
     @FXML private PasswordField password;
     @FXML private Button loginButton;
+    @FXML private Label locationVar;
     private Dictionary creds = new Hashtable();
+
+    public static void LoginController() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginController.class.getResource("login-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage loginStage = new Stage();
+        loginStage.setTitle("Login");
+        loginStage.setScene(scene);
+        loginStage.show();
+
+        // Send a log that the login screen made it
+        ScheduleLogger.addToLog("App launched successfully!", "info");
+    }
+
+    public void initialize() {
+        // Set the location var based on the zoneID
+        String zoneId = ZoneId.systemDefault().getId();
+        locationVar.setText(zoneId);
+    }
 
     /**
      * Method for the cancel button

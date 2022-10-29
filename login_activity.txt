@@ -11,3 +11,49 @@
 [2022-10-27 17:33:37] [INFO] App launched successfully! 
 [2022-10-27 17:33:43] [INFO] Successfully connected to DB 
 [2022-10-27 17:33:43] [INFO] Log in successful by: admin 
+[2022-10-27 20:04:52] [INFO] App launched successfully! 
+[2022-10-27 20:04:58] [INFO] Successfully connected to DB 
+[2022-10-27 20:04:58] [INFO] Log in successful by: admin 
+[2022-10-27 20:05:55] [INFO] App launched successfully! 
+[2022-10-27 20:05:57] [INFO] App closed 
+[2022-10-27 20:11:29] [INFO] App launched successfully! 
+[2022-10-27 20:11:35] [INFO] Successfully connected to DB 
+[2022-10-27 20:11:35] [INFO] Log in successful by: admin 
+[2022-10-27 20:13:36] [INFO] App launched successfully! 
+[2022-10-27 20:13:39] [INFO] Successfully connected to DB 
+[2022-10-27 20:13:39] [INFO] Log in successful by: admin 
+[2022-10-27 20:26:08] [INFO] App launched successfully! 
+[2022-10-27 20:26:13] [INFO] Successfully connected to DB 
+[2022-10-27 20:26:13] [INFO] Log in successful by: admin 
+[2022-10-27 20:26:32] [INFO] App closed 
+[2022-10-27 20:35:03] [INFO] App launched successfully! 
+[2022-10-27 20:35:09] [INFO] Successfully connected to DB 
+[2022-10-27 20:35:09] [INFO] Log in successful by: admin 
+[2022-10-27 20:35:19] [INFO] App closed 
+[2022-10-27 20:37:44] [INFO] App launched successfully! 
+[2022-10-27 20:37:50] [INFO] Successfully connected to DB 
+[2022-10-27 20:37:50] [INFO] Log in successful by: admin 
+[2022-10-27 20:37:57] [INFO] App closed 
+[2022-10-29 09:00:54] [INFO] App launched successfully! 
+[2022-10-29 09:01:01] [INFO] Successfully connected to DB 
+[2022-10-29 09:01:01] [INFO] Log in successful by: admin 
+[2022-10-29 09:43:01] [INFO] App launched successfully! 
+[2022-10-29 09:43:05] [INFO] Login Cancelled 
+[2022-10-29 09:43:46] [INFO] App launched successfully! 
+[2022-10-29 09:43:49] [INFO] Login Cancelled 
+[2022-10-29 09:55:07] [INFO] App launched successfully! 
+[2022-10-29 09:55:18] [INFO] Login Cancelled 
+[2022-10-29 09:55:25] [INFO] App launched successfully! 
+[2022-10-29 09:55:30] [INFO] Successfully connected to DB 
+[2022-10-29 09:55:30] [WARNING] Log in failed: Invalid Username 
+[2022-10-29 09:58:14] [INFO] Login Cancelled 
+[2022-10-29 10:01:31] [INFO] App launched successfully! 
+[2022-10-29 10:01:33] [INFO] Login Cancelled 
+[2022-10-29 10:01:39] [INFO] App launched successfully! 
+[2022-10-29 10:01:43] [INFO] Login Cancelled 
+[2022-10-29 10:01:51] [INFO] App launched successfully! 
+[2022-10-29 10:01:53] [INFO] Login Cancelled 
+[2022-10-29 10:14:13] [INFO] App launched successfully! 
+[2022-10-29 10:14:18] [INFO] Login Cancelled 
+[2022-10-29 10:16:31] [INFO] App launched successfully! 
+[2022-10-29 10:16:36] [INFO] Login Cancelled 
