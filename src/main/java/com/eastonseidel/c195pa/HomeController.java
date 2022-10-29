@@ -13,7 +13,7 @@ public class HomeController {
      * Code for the Home Screen window for the application
      */
     public static void HomeWindow() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Scheduler.class.getResource("home-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HomeController.class.getResource("home-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage homeStage = new Stage();
         homeStage.setTitle("Home");
