@@ -35,9 +35,9 @@ public class HomeController {
     public void initialize() {
         // Change language variables
         quitButton.setText(Translator.ln.get("quitButton").toString());
-        scheduleButton.setText(Translator.ln.get("scheduleButton").toString());
-        reportsButton.setText(Translator.ln.get("reportsButton").toString());
-        customersButton.setText(Translator.ln.get("customersButton").toString());
+        scheduleButton.setText(Translator.ln.get("schedule").toString());
+        reportsButton.setText(Translator.ln.get("reports").toString());
+        customersButton.setText(Translator.ln.get("customers").toString());
 
         // change the button sizes if needed
         if (quitButton.getText().equals("Quitter")) {

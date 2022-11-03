@@ -46,13 +46,15 @@ public class Translator {
         ln.put("quitButton", "Quit");
 
         // shcedule Button
-        ln.put("scheduleButton", "Schedule");
+        ln.put("schedule", "Schedule");
 
         // reports Button
-        ln.put("reportsButton", "Reports");
+        ln.put("reports", "Reports");
 
         // customers button
-        ln.put("customersButton", "Customers");
+        ln.put("customers", "Customers");
+
+        // Customers variables
     }
 
     public static void French() {
@@ -95,12 +97,12 @@ public class Translator {
         ln.put("quitButton", "Quitter");
 
         // shcedule Button
-        ln.put("scheduleButton", "Programme");
+        ln.put("schedule", "Programme");
 
         // reports Button
-        ln.put("reportsButton", "Rapports");
+        ln.put("reports", "Rapports");
 
         // customers button
-        ln.put("customersButton", "Clients");
+        ln.put("customers", "Clients");
     }
 }
