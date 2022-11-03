@@ -8,12 +8,12 @@ Perforamnce Assessment for Software II at WGU
 
 ~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  determines the user’s location (i.e., ZoneId) and displays it in a label on the log-in form~~
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  displays the log-in form in English or French based on the user’s computer language setting to translate all the text, labels, buttons, and errors on the form
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  displays the log-in form in English or French based on the user’s computer language setting to translate all the text, labels, buttons, and errors on the form~~
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  automatically translates error control messages into English or French based on the user’s computer language setting
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  automatically translates error control messages into English or French based on the user’s computer language setting~~
 
 
-&nbsp;&nbsp;&nbsp;Note: Some operating systems require a reboot when changing the language settings.
+~~&nbsp;&nbsp;&nbsp;Note: Some operating systems require a reboot when changing the language settings.~~
 
 <br>
 

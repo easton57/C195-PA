@@ -7,12 +7,12 @@
 <?import javafx.scene.layout.Pane?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="256.0" prefWidth="512.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.eastonseidel.c195pa.LoginController">
-   <Button fx:id="loginButton" layoutX="146.0" layoutY="200.0" mnemonicParsing="false" onAction="#onLoginButtonClick" prefWidth="60.0" text="Login" />
-   <Button layoutX="314.0" layoutY="200.0" mnemonicParsing="false" onAction="#onCancelButtonClick" prefWidth="60.0" text="Cancel" />
+   <Button fx:id="loginButton" layoutX="121.0" layoutY="190.0" mnemonicParsing="false" onAction="#onLoginButtonClick" prefWidth="65.0" />
+   <Button fx:id="cancelButton" layoutX="326.0" layoutY="190.0" mnemonicParsing="false" onAction="#onCancelButtonClick" prefWidth="65.0" />
    <TextField fx:id="username" layoutX="182.0" layoutY="64.0" prefHeight="25.0" prefWidth="250.0" />
    <PasswordField fx:id="password" layoutX="182.0" layoutY="128.0" prefHeight="25.0" prefWidth="250.0" />
-   <Label alignment="CENTER_RIGHT" layoutX="54.0" layoutY="68.0" prefHeight="18.0" prefWidth="101.0" text="Username:" textAlignment="RIGHT" />
-   <Label alignment="CENTER_RIGHT" layoutX="60.0" layoutY="132.0" prefHeight="18.0" prefWidth="101.0" text="Password:" textAlignment="RIGHT" />
-   <Label alignment="TOP_LEFT" layoutX="9.0" layoutY="233.0" prefHeight="18.0" prefWidth="60.0" text="Location:" />
-   <Label fx:id="locationVar" alignment="TOP_LEFT" layoutX="75.0" layoutY="233.0" prefHeight="18.0" prefWidth="429.0" />
+   <Label fx:id="usernameLabel" alignment="CENTER_RIGHT" layoutX="27.0" layoutY="68.0" prefHeight="18.0" prefWidth="134.0" textAlignment="RIGHT" />
+   <Label fx:id="passwordLabel" alignment="CENTER_RIGHT" layoutX="27.0" layoutY="132.0" prefHeight="18.0" prefWidth="134.0" textAlignment="RIGHT" />
+   <Label fx:id="locationLabel" alignment="TOP_LEFT" layoutX="9.0" layoutY="233.0" prefHeight="18.0" prefWidth="65.0" textAlignment="RIGHT" />
+   <Label fx:id="locationVar" alignment="TOP_LEFT" layoutX="70.0" layoutY="233.0" prefHeight="18.0" prefWidth="430.0" />
 </Pane>

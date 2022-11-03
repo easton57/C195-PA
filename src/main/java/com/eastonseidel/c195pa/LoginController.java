@@ -22,14 +22,19 @@ public class LoginController {
     private TextField username;
     @FXML private PasswordField password;
     @FXML private Button loginButton;
+    @FXML private Button cancelButton;
     @FXML private Label locationVar;
+    @FXML private Label usernameLabel;
+    @FXML private Label passwordLabel;
+    @FXML private Label locationLabel;
+
     private Dictionary creds = new Hashtable();
 
     public static void LoginController() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(LoginController.class.getResource("login-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage loginStage = new Stage();
-        loginStage.setTitle("Login");
+        loginStage.setTitle(Translator.ln.get("title").toString());
         loginStage.setScene(scene);
         loginStage.show();
 
@@ -41,6 +46,31 @@ public class LoginController {
         // Set the location var based on the zoneID
         String zoneId = ZoneId.systemDefault().getId();
         locationVar.setText(zoneId);
+
+        // Change language variables
+        loginButton.setText(Translator.ln.get("login").toString());
+        cancelButton.setText(Translator.ln.get("cancel").toString());
+        passwordLabel.setText(Translator.ln.get("password").toString());
+        locationLabel.setText(Translator.ln.get("location").toString());
+        usernameLabel.setText(Translator.ln.get("username").toString());
+
+        // Move the french objects if needed
+        if (loginButton.getText().equals("Connectez-vous")) {
+            // login button mods
+            loginButton.setPrefWidth(125);
+            loginButton.setLayoutX(71);
+
+            // Cancel Button
+            cancelButton.setPrefWidth(125);
+            cancelButton.setLayoutX(316);
+
+            // Location text
+            locationLabel.setPrefWidth(101);
+
+            // Location Variable text
+            locationVar.setPrefWidth(393);
+            locationVar.setLayoutX(105);
+        }
     }
 
     /**
@@ -89,7 +119,7 @@ public class LoginController {
                 // Log connecting to the DB
                 ScheduleLogger.addToLog("Successfully connected to DB", "info");
             } catch (Exception exception) {
-                String errorString = "Please verify the local database is running and accessible!\n" + exception;
+                String errorString = Translator.ln.get("dbFailed").toString() + exception;
 
                 // Log the error
                 ScheduleLogger.addToLog(errorString, "severe");
@@ -124,8 +154,8 @@ public class LoginController {
 
                 // Wrong Password
                 Alert incorrectPassword = new Alert(Alert.AlertType.WARNING);
-                incorrectPassword.setHeaderText("Incorrect Password!");
-                incorrectPassword.setContentText("Password is incorrect, please check your password and try again.");
+                incorrectPassword.setHeaderText(Translator.ln.get("invalidPasswordTitle").toString());
+                incorrectPassword.setContentText(Translator.ln.get("invalidPassword").toString());
                 incorrectPassword.showAndWait();
             }
         }
@@ -135,8 +165,8 @@ public class LoginController {
 
             // Print a username failure
             Alert invalidUser = new Alert(Alert.AlertType.WARNING);
-            invalidUser.setHeaderText("Invalid Username!");
-            invalidUser.setContentText("Username doesn't exists in application, please check your Username and try again.");
+            invalidUser.setHeaderText(Translator.ln.get("invalidUsernameTitle").toString());
+            invalidUser.setContentText(Translator.ln.get("invalidUsername").toString());
             invalidUser.showAndWait();
         }
     }
