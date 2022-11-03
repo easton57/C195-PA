@@ -32,7 +32,7 @@ public class Scheduler extends Application {
         stage.setScene(scene);
 
         //  Start the javafx app
-        LoginController.LoginController();
+        LoginController.LoginWindow();
     }
 
     public static void main(String[] args) {

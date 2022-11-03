@@ -24,7 +24,7 @@ public class Translator {
         ln.put("cancel", "Cancel");
 
         // window title
-        ln.put("title", "Scheduler");
+        ln.put("appTitle", "Scheduler");
 
         // error strings
         // Db failed
@@ -55,6 +55,17 @@ public class Translator {
         ln.put("customers", "Customers");
 
         // Customers variables
+        // new button
+        ln.put("new", "New");
+
+        // delete button
+        ln.put("delete", "Delete");
+
+        // edit button
+        ln.put("edit", "Edit");
+
+        // Customer Column
+        ln.put("customerName", "Customer Name");
     }
 
     public static void French() {
@@ -75,7 +86,7 @@ public class Translator {
         ln.put("cancel", "Annuler");
 
         // window title
-        ln.put("title", "Programmateur");
+        ln.put("appTitle", "Programmateur");
 
         // error strings
         // Db failed
@@ -104,5 +115,18 @@ public class Translator {
 
         // customers button
         ln.put("customers", "Clients");
+
+        // Customers variables
+        // new button
+        ln.put("new", "Nouveau");
+
+        // delete button
+        ln.put("delete", "Effacer");
+
+        // edit button
+        ln.put("edit", "Éditer");
+
+        // Customer Column
+        ln.put("customerName", "Nom du client");
     }
 }

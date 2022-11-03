@@ -28,13 +28,13 @@ public class LoginController {
     @FXML private Label passwordLabel;
     @FXML private Label locationLabel;
 
-    private Dictionary creds = new Hashtable();
+    private final Dictionary creds = new Hashtable();
 
-    public static void LoginController() throws IOException {
+    public static void LoginWindow() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(LoginController.class.getResource("login-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage loginStage = new Stage();
-        loginStage.setTitle(Translator.ln.get("title").toString());
+        loginStage.setTitle(Translator.ln.get("appTitle").toString());
         loginStage.setScene(scene);
         loginStage.show();
 
@@ -42,6 +42,9 @@ public class LoginController {
         ScheduleLogger.addToLog("App launched successfully!", "info");
     }
 
+    /**
+     * Initializer class for text and language on the page
+     */
     public void initialize() {
         // Set the location var based on the zoneID
         String zoneId = ZoneId.systemDefault().getId();
