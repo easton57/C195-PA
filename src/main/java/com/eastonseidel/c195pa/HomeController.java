@@ -3,11 +3,19 @@ package com.eastonseidel.c195pa;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.time.ZoneId;
 
 public class HomeController {
+
+    // FXML objects
+    @FXML Button quitButton;
+    @FXML Button scheduleButton;
+    @FXML Button reportsButton;
+    @FXML Button customersButton;
 
     /**
      * Code for the Home Screen window for the application
@@ -16,9 +24,26 @@ public class HomeController {
         FXMLLoader fxmlLoader = new FXMLLoader(HomeController.class.getResource("home-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage homeStage = new Stage();
-        homeStage.setTitle("Home");
+        homeStage.setTitle(Translator.ln.get("homeTitle").toString());
         homeStage.setScene(scene);
         homeStage.show();
+    }
+
+    /**
+     * Initializer class for text and language on the page
+     */
+    public void initialize() {
+        // Change language variables
+        quitButton.setText(Translator.ln.get("quitButton").toString());
+        scheduleButton.setText(Translator.ln.get("scheduleButton").toString());
+        reportsButton.setText(Translator.ln.get("reportsButton").toString());
+        customersButton.setText(Translator.ln.get("customersButton").toString());
+
+        // change the button sizes if needed
+        if (quitButton.getText().equals("Quitter")) {
+            quitButton.setPrefWidth(90);
+            quitButton.setLayoutX(130);
+        }
     }
 
     /**

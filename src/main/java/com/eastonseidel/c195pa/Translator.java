@@ -37,6 +37,22 @@ public class Translator {
         // Invalid Username
         ln.put("invalidUsernameTitle", "Invalid Username!");
         ln.put("invalidUsername", "Username doesn't exists in application, please check your Username and try again.");
+
+        // Home Variables
+        // home title
+        ln.put("homeTitle", "Home");
+
+        // quit button
+        ln.put("quitButton", "Quit");
+
+        // shcedule Button
+        ln.put("scheduleButton", "Schedule");
+
+        // reports Button
+        ln.put("reportsButton", "Reports");
+
+        // customers button
+        ln.put("customersButton", "Customers");
     }
 
     public static void French() {
@@ -70,5 +86,21 @@ public class Translator {
         // Invalid Username
         ln.put("invalidUsernameTitle", "Nom d'utilisateur invalide!");
         ln.put("invalidUsername", "Le nom d'utilisateur n'existe pas dans l'application, veuillez vérifier votre nom d'utilisateur et réessayer.");
+
+        // Home Variables
+        // home title
+        ln.put("homeTitle", "Lanceur");
+
+        // quit button
+        ln.put("quitButton", "Quitter");
+
+        // shcedule Button
+        ln.put("scheduleButton", "Programme");
+
+        // reports Button
+        ln.put("reportsButton", "Rapports");
+
+        // customers button
+        ln.put("customersButton", "Clients");
     }
 }
