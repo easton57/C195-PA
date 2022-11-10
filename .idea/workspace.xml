@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="867856f0-013f-4852-b0f1-1ecf452cb8ba" name="Changes" comment="Created and started implementing logger.">
+    <list default="true" id="867856f0-013f-4852-b0f1-1ecf452cb8ba" name="Changes" comment="Made some var's more friendly to use aside from their original purpose">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/Appointment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomerActionsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login_activity.txt" beforeDir="false" afterPath="$PROJECT_DIR$/login_activity.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa/main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa/home-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/ScheduleLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/SchedulerLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/Translator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/Translator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa/customers-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa/customers-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa/edit-customer-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa/edit-customer-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +34,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
@@ -39,41 +50,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/eseidel/Nextcloud/Code/GitHub/CA482_PA_FX",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.30804598",
-    "settings.editor.selected.configurable": "MavenSettings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/eseidel/2nd Drive/Nextcloud2/Code/GitHub/CA482_PA_FX&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.30804598&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa" />
       <recent name="$PROJECT_DIR$/target/classes/com/eastonseidel/c195pa" />
       <recent name="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa" />
       <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.eastonseidel.c195pa" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.LoginApplication">
+  <component name="RunManager" selected="Application.Scheduler">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.eastonseidel.c195pa.HelloApplication" />
       <module name="C195-PA" />
@@ -87,8 +101,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.eastonseidel.c195pa.LoginApplication" />
+    <configuration name="Scheduler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.eastonseidel.c195pa.Scheduler" />
       <module name="C195-PA" />
       <extension name="coverage">
         <pattern>
@@ -101,12 +115,12 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Scheduler" />
       <item itemvalue="Application.HelloApplication" />
-      <item itemvalue="Application.LoginApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LoginApplication" />
+        <item itemvalue="Application.Scheduler" />
       </list>
     </recent_temporary>
   </component>
@@ -139,6 +153,19 @@
       <workItem from="1666901982532" duration="25000" />
       <workItem from="1666902755991" duration="168000" />
       <workItem from="1666902961272" duration="2158000" />
+      <workItem from="1666914776004" duration="164000" />
+      <workItem from="1666914960128" duration="15000" />
+      <workItem from="1666925166602" duration="3169000" />
+      <workItem from="1667022687161" duration="3000" />
+      <workItem from="1667058820593" duration="5182000" />
+      <workItem from="1667244566668" duration="5264000" />
+      <workItem from="1667444557057" duration="5595000" />
+      <workItem from="1667499895543" duration="645000" />
+      <workItem from="1667586303178" duration="8000" />
+      <workItem from="1667659676364" duration="9946000" />
+      <workItem from="1667686434996" duration="6564000" />
+      <workItem from="1668050926799" duration="954000" />
+      <workItem from="1668061097651" duration="5000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Project Commit">
       <created>1664908358832</created>
@@ -210,7 +237,70 @@
       <option name="project" value="LOCAL" />
       <updated>1666754000405</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Created next set of app files">
+      <created>1666914813557</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666914813557</updated>
+    </task>
+    <task id="LOCAL-00012" summary="removed children tags and javafx versioning">
+      <created>1666926638641</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1666926638641</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added functionality to all buttons on the home page">
+      <created>1666928313922</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1666928313922</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added functionality to all cancel and quit buttons">
+      <created>1666928338111</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1666928338111</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added controllers and basic functionality to">
+      <created>1667059272603</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1667059272603</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Created separate controllers for the login and the initializer, added locale to login page, created files for translator.">
+      <created>1667064574793</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1667064574793</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Login page now translates to french based on system settings (hopefully)">
+      <created>1667447097562</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1667447097562</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Home page bilingual">
+      <created>1667448824037</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1667448824037</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Made some var's more friendly to use aside from their original purpose">
+      <created>1667448958276</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1667448958276</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,10 +328,24 @@
     <MESSAGE value="Started the code for login controller and app" />
     <MESSAGE value="Created login page functions and actions" />
     <MESSAGE value="Created and started implementing logger." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created and started implementing logger." />
+    <MESSAGE value="Created next set of app files" />
+    <MESSAGE value="removed children tags and javafx versioning" />
+    <MESSAGE value="Added functionality to all buttons on the home page" />
+    <MESSAGE value="Added functionality to all cancel and quit buttons" />
+    <MESSAGE value="Added controllers and basic functionality to" />
+    <MESSAGE value="Created separate controllers for the login and the initializer, added locale to login page, created files for translator." />
+    <MESSAGE value="Login page now translates to french based on system settings (hopefully)" />
+    <MESSAGE value="Home page bilingual" />
+    <MESSAGE value="Made some var's more friendly to use aside from their original purpose" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made some var's more friendly to use aside from their original purpose" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/C195_PA$Scheduler.ic" NAME="Scheduler Coverage Results" MODIFIED="1667687257564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.eastonseidel.c195pa.*</FILTER>
+    </SUITE>
   </component>
 </project>

@@ -66,6 +66,32 @@ public class Translator {
 
         // Customer Column
         ln.put("customerName", "Customer Name");
+
+        // Customer action variables
+        // Edit customer title
+        ln.put("editCustomer", "Edit Customer");
+
+        // Create Customer Title
+        ln.put("createCustomer", "Create Customer");
+
+        // Save
+        ln.put("save", "Save");
+
+        // phone number
+        ln.put("phoneNumber", "Phone Number");
+
+        // postal code
+        ln.put("postalCode", "Postal Code");
+
+        // address
+        ln.put("address", "Address");
+
+        // id
+        ln.put("id", "Customer ID");
+
+        // Error opening customer
+        ln.put("editCustomerTitleError", "Error Opening Customer!");
+        ln.put("editCustomerErrorText", "There was an error opening this customer for modification!\n");
     }
 
     public static void French() {
@@ -128,5 +154,31 @@ public class Translator {
 
         // Customer Column
         ln.put("customerName", "Nom du client");
+
+        // Customer action variables
+        // Edit customer title
+        ln.put("editCustomer", "Modifier le client");
+
+        // Create Customer Title
+        ln.put("createCustomer", "Créer un client");
+
+        // Save
+        ln.put("save", "Sauvegarder");
+
+        // phone number
+        ln.put("phoneNumber", "Numéro de téléphone");
+
+        // postal code
+        ln.put("postalCode", "Code postal");
+
+        // address
+        ln.put("address", "Adresse");
+
+        // id
+        ln.put("id", "N ° de client");
+
+        // Error opening customer
+        ln.put("editCustomerTitleError", "Error Opening Customer!");
+        ln.put("editCustomerErrorText", "There was an error opening this customer for modification!\n");
     }
 }

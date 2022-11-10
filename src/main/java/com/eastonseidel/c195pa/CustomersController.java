@@ -1,25 +1,33 @@
 package com.eastonseidel.c195pa;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
+import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 public class CustomersController {
 
-    @FXML Button cancelButton;
-    @FXML Button newButton;
-    @FXML Button deleteButton;
-    @FXML Button editButton;
-    @FXML TableColumn customerColumn;
-    @FXML Text customersTitle;
+    @FXML private Button cancelButton;
+    @FXML private Button newButton;
+    @FXML private Button deleteButton;
+    @FXML private Button editButton;
+    @FXML private TableView<Customer> customerTable;
+    @FXML private TableColumn customerColumn;
+    @FXML private Text customersTitle;
+    private static ObservableList<Customer> customers = FXCollections.observableArrayList();
 
     /**
      * Code for the Home Screen window for the application
@@ -37,6 +45,9 @@ public class CustomersController {
      * Initializer class for text and language on the page
      */
     public void initialize() {
+        // Set up the table cells
+        customerColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
+
         // Change language variables
         cancelButton.setText(Translator.ln.get("cancel").toString());
         newButton.setText(Translator.ln.get("new").toString());
@@ -66,6 +77,52 @@ public class CustomersController {
             // Customer Title
             customersTitle.setLayoutX(126);
         }
+
+        // Fill the tableview
+        Connection localDb;
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            localDb = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/client_schedule",
+                    "sqlUser", "Passw0rd!"
+            );
+
+            Statement statement;
+            statement = localDb.createStatement();
+            ResultSet resultSet;
+            resultSet = statement.executeQuery(
+                    "SELECT * FROM customers"
+            );
+
+            while (resultSet.next()) {
+                // Add customer to table
+                customers.add(new Customer(resultSet.getInt("Customer_ID"), resultSet.getString("Customer_Name"),
+                        resultSet.getString("Address"), resultSet.getString("Postal_Code"), resultSet.getString("Phone"),
+                        resultSet.getString("Create_Date"), resultSet.getString("Created_By"), resultSet.getString("Last_Update"),
+                        resultSet.getString("Last_Updated_By"), resultSet.getInt("Division_ID")));
+            }
+            resultSet.close();
+            statement.close();
+            localDb.close();
+
+            // Log connecting to the DB
+            SchedulerLogger.addToLog("Successfully connected to DB", "info");
+        } catch (Exception exception) {
+            String errorString = Translator.ln.get("dbFailed").toString() + exception;
+
+            // Log the error
+            SchedulerLogger.addToLog(errorString, "severe");
+
+            // Alert that an error occured
+            // Create a popup
+            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+            errorAlert.setHeaderText("Database Error!");
+            errorAlert.setContentText(errorString);
+            errorAlert.showAndWait();
+        }
+
+        // set the table view to the list
+        customerTable.setItems(customers);
     }
 
     /**
@@ -77,5 +134,46 @@ public class CustomersController {
         Node node = (Node) event.getSource();
         Stage active = (Stage) node.getScene().getWindow();
         active.close();
+    }
+
+    /**
+     * Method for creating a new customer
+     */
+    @FXML
+    protected void onNewButtonClick(ActionEvent event) throws IOException {
+        CustomerActionsController.NewCustomer();
+    }
+
+    /**
+     * Method for editing a customer
+     */
+    @FXML
+    protected void onEditButtonClick(ActionEvent event) throws IOException {
+        // Get the table position and call the edit window
+        try {
+            TablePosition pos = customerTable.getSelectionModel().getSelectedCells().get(0);
+            int row = pos.getRow();
+
+            Customer oldCustomer = customerTable.getItems().get(row);
+
+            CustomerActionsController.EditCustomer(oldCustomer);
+        }
+        catch (Exception e) {
+            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+            errorAlert.setHeaderText(Translator.ln.get("editCustomerTitleError").toString());
+            errorAlert.setContentText(Translator.ln.get("editCustomerErrorText").toString() + e);
+            errorAlert.showAndWait();
+
+            // Log the error
+            SchedulerLogger.addToLog("warning", "There was an error attempting to edit a customer" + e);
+        }
+    }
+
+    /**
+     * Method for deleting a customer
+     */
+    @FXML
+    protected void onDeleteButtonClick(ActionEvent event) {
+
     }
 }

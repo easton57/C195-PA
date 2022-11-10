@@ -15,10 +15,10 @@
       </font>
    </Text>
    <Button fx:id="cancelButton" layoutX="145.0" layoutY="440.0" mnemonicParsing="false" prefWidth="60.0" onAction="#onCancelButtonClick"/>
-   <Button fx:id="newButton" layoutX="65.0" layoutY="390.0" mnemonicParsing="false" prefWidth="60.0" />
-   <Button fx:id="deleteButton" layoutX="226.0" layoutY="390.0" mnemonicParsing="false" prefWidth="60.0" />
-   <Button fx:id="editButton" layoutX="144.0" layoutY="390.0" mnemonicParsing="false" prefWidth="60.0" />
-   <TableView layoutX="25.0" layoutY="70.0" prefHeight="300.0" prefWidth="300.0">
+   <Button fx:id="newButton" layoutX="65.0" layoutY="390.0" mnemonicParsing="false" prefWidth="60.0" onAction="#onNewButtonClick"/>
+   <Button fx:id="deleteButton" layoutX="226.0" layoutY="390.0" mnemonicParsing="false" prefWidth="60.0" onAction="#onDeleteButtonClick"/>
+   <Button fx:id="editButton" layoutX="144.0" layoutY="390.0" mnemonicParsing="false" prefWidth="60.0" onAction="#onEditButtonClick"/>
+   <TableView fx:id="customerTable" layoutX="25.0" layoutY="70.0" prefHeight="300.0" prefWidth="300.0">
      <columns>
        <TableColumn fx:id="customerColumn" prefWidth="300.0" />
      </columns>

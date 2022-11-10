@@ -39,7 +39,7 @@ public class LoginController {
         loginStage.show();
 
         // Send a log that the login screen made it
-        ScheduleLogger.addToLog("App launched successfully!", "info");
+        SchedulerLogger.addToLog("App launched successfully!", "info");
     }
 
     /**
@@ -82,7 +82,7 @@ public class LoginController {
     @FXML
     protected void onCancelButtonClick() {
         // Log the app closing
-        ScheduleLogger.addToLog("Login Cancelled", "info");
+        SchedulerLogger.addToLog("Login Cancelled", "info");
 
         System.exit(-1);
     }
@@ -120,12 +120,12 @@ public class LoginController {
                 localDb.close();
 
                 // Log connecting to the DB
-                ScheduleLogger.addToLog("Successfully connected to DB", "info");
+                SchedulerLogger.addToLog("Successfully connected to DB", "info");
             } catch (Exception exception) {
                 String errorString = Translator.ln.get("dbFailed").toString() + exception;
 
                 // Log the error
-                ScheduleLogger.addToLog(errorString, "severe");
+                SchedulerLogger.addToLog(errorString, "severe");
 
                 // Alert that an error occured
                 // Create a popup
@@ -141,7 +141,7 @@ public class LoginController {
             // Check the password
             if (creds.get(username.getText()).equals(password.getText())) {
                 // Log the success
-                ScheduleLogger.addToLog("Log in successful by: " + username.getText(), "info");
+                SchedulerLogger.addToLog("Log in successful by: " + username.getText(), "info");
 
                 // close the active window
                 Node node = (Node) event.getSource();
@@ -153,7 +153,7 @@ public class LoginController {
             }
             else {
                 // log failed password
-                ScheduleLogger.addToLog("Log in failed: Invalid Password", "warning");
+                SchedulerLogger.addToLog("Log in failed: Invalid Password", "warning");
 
                 // Wrong Password
                 Alert incorrectPassword = new Alert(Alert.AlertType.WARNING);
@@ -164,7 +164,7 @@ public class LoginController {
         }
         catch (Exception exception) {
             // log invalid username
-            ScheduleLogger.addToLog("Log in failed: Invalid Username", "warning");
+            SchedulerLogger.addToLog("Log in failed: Invalid Username", "warning");
 
             // Print a username failure
             Alert invalidUser = new Alert(Alert.AlertType.WARNING);

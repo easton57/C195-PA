@@ -7,7 +7,6 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.time.ZoneId;
 
 public class HomeController {
 
@@ -52,7 +51,7 @@ public class HomeController {
     @FXML
     protected void onQuitButtonClick() {
         // Log the app closing
-        ScheduleLogger.addToLog("App closed", "info");
+        SchedulerLogger.addToLog("App closed", "info");
 
         System.exit(0);
     }

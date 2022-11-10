@@ -1,22 +1,21 @@
 package com.eastonseidel.c195pa;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.logging.*;
 
-public class ScheduleLogger {
+public class SchedulerLogger {
     // Define our logger
     static Handler fileHandler = null;
     private static Logger LOGGER = null;
 
     static {
         // Formatting file
-        InputStream stream = ScheduleLogger.class.getClassLoader().getResourceAsStream("ScheduleLogger.properties");
+        InputStream stream = SchedulerLogger.class.getClassLoader().getResourceAsStream("ScheduleLogger.properties");
 
         try {
             LogManager.getLogManager().readConfiguration(stream);
-            LOGGER = Logger.getLogger(ScheduleLogger.class.getName());
+            LOGGER = Logger.getLogger(SchedulerLogger.class.getName());
         }
         catch (IOException e) {
             e.printStackTrace();

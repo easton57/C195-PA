@@ -1,5 +1,5 @@
 # C195-PA
-Perforamnce Assessment for Software II at WGU
+Performance Assessment for Software II at WGU
 
 <H2>To Do:</H2>
 1.  Create a log-in form with the following capabilities:
