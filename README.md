@@ -2,7 +2,7 @@
 Performance Assessment for Software II at WGU
 
 <H2>To Do:</H2>
-1.  Create a log-in form with the following capabilities:
+~~1.  Create a log-in form with the following capabilities:~~
 
 ~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  accepts a user ID and password and provides an appropriate error message~~
 
@@ -17,7 +17,7 @@ Performance Assessment for Software II at WGU
 
 <br>
 
-2.  Write code that provides the following customer record functionalities:
+~~2.  Write code that provides the following customer record functionalities:~~
 
 ~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  Customer records and appointments can be added, updated, and deleted.~~
 
@@ -40,7 +40,7 @@ Performance Assessment for Software II at WGU
 ~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  When updating a customer, the customer data autopopulates in the form.~~
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  Country and first-level division data is prepopulated in separate combo boxes or lists in the user interface for the user to choose. The first-level list should be filtered by the user’s selection of a country (e.g., when choosing U.S., filter so it only shows states).
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  Country and first-level division data is prepopulated in separate combo boxes or lists in the user interface for the user to choose. The first-level list should be filtered by the user’s selection of a country (e.g., when choosing U.S., filter so it only shows states).~~
 
 ~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  All of the original customer information is displayed on the update form.~~
 
@@ -50,7 +50,7 @@ Performance Assessment for Software II at WGU
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  Customer data is displayed using a TableView, including first-level division data. A list of all the customers and their information may be viewed in a TableView, and updates of the data can be performed in text fields on the form.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  When a customer record is deleted, a custom message should display in the user interface.
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  When a customer record is deleted, a custom message should display in the user interface.~~
 
 <br>
 

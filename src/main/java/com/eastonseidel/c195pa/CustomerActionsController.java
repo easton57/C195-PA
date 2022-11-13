@@ -51,6 +51,10 @@ public class CustomerActionsController {
     private static Dictionary countryIds = new Hashtable();
     private static Dictionary divisionIds = new Hashtable();
     private static Dictionary divisionNames = new Hashtable();
+    private static List usDivisions = new LinkedList<String>();
+    private static List canadaDivisions = new LinkedList<String>();
+    private static List ukDivisions = new LinkedList<String>();
+    private static List divisionList = new LinkedList<String>();
     private static String title;
 
     /**
@@ -163,7 +167,6 @@ public class CustomerActionsController {
         }
 
         List countryList = new LinkedList<String>();
-        List divisionList = new LinkedList<String>();
 
         // grab the id's and divisions from the db
         Connection localDb;
@@ -196,7 +199,16 @@ public class CustomerActionsController {
                 divisionNames.put(resultSet.getString("Division"), resultSet.getString("Division_ID"));
                 divisionIds.put(resultSet.getString("Division_ID"), resultSet.getString("Division"));
                 divisionToCountryId.put(resultSet.getString("Division_ID"), countryIds.get(resultSet.getString("Country_ID")));
-                divisionList.add(resultSet.getString("Division"));
+
+                if (resultSet.getInt("Country_ID") == 1) {
+                    usDivisions.add(resultSet.getString("Division"));
+                }
+                else if (resultSet.getInt("Country_ID") == 2) {
+                    ukDivisions.add(resultSet.getString("Division"));
+                }
+                else {
+                    canadaDivisions.add(resultSet.getString("Division"));
+                }
             }
 
             resultSet.close();
@@ -336,5 +348,27 @@ public class CustomerActionsController {
         Node node = (Node) event.getSource();
         Stage active = (Stage) node.getScene().getWindow();
         active.close();
+    }
+
+    /**
+     * Method for hopefully checking the combo box value and changing the available values in the other box
+     */
+    @FXML
+    protected void onCountryComboBoxChange(ActionEvent event) {
+        String boxText = countryIdBox.getValue().toString();
+
+        // Determine the other list values
+        if (boxText.contains("U.S")) {
+            divisionList = usDivisions;
+        }
+        else if (boxText.contains("Canada")) {
+            divisionList = canadaDivisions;
+        }
+        else {
+            divisionList = ukDivisions;
+        }
+
+        // first level division ID
+        divisionIdBox.setItems(FXCollections.observableArrayList(divisionList));
     }
 }

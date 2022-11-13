@@ -242,6 +242,12 @@ public class CustomersController {
 
             statement.close();
             localDb.close();
+
+            // Notify of the action
+            Alert deleteSuccess = new Alert(Alert.AlertType.INFORMATION);
+            deleteSuccess.setHeaderText(Translator.ln.get("deleteCustomerTitleAlert").toString());
+            deleteSuccess.setContentText(Translator.ln.get("deleteCustomerAlertText").toString() + oldCustomer.getName());
+            deleteSuccess.showAndWait();
         } catch (Exception exception) {
             String errorString = Translator.ln.get("dbFailed").toString() + exception;
 

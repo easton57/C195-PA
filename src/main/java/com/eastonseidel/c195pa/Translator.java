@@ -95,6 +95,10 @@ public class Translator {
 
         // Error writing change to customer
         ln.put("writeCustomerError", "There was an error writing changes to the database!\n");
+
+        // Customer Deleted Alert Text
+        ln.put("deleteCustomerTitleAlert", "Customer Deleted");
+        ln.put("deleteCustomerAlertText", "Successfully deleted the following customer: ");
     }
 
     public static void French() {
@@ -186,5 +190,9 @@ public class Translator {
 
         // Error writing change to customer
         ln.put("writeCustomerError", "Une erreur s'est produite lors de l'écriture des modifications dans la base de données!\n");
+
+        // Customer Deleted Alert Text
+        ln.put("deleteCustomerTitleAlert", "Client supprimé");
+        ln.put("deleteCustomerAlertText", "Le client suivant a bien été supprimé: ");
     }
 }

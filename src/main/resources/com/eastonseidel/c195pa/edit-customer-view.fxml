@@ -20,5 +20,5 @@
    <Text fx:id="customerNameLabel" layoutX="17.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="179.16799926757812" />
    <Text fx:id="customerIdLabel" layoutX="17.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="179.16799926757812" />
    <ComboBox id="divisionId" fx:id="divisionIdBox" layoutX="353.0" layoutY="249.0" prefWidth="160.0" />
-   <ComboBox id="countryId" fx:id="countryIdBox" layoutX="528.0" layoutY="249.0" prefWidth="100.0" />
+   <ComboBox id="countryId" fx:id="countryIdBox" layoutX="528.0" layoutY="249.0" prefWidth="100.0" onAction="#onCountryComboBoxChange"/>
 </Pane>
