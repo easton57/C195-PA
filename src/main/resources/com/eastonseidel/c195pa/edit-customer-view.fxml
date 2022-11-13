@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.eastonseidel.c195pa.CustomerActionsController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.eastonseidel.c195pa.CustomerActionsController">
   <Button fx:id="saveButton" layoutX="220.0" layoutY="400.0" mnemonicParsing="false" onAction="#onSaveButtonClick" prefWidth="60.0" />
   <Button fx:id="cancelButton" layoutX="420.0" layoutY="400.0" mnemonicParsing="false" onAction="#onCancelButtonClick" prefWidth="60.0" />
    <TextField id="phoneNumberInput" fx:id="phoneNumberInput" layoutX="213.0" layoutY="309.0" prefWidth="300.0" />
@@ -19,6 +19,6 @@
    <Text fx:id="addressLabel" layoutX="17.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="179.16799926757812" />
    <Text fx:id="customerNameLabel" layoutX="17.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="179.16799926757812" />
    <Text fx:id="customerIdLabel" layoutX="17.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="179.16799926757812" />
-   <ComboBox id="divisionId" fx:id="divisionId" layoutX="353.0" layoutY="249.0" prefWidth="160.0" />
-   <ComboBox id="countryId" fx:id="countryId" layoutX="528.0" layoutY="249.0" prefWidth="100.0" />
+   <ComboBox id="divisionId" fx:id="divisionIdBox" layoutX="353.0" layoutY="249.0" prefWidth="160.0" />
+   <ComboBox id="countryId" fx:id="countryIdBox" layoutX="528.0" layoutY="249.0" prefWidth="100.0" />
 </Pane>

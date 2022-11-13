@@ -92,6 +92,9 @@ public class Translator {
         // Error opening customer
         ln.put("editCustomerTitleError", "Error Opening Customer!");
         ln.put("editCustomerErrorText", "There was an error opening this customer for modification!\n");
+
+        // Error writing change to customer
+        ln.put("writeCustomerError", "There was an error writing changes to the database!\n");
     }
 
     public static void French() {
@@ -180,5 +183,8 @@ public class Translator {
         // Error opening customer
         ln.put("editCustomerTitleError", "Error Opening Customer!");
         ln.put("editCustomerErrorText", "There was an error opening this customer for modification!\n");
+
+        // Error writing change to customer
+        ln.put("writeCustomerError", "Une erreur s'est produite lors de l'écriture des modifications dans la base de données!\n");
     }
 }

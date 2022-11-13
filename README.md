@@ -19,13 +19,13 @@ Performance Assessment for Software II at WGU
 
 2.  Write code that provides the following customer record functionalities:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  Customer records and appointments can be added, updated, and deleted.
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  Customer records and appointments can be added, updated, and deleted.~~
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  When deleting a customer record, all of the customer’s appointments must be deleted first, due to foreign key constraints.
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  When deleting a customer record, all of the customer’s appointments must be deleted first, due to foreign key constraints.~~
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  When adding and updating a customer, text fields are used to collect the following data: customer name, address, postal code, and phone number.
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  When adding and updating a customer, text fields are used to collect the following data: customer name, address, postal code, and phone number.~~
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  Customer IDs are auto-generated, and first-level division (i.e., states, provinces) and country data are collected using separate combo boxes.
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  Customer IDs are auto-generated, and first-level division (i.e., states, provinces) and country data are collected using separate combo boxes.~~
 
 
 &nbsp;&nbsp;&nbsp;Note: The address text field should not include first-level division and country data. Please use the following examples to format addresses:
@@ -37,16 +37,16 @@ Performance Assessment for Software II at WGU
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  UK address: 123 ABC Street, Greenwich, London
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  When updating a customer, the customer data autopopulates in the form.
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  When updating a customer, the customer data autopopulates in the form.~~
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  Country and first-level division data is prepopulated in separate combo boxes or lists in the user interface for the user to choose. The first-level list should be filtered by the user’s selection of a country (e.g., when choosing U.S., filter so it only shows states).
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  All of the original customer information is displayed on the update form.
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  All of the original customer information is displayed on the update form.~~
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  Customer_ID must be disabled.
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  Customer_ID must be disabled.~~
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  All of the fields can be updated except for Customer_ID.
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  All of the fields can be updated except for Customer_ID.~~
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  Customer data is displayed using a TableView, including first-level division data. A list of all the customers and their information may be viewed in a TableView, and updates of the data can be performed in text fields on the form.
 
@@ -131,10 +131,10 @@ Performance Assessment for Software II at WGU
 B.  Write at least two different lambda expressions to improve your code.
 
 
-C.  Write code that provides the ability to track user activity by recording all user log-in attempts, dates, and time stamps and whether each attempt was successful in a file named login_activity.txt. Append each new record to the existing file, and save to the root folder of the application.
+~~C.  Write code that provides the ability to track user activity by recording all user log-in attempts, dates, and time stamps and whether each attempt was successful in a file named login_activity.txt. Append each new record to the existing file, and save to the root folder of the application.~~
 
 
-D.  Provide descriptive Javadoc comments for at least 70 percent of the classes and their members throughout the code, and create an index.html file of your comments to include with your submission based on Oracle’s guidelines for the Javadoc tool best practices. Your comments should include a justification for each lambda expression in the method where it is used.
+~~D.  Provide descriptive Javadoc comments for at least 70 percent of the classes and their members throughout the code, and create an index.html file of your comments to include with your submission based on Oracle’s guidelines for the Javadoc tool best practices. Your comments should include a justification for each lambda expression in the method where it is used.~~
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Note: The comments on the lambda need to be located in the comments describing the method where it is located for it to export properly.
@@ -155,4 +155,4 @@ E.  Create a README.txt file that includes the following information:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  the MySQL Connector driver version number, including the update number (e.g., mysql-connector-java-8.1.23)
 
 
-F.  Demonstrate professional communication in the content and presentation of your submission.
+~~F.  Demonstrate professional communication in the content and presentation of your submission.~~

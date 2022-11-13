@@ -79,6 +79,19 @@ public class CustomersController {
         }
 
         // Fill the tableview
+        dbRefresh();
+
+        // set the table view to the list
+        customerTable.setItems(customers);
+    }
+
+    /**
+     * Method to refresh the table data after edits
+     */
+    public static void dbRefresh() {
+        // Empty the var and table
+        customers.removeAll();
+
         Connection localDb;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -104,9 +117,6 @@ public class CustomersController {
             resultSet.close();
             statement.close();
             localDb.close();
-
-            // Log connecting to the DB
-            SchedulerLogger.addToLog("Successfully connected to DB", "info");
         } catch (Exception exception) {
             String errorString = Translator.ln.get("dbFailed").toString() + exception;
 
@@ -120,9 +130,6 @@ public class CustomersController {
             errorAlert.setContentText(errorString);
             errorAlert.showAndWait();
         }
-
-        // set the table view to the list
-        customerTable.setItems(customers);
     }
 
     /**
@@ -141,6 +148,8 @@ public class CustomersController {
      */
     @FXML
     protected void onNewButtonClick(ActionEvent event) throws IOException {
+        customerTable.getItems().clear();
+
         CustomerActionsController.NewCustomer();
     }
 
@@ -157,6 +166,8 @@ public class CustomersController {
             Customer oldCustomer = customerTable.getItems().get(row);
 
             CustomerActionsController.EditCustomer(oldCustomer);
+
+            customerTable.getItems().clear();
         }
         catch (Exception e) {
             Alert errorAlert = new Alert(Alert.AlertType.ERROR);
@@ -174,6 +185,75 @@ public class CustomersController {
      */
     @FXML
     protected void onDeleteButtonClick(ActionEvent event) {
+        Customer oldCustomer = null;
 
+        // Get the table position and call the edit window
+        try {
+            TablePosition pos = customerTable.getSelectionModel().getSelectedCells().get(0);
+            int row = pos.getRow();
+
+            oldCustomer = customerTable.getItems().get(row);
+        }
+        catch (Exception e) {
+            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+            errorAlert.setHeaderText(Translator.ln.get("editCustomerTitleError").toString());
+            errorAlert.setContentText(Translator.ln.get("editCustomerErrorText").toString() + e);
+            errorAlert.showAndWait();
+
+            // Log the error
+            SchedulerLogger.addToLog("warning", "There was an error attempting to edit a customer" + e);
+        }
+
+        // Delete the selected user
+        Connection localDb;
+        try {
+            // Grab the country Id's
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            localDb = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/client_schedule",
+                    "sqlUser", "Passw0rd!"
+            );
+
+            Statement statement;
+            statement = localDb.createStatement();
+            boolean result;
+            result = statement.execute(
+                    "DELETE FROM customers WHERE Customer_ID=" + oldCustomer.getId()
+            );
+
+            if (!result) {
+                // Refresh the table
+                customerTable.getItems().clear();
+                dbRefresh();
+            }
+            else {
+                String errorString = Translator.ln.get("WriteCustomerError").toString();
+
+                // Log the error
+                SchedulerLogger.addToLog(errorString, "severe");
+
+                // Alert that an error occured
+                // Create a popup
+                Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+                errorAlert.setHeaderText("Database Error!");
+                errorAlert.setContentText(errorString);
+                errorAlert.showAndWait();
+            }
+
+            statement.close();
+            localDb.close();
+        } catch (Exception exception) {
+            String errorString = Translator.ln.get("dbFailed").toString() + exception;
+
+            // Log the error
+            SchedulerLogger.addToLog(errorString, "severe");
+
+            // Alert that an error occured
+            // Create a popup
+            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+            errorAlert.setHeaderText("Database Error!");
+            errorAlert.setContentText(errorString);
+            errorAlert.showAndWait();
+        }
     }
 }
