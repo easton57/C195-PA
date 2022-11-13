@@ -28,13 +28,13 @@ Performance Assessment for Software II at WGU
 ~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  Customer IDs are auto-generated, and first-level division (i.e., states, provinces) and country data are collected using separate combo boxes.~~
 
 
-&nbsp;&nbsp;&nbsp;Note: The address text field should not include first-level division and country data. Please use the following examples to format addresses:
+~~&nbsp;&nbsp;&nbsp;Note: The address text field should not include first-level division and country data. Please use the following examples to format addresses:~~
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  U.S. address: 123 ABC Street, White Plains
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  U.S. address: 123 ABC Street, White Plains~~
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  Canadian address: 123 ABC Street, Newmarket
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  Canadian address: 123 ABC Street, Newmarket~~
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  UK address: 123 ABC Street, Greenwich, London
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  UK address: 123 ABC Street, Greenwich, London~~
 
 
 ~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  When updating a customer, the customer data autopopulates in the form.~~

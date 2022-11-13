@@ -7,20 +7,23 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="350.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.eastonseidel.c195pa.CustomersController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.eastonseidel.c195pa.CustomersController">
    <Text fx:id="customersTitle" layoutX="103.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0">
       <font>
          <Font size="28.0" />
       </font>
    </Text>
-   <Button fx:id="cancelButton" layoutX="145.0" layoutY="440.0" mnemonicParsing="false" prefWidth="60.0" onAction="#onCancelButtonClick"/>
-   <Button fx:id="newButton" layoutX="65.0" layoutY="390.0" mnemonicParsing="false" prefWidth="60.0" onAction="#onNewButtonClick"/>
-   <Button fx:id="deleteButton" layoutX="226.0" layoutY="390.0" mnemonicParsing="false" prefWidth="60.0" onAction="#onDeleteButtonClick"/>
-   <Button fx:id="editButton" layoutX="144.0" layoutY="390.0" mnemonicParsing="false" prefWidth="60.0" onAction="#onEditButtonClick"/>
-   <TableView fx:id="customerTable" layoutX="25.0" layoutY="70.0" prefHeight="300.0" prefWidth="300.0">
+   <Button fx:id="newButton" layoutX="240.0" layoutY="390.0" mnemonicParsing="false" onAction="#onNewButtonClick" prefWidth="60.0" />
+   <Button fx:id="editButton" layoutX="319.0" layoutY="390.0" mnemonicParsing="false" onAction="#onEditButtonClick" prefWidth="60.0" />
+   <Button fx:id="deleteButton" layoutX="401.0" layoutY="390.0" mnemonicParsing="false" onAction="#onDeleteButtonClick" prefWidth="60.0" />
+   <Button fx:id="cancelButton" layoutX="320.0" layoutY="440.0" mnemonicParsing="false" onAction="#onCancelButtonClick" prefWidth="60.0" />
+   <TableView fx:id="customerTable" layoutX="25.0" layoutY="70.0" prefHeight="300.0" prefWidth="650.0">
      <columns>
-       <TableColumn fx:id="customerColumn" prefWidth="300.0" />
+       <TableColumn fx:id="idColumn" prefWidth="50.0" />
+         <TableColumn fx:id="customerColumn" prefWidth="150.0" />
+         <TableColumn fx:id="addressColumn" prefWidth="250.0" />
+         <TableColumn fx:id="postalCodeColumn" prefWidth="75.0" />
+         <TableColumn fx:id="phoneColumn" prefWidth="125.0" />
      </columns>
    </TableView>
 </Pane>

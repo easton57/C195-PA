@@ -25,7 +25,11 @@ public class CustomersController {
     @FXML private Button deleteButton;
     @FXML private Button editButton;
     @FXML private TableView<Customer> customerTable;
+    @FXML private TableColumn idColumn;
     @FXML private TableColumn customerColumn;
+    @FXML private TableColumn addressColumn;
+    @FXML private TableColumn postalCodeColumn;
+    @FXML private TableColumn phoneColumn;
     @FXML private Text customersTitle;
     private static ObservableList<Customer> customers = FXCollections.observableArrayList();
 
@@ -46,36 +50,46 @@ public class CustomersController {
      */
     public void initialize() {
         // Set up the table cells
+        idColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
         customerColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
+        addressColumn.setCellValueFactory(new PropertyValueFactory<>("modifiedAddress"));
+        postalCodeColumn.setCellValueFactory(new PropertyValueFactory<>("postalCode"));
+        phoneColumn.setCellValueFactory(new PropertyValueFactory<>("phone"));
 
         // Change language variables
         cancelButton.setText(Translator.ln.get("cancel").toString());
         newButton.setText(Translator.ln.get("new").toString());
         deleteButton.setText(Translator.ln.get("delete").toString());
         editButton.setText(Translator.ln.get("edit").toString());
-        customerColumn.setText(Translator.ln.get("customerName").toString());
         customersTitle.setText(Translator.ln.get("customers").toString());
+
+        // Column Labels
+        idColumn.setText("ID");
+        customerColumn.setText(Translator.ln.get("customerName").toString());
+        addressColumn.setText(Translator.ln.get("address").toString());
+        postalCodeColumn.setText(Translator.ln.get("postalCode").toString());
+        phoneColumn.setText(Translator.ln.get("phoneNumber").toString());
 
         // change the button sizes if needed
         if (cancelButton.getText().equals("Annuler")) {
             // Cancel Button
             cancelButton.setPrefWidth(80);
-            cancelButton.setLayoutX(135);
+            cancelButton.setLayoutX(310);
 
             // New Button
             newButton.setPrefWidth(80);
-            newButton.setLayoutX(25);
+            newButton.setLayoutX(200);
 
             // Delete Button
             deleteButton.setPrefWidth(80);
-            deleteButton.setLayoutX(245);
+            deleteButton.setLayoutX(420);
 
             // Edit Button
             editButton.setPrefWidth(80);
-            editButton.setLayoutX(135);
+            editButton.setLayoutX(310);
 
             // Customer Title
-            customersTitle.setLayoutX(126);
+            customersTitle.setLayoutX(301);
         }
 
         // Fill the tableview
