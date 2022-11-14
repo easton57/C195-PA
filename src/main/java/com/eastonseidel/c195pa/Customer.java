@@ -75,6 +75,17 @@ public class Customer {
 
     public void setAddress(String address) {
         this.address = address;
+
+        getDivisions();
+        if (divisionIdToCountry.get(divisionId).contains("U.S")) {
+            modifiedAddress = "U.S. address: " + address + " " + divisionIds.get(divisionId);
+        }
+        else if (divisionIdToCountry.get(divisionId).contains("Canada")) {
+            modifiedAddress = "Canada address: " + address + " " + divisionIds.get(divisionId);
+        }
+        else {
+            modifiedAddress = "UK address: " + address + " " + divisionIds.get(divisionId);
+        }
     }
 
     public String getPostalCode() {

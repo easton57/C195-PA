@@ -48,7 +48,7 @@ Performance Assessment for Software II at WGU
 
 ~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  All of the fields can be updated except for Customer_ID.~~
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  Customer data is displayed using a TableView, including first-level division data. A list of all the customers and their information may be viewed in a TableView, and updates of the data can be performed in text fields on the form.
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  Customer data is displayed using a TableView, including first-level division data. A list of all the customers and their information may be viewed in a TableView, and updates of the data can be performed in text fields on the form.~~
 
 ~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  When a customer record is deleted, a custom message should display in the user interface.~~
 

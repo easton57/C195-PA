@@ -3,12 +3,14 @@ package com.eastonseidel.c195pa;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -51,10 +53,15 @@ public class CustomersController {
     public void initialize() {
         // Set up the table cells
         idColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
-        customerColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
-        addressColumn.setCellValueFactory(new PropertyValueFactory<>("modifiedAddress"));
-        postalCodeColumn.setCellValueFactory(new PropertyValueFactory<>("postalCode"));
-        phoneColumn.setCellValueFactory(new PropertyValueFactory<>("phone"));
+        customerColumn.setCellValueFactory(new PropertyValueFactory<Customer, String>("name"));
+        addressColumn.setCellValueFactory(new PropertyValueFactory<Customer, String>("modifiedAddress"));
+        postalCodeColumn.setCellValueFactory(new PropertyValueFactory<Customer, String>("postalCode"));
+        phoneColumn.setCellValueFactory(new PropertyValueFactory<Customer, String>("phone"));
+
+        customerColumn.setCellFactory(TextFieldTableCell.forTableColumn());
+        addressColumn.setCellFactory(TextFieldTableCell.forTableColumn());
+        postalCodeColumn.setCellFactory(TextFieldTableCell.forTableColumn());
+        phoneColumn.setCellFactory(TextFieldTableCell.forTableColumn());
 
         // Change language variables
         cancelButton.setText(Translator.ln.get("cancel").toString());
@@ -151,6 +158,8 @@ public class CustomersController {
      */
     @FXML
     protected void onCancelButtonClick(ActionEvent event) {
+        customerTable.getItems().clear();
+
         // close the active window
         Node node = (Node) event.getSource();
         Stage active = (Stage) node.getScene().getWindow();
@@ -262,6 +271,233 @@ public class CustomersController {
             deleteSuccess.setHeaderText(Translator.ln.get("deleteCustomerTitleAlert").toString());
             deleteSuccess.setContentText(Translator.ln.get("deleteCustomerAlertText").toString() + oldCustomer.getName());
             deleteSuccess.showAndWait();
+        } catch (Exception exception) {
+            String errorString = Translator.ln.get("dbFailed").toString() + exception;
+
+            // Log the error
+            SchedulerLogger.addToLog(errorString, "severe");
+
+            // Alert that an error occured
+            // Create a popup
+            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+            errorAlert.setHeaderText("Database Error!");
+            errorAlert.setContentText(errorString);
+            errorAlert.showAndWait();
+        }
+    }
+
+    @FXML
+    protected void onEditCustomerColumn(TableColumn.CellEditEvent<Customer, String> t) {
+        // Set the new value to the customer array
+        t.getTableView().getItems().get(t.getTablePosition().getRow()).setName(t.getNewValue());
+
+        // Write to the array
+        int row = customerTable.getSelectionModel().getSelectedCells().get(0).getRow();
+        Customer oldCustomer = customerTable.getItems().get(row);
+
+        Connection localDb;
+        try {
+            String sqlStatement;
+
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            localDb = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/client_schedule",
+                    "sqlUser", "Passw0rd!"
+            );
+
+            Statement statement;
+            statement = localDb.createStatement();
+            boolean result;
+            result = statement.execute("UPDATE customers SET Customer_Name=\"" + oldCustomer.getName() +
+                    "\" WHERE Customer_ID=" + oldCustomer.getId() + ";");
+
+            statement.close();
+            localDb.close();
+
+            if (result) {
+                String errorString = Translator.ln.get("WriteCustomerError").toString();
+
+                // Log the error
+                SchedulerLogger.addToLog(errorString, "severe");
+
+                // Alert that an error occured
+                // Create a popup
+                Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+                errorAlert.setHeaderText("Database Error!");
+                errorAlert.setContentText(errorString);
+                errorAlert.showAndWait();
+            }
+        } catch (Exception exception) {
+            String errorString = Translator.ln.get("dbFailed").toString() + exception;
+
+            // Log the error
+            SchedulerLogger.addToLog(errorString, "severe");
+
+            // Alert that an error occured
+            // Create a popup
+            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+            errorAlert.setHeaderText("Database Error!");
+            errorAlert.setContentText(errorString);
+            errorAlert.showAndWait();
+        }
+    }
+
+    @FXML
+    protected void onEditAddressColumn(TableColumn.CellEditEvent<Customer, String> t) {
+        // Set the new value to the customer array
+        t.getTableView().getItems().get(t.getTablePosition().getRow()).setAddress(t.getNewValue());
+
+        // Write to the array
+        int row = customerTable.getSelectionModel().getSelectedCells().get(0).getRow();
+        Customer oldCustomer = customerTable.getItems().get(row);
+
+        Connection localDb;
+        try {
+            String sqlStatement;
+
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            localDb = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/client_schedule",
+                    "sqlUser", "Passw0rd!"
+            );
+
+            Statement statement;
+            statement = localDb.createStatement();
+            boolean result;
+            result = statement.execute("UPDATE customers SET Address=\"" + oldCustomer.getAddress() +
+                    "\" WHERE Customer_ID=" + oldCustomer.getId() + ";");
+
+            statement.close();
+            localDb.close();
+
+            if (result) {
+                String errorString = Translator.ln.get("WriteCustomerError").toString();
+
+                // Log the error
+                SchedulerLogger.addToLog(errorString, "severe");
+
+                // Alert that an error occured
+                // Create a popup
+                Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+                errorAlert.setHeaderText("Database Error!");
+                errorAlert.setContentText(errorString);
+                errorAlert.showAndWait();
+            }
+        } catch (Exception exception) {
+            String errorString = Translator.ln.get("dbFailed").toString() + exception;
+
+            // Log the error
+            SchedulerLogger.addToLog(errorString, "severe");
+
+            // Alert that an error occured
+            // Create a popup
+            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+            errorAlert.setHeaderText("Database Error!");
+            errorAlert.setContentText(errorString);
+            errorAlert.showAndWait();
+        }
+
+        // Refresh table
+        customerTable.refresh();
+    }
+
+    @FXML
+    protected void onEditPostalCodeColumn(TableColumn.CellEditEvent<Customer, String> t) {
+        // Set the new value to the customer array
+        t.getTableView().getItems().get(t.getTablePosition().getRow()).setPostalCode(t.getNewValue());
+
+        // Write to the array
+        int row = customerTable.getSelectionModel().getSelectedCells().get(0).getRow();
+        Customer oldCustomer = customerTable.getItems().get(row);
+
+        Connection localDb;
+        try {
+            String sqlStatement;
+
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            localDb = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/client_schedule",
+                    "sqlUser", "Passw0rd!"
+            );
+
+            Statement statement;
+            statement = localDb.createStatement();
+            boolean result;
+            result = statement.execute("UPDATE customers SET Postal_Code=\"" + oldCustomer.getPostalCode() +
+                    "\" WHERE Customer_ID=" + oldCustomer.getId() + ";");
+
+            statement.close();
+            localDb.close();
+
+            if (result) {
+                String errorString = Translator.ln.get("WriteCustomerError").toString();
+
+                // Log the error
+                SchedulerLogger.addToLog(errorString, "severe");
+
+                // Alert that an error occured
+                // Create a popup
+                Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+                errorAlert.setHeaderText("Database Error!");
+                errorAlert.setContentText(errorString);
+                errorAlert.showAndWait();
+            }
+        } catch (Exception exception) {
+            String errorString = Translator.ln.get("dbFailed").toString() + exception;
+
+            // Log the error
+            SchedulerLogger.addToLog(errorString, "severe");
+
+            // Alert that an error occured
+            // Create a popup
+            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+            errorAlert.setHeaderText("Database Error!");
+            errorAlert.setContentText(errorString);
+            errorAlert.showAndWait();
+        }
+    }
+
+    @FXML
+    protected void onEditPhoneColumn(TableColumn.CellEditEvent<Customer, String> t) {
+        // Set the new value to the customer array
+        t.getTableView().getItems().get(t.getTablePosition().getRow()).setPhone(t.getNewValue());
+
+        // Write to the array
+        int row = customerTable.getSelectionModel().getSelectedCells().get(0).getRow();
+        Customer oldCustomer = customerTable.getItems().get(row);
+
+        Connection localDb;
+        try {
+            String sqlStatement;
+
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            localDb = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/client_schedule",
+                    "sqlUser", "Passw0rd!"
+            );
+
+            Statement statement;
+            statement = localDb.createStatement();
+            boolean result;
+            result = statement.execute("UPDATE customers SET Phone=\"" + oldCustomer.getPhone() +
+                    "\" WHERE Customer_ID=" + oldCustomer.getId() + ";");
+
+            statement.close();
+            localDb.close();
+
+            if (result) {
+                String errorString = Translator.ln.get("WriteCustomerError").toString();
+
+                // Log the error
+                SchedulerLogger.addToLog(errorString, "severe");
+
+                // Alert that an error occured
+                // Create a popup
+                Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+                errorAlert.setHeaderText("Database Error!");
+                errorAlert.setContentText(errorString);
+                errorAlert.showAndWait();
+            }
         } catch (Exception exception) {
             String errorString = Translator.ln.get("dbFailed").toString() + exception;
 
