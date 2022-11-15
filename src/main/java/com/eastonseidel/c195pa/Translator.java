@@ -4,7 +4,7 @@ import java.util.Dictionary;
 import java.util.Hashtable;
 
 public class Translator {
-    public static Dictionary ln = new Hashtable();
+    public static Dictionary<String, String> ln = new Hashtable();
 
     public static void English() {
         // Login Strings

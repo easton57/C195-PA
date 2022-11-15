@@ -8,8 +8,6 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Dictionary;
 import java.util.Hashtable;
-import java.util.LinkedList;
-import java.util.List;
 
 public class Customer {
     private int id;
@@ -185,7 +183,7 @@ public class Customer {
             statement.close();
             localDb.close();
         } catch (Exception exception) {
-            String errorString = Translator.ln.get("dbFailed").toString() + exception;
+            String errorString = Translator.ln.get("dbFailed") + exception;
 
             // Log the error
             SchedulerLogger.addToLog(errorString, "severe");

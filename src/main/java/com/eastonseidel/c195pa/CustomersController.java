@@ -42,7 +42,7 @@ public class CustomersController {
         FXMLLoader fxmlLoader = new FXMLLoader(CustomersController.class.getResource("customers-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage homeStage = new Stage();
-        homeStage.setTitle(Translator.ln.get("customers").toString());
+        homeStage.setTitle(Translator.ln.get("customers"));
         homeStage.setScene(scene);
         homeStage.show();
     }
@@ -64,18 +64,18 @@ public class CustomersController {
         phoneColumn.setCellFactory(TextFieldTableCell.forTableColumn());
 
         // Change language variables
-        cancelButton.setText(Translator.ln.get("cancel").toString());
-        newButton.setText(Translator.ln.get("new").toString());
-        deleteButton.setText(Translator.ln.get("delete").toString());
-        editButton.setText(Translator.ln.get("edit").toString());
-        customersTitle.setText(Translator.ln.get("customers").toString());
+        cancelButton.setText(Translator.ln.get("cancel"));
+        newButton.setText(Translator.ln.get("new"));
+        deleteButton.setText(Translator.ln.get("delete"));
+        editButton.setText(Translator.ln.get("edit"));
+        customersTitle.setText(Translator.ln.get("customers"));
 
         // Column Labels
         idColumn.setText("ID");
-        customerColumn.setText(Translator.ln.get("customerName").toString());
-        addressColumn.setText(Translator.ln.get("address").toString());
-        postalCodeColumn.setText(Translator.ln.get("postalCode").toString());
-        phoneColumn.setText(Translator.ln.get("phoneNumber").toString());
+        customerColumn.setText(Translator.ln.get("customerName"));
+        addressColumn.setText(Translator.ln.get("address"));
+        postalCodeColumn.setText(Translator.ln.get("postalCode"));
+        phoneColumn.setText(Translator.ln.get("phoneNumber"));
 
         // change the button sizes if needed
         if (cancelButton.getText().equals("Annuler")) {
@@ -139,7 +139,7 @@ public class CustomersController {
             statement.close();
             localDb.close();
         } catch (Exception exception) {
-            String errorString = Translator.ln.get("dbFailed").toString() + exception;
+            String errorString = Translator.ln.get("dbFailed") + exception;
 
             // Log the error
             SchedulerLogger.addToLog(errorString, "severe");
@@ -194,8 +194,8 @@ public class CustomersController {
         }
         catch (Exception e) {
             Alert errorAlert = new Alert(Alert.AlertType.ERROR);
-            errorAlert.setHeaderText(Translator.ln.get("editCustomerTitleError").toString());
-            errorAlert.setContentText(Translator.ln.get("editCustomerErrorText").toString() + e);
+            errorAlert.setHeaderText(Translator.ln.get("editCustomerTitleError"));
+            errorAlert.setContentText(Translator.ln.get("editCustomerErrorText") + e);
             errorAlert.showAndWait();
 
             // Log the error
@@ -219,8 +219,8 @@ public class CustomersController {
         }
         catch (Exception e) {
             Alert errorAlert = new Alert(Alert.AlertType.ERROR);
-            errorAlert.setHeaderText(Translator.ln.get("editCustomerTitleError").toString());
-            errorAlert.setContentText(Translator.ln.get("editCustomerErrorText").toString() + e);
+            errorAlert.setHeaderText(Translator.ln.get("editCustomerTitleError"));
+            errorAlert.setContentText(Translator.ln.get("editCustomerErrorText") + e);
             errorAlert.showAndWait();
 
             // Log the error
@@ -250,7 +250,7 @@ public class CustomersController {
                 dbRefresh();
             }
             else {
-                String errorString = Translator.ln.get("WriteCustomerError").toString();
+                String errorString = Translator.ln.get("WriteCustomerError");
 
                 // Log the error
                 SchedulerLogger.addToLog(errorString, "severe");
@@ -268,11 +268,11 @@ public class CustomersController {
 
             // Notify of the action
             Alert deleteSuccess = new Alert(Alert.AlertType.INFORMATION);
-            deleteSuccess.setHeaderText(Translator.ln.get("deleteCustomerTitleAlert").toString());
-            deleteSuccess.setContentText(Translator.ln.get("deleteCustomerAlertText").toString() + oldCustomer.getName());
+            deleteSuccess.setHeaderText(Translator.ln.get("deleteCustomerTitleAlert"));
+            deleteSuccess.setContentText(Translator.ln.get("deleteCustomerAlertText") + oldCustomer.getName());
             deleteSuccess.showAndWait();
         } catch (Exception exception) {
-            String errorString = Translator.ln.get("dbFailed").toString() + exception;
+            String errorString = Translator.ln.get("dbFailed") + exception;
 
             // Log the error
             SchedulerLogger.addToLog(errorString, "severe");
@@ -315,7 +315,7 @@ public class CustomersController {
             localDb.close();
 
             if (result) {
-                String errorString = Translator.ln.get("WriteCustomerError").toString();
+                String errorString = Translator.ln.get("WriteCustomerError");
 
                 // Log the error
                 SchedulerLogger.addToLog(errorString, "severe");
@@ -328,7 +328,7 @@ public class CustomersController {
                 errorAlert.showAndWait();
             }
         } catch (Exception exception) {
-            String errorString = Translator.ln.get("dbFailed").toString() + exception;
+            String errorString = Translator.ln.get("dbFailed") + exception;
 
             // Log the error
             SchedulerLogger.addToLog(errorString, "severe");
@@ -371,7 +371,7 @@ public class CustomersController {
             localDb.close();
 
             if (result) {
-                String errorString = Translator.ln.get("WriteCustomerError").toString();
+                String errorString = Translator.ln.get("WriteCustomerError");
 
                 // Log the error
                 SchedulerLogger.addToLog(errorString, "severe");
@@ -384,7 +384,7 @@ public class CustomersController {
                 errorAlert.showAndWait();
             }
         } catch (Exception exception) {
-            String errorString = Translator.ln.get("dbFailed").toString() + exception;
+            String errorString = Translator.ln.get("dbFailed") + exception;
 
             // Log the error
             SchedulerLogger.addToLog(errorString, "severe");
@@ -430,7 +430,7 @@ public class CustomersController {
             localDb.close();
 
             if (result) {
-                String errorString = Translator.ln.get("WriteCustomerError").toString();
+                String errorString = Translator.ln.get("WriteCustomerError");
 
                 // Log the error
                 SchedulerLogger.addToLog(errorString, "severe");
@@ -443,7 +443,7 @@ public class CustomersController {
                 errorAlert.showAndWait();
             }
         } catch (Exception exception) {
-            String errorString = Translator.ln.get("dbFailed").toString() + exception;
+            String errorString = Translator.ln.get("dbFailed") + exception;
 
             // Log the error
             SchedulerLogger.addToLog(errorString, "severe");
@@ -486,7 +486,7 @@ public class CustomersController {
             localDb.close();
 
             if (result) {
-                String errorString = Translator.ln.get("WriteCustomerError").toString();
+                String errorString = Translator.ln.get("WriteCustomerError");
 
                 // Log the error
                 SchedulerLogger.addToLog(errorString, "severe");
@@ -499,7 +499,7 @@ public class CustomersController {
                 errorAlert.showAndWait();
             }
         } catch (Exception exception) {
-            String errorString = Translator.ln.get("dbFailed").toString() + exception;
+            String errorString = Translator.ln.get("dbFailed") + exception;
 
             // Log the error
             SchedulerLogger.addToLog(errorString, "severe");

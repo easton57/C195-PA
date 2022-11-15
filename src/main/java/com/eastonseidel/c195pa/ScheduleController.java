@@ -18,7 +18,7 @@ public class ScheduleController {
         FXMLLoader fxmlLoader = new FXMLLoader(ScheduleController.class.getResource("schedule-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage homeStage = new Stage();
-        homeStage.setTitle("Schedule");
+        homeStage.setTitle(Translator.ln.get("schedule"));
         homeStage.setScene(scene);
         homeStage.show();
     }

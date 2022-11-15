@@ -62,7 +62,7 @@ public class CustomerActionsController {
      * @throws IOException for javafx
      */
     public static void EditCustomer(Customer oldCustomer) throws IOException {
-        title = Translator.ln.get("editCustomer").toString();
+        title = Translator.ln.get("editCustomer");
         FXMLLoader fxmlLoader = new FXMLLoader(CustomerActionsController.class.getResource("edit-customer-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
@@ -88,7 +88,7 @@ public class CustomerActionsController {
      * @throws IOException for javafx
      */
     public static void NewCustomer() throws IOException {
-        title = Translator.ln.get("createCustomer").toString();
+        title = Translator.ln.get("createCustomer");
         FXMLLoader fxmlLoader = new FXMLLoader(CustomerActionsController.class.getResource("edit-customer-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
@@ -102,13 +102,13 @@ public class CustomerActionsController {
      */
     public void initialize() {
         // set the text for the objects
-        phoneNumberLabel.setText(Translator.ln.get("phoneNumber").toString());
-        postalCodeLabel.setText(Translator.ln.get("postalCode").toString());
-        addressLabel.setText(Translator.ln.get("address").toString());
-        customerNameLabel.setText(Translator.ln.get("customerName").toString());
-        customerIdLabel.setText(Translator.ln.get("id").toString());
-        saveButton.setText(Translator.ln.get("save").toString());
-        cancelButton.setText(Translator.ln.get("cancel").toString());
+        phoneNumberLabel.setText(Translator.ln.get("phoneNumber"));
+        postalCodeLabel.setText(Translator.ln.get("postalCode"));
+        addressLabel.setText(Translator.ln.get("address"));
+        customerNameLabel.setText(Translator.ln.get("customerName"));
+        customerIdLabel.setText(Translator.ln.get("id"));
+        saveButton.setText(Translator.ln.get("save"));
+        cancelButton.setText(Translator.ln.get("cancel"));
 
         customerIdInput.setDisable(true);
 
@@ -142,7 +142,7 @@ public class CustomerActionsController {
                 statement.close();
                 localDb.close();
             } catch (Exception exception) {
-                String errorString = Translator.ln.get("dbFailed").toString() + exception;
+                String errorString = Translator.ln.get("dbFailed") + exception;
 
                 // Log the error
                 SchedulerLogger.addToLog(errorString, "severe");
@@ -215,7 +215,7 @@ public class CustomerActionsController {
             statement.close();
             localDb.close();
         } catch (Exception exception) {
-            String errorString = Translator.ln.get("dbFailed").toString() + exception;
+            String errorString = Translator.ln.get("dbFailed") + exception;
 
             // Log the error
             SchedulerLogger.addToLog(errorString, "severe");
@@ -306,7 +306,7 @@ public class CustomerActionsController {
                 active.close();
             }
             else {
-                String errorString = Translator.ln.get("WriteCustomerError").toString();
+                String errorString = Translator.ln.get("WriteCustomerError");
 
                 // Log the error
                 SchedulerLogger.addToLog(errorString, "severe");
@@ -319,7 +319,7 @@ public class CustomerActionsController {
                 errorAlert.showAndWait();
             }
         } catch (Exception exception) {
-            String errorString = Translator.ln.get("dbFailed").toString() + exception;
+            String errorString = Translator.ln.get("dbFailed") + exception;
 
             // Log the error
             SchedulerLogger.addToLog(errorString, "severe");

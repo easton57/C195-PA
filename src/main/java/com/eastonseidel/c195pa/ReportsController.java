@@ -18,7 +18,7 @@ public class ReportsController {
         FXMLLoader fxmlLoader = new FXMLLoader(ReportsController.class.getResource("reports-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage homeStage = new Stage();
-        homeStage.setTitle("Reports");
+        homeStage.setTitle(Translator.ln.get("reports"));
         homeStage.setScene(scene);
         homeStage.show();
     }

@@ -23,7 +23,7 @@ public class HomeController {
         FXMLLoader fxmlLoader = new FXMLLoader(HomeController.class.getResource("home-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage homeStage = new Stage();
-        homeStage.setTitle(Translator.ln.get("homeTitle").toString());
+        homeStage.setTitle(Translator.ln.get("homeTitle"));
         homeStage.setScene(scene);
         homeStage.show();
     }
@@ -33,10 +33,10 @@ public class HomeController {
      */
     public void initialize() {
         // Change language variables
-        quitButton.setText(Translator.ln.get("quitButton").toString());
-        scheduleButton.setText(Translator.ln.get("schedule").toString());
-        reportsButton.setText(Translator.ln.get("reports").toString());
-        customersButton.setText(Translator.ln.get("customers").toString());
+        quitButton.setText(Translator.ln.get("quitButton"));
+        scheduleButton.setText(Translator.ln.get("schedule"));
+        reportsButton.setText(Translator.ln.get("reports"));
+        customersButton.setText(Translator.ln.get("customers"));
 
         // change the button sizes if needed
         if (quitButton.getText().equals("Quitter")) {

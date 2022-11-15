@@ -34,7 +34,7 @@ public class LoginController {
         FXMLLoader fxmlLoader = new FXMLLoader(LoginController.class.getResource("login-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage loginStage = new Stage();
-        loginStage.setTitle(Translator.ln.get("appTitle").toString());
+        loginStage.setTitle(Translator.ln.get("appTitle"));
         loginStage.setScene(scene);
         loginStage.show();
 
@@ -51,11 +51,11 @@ public class LoginController {
         locationVar.setText(zoneId);
 
         // Change language variables
-        loginButton.setText(Translator.ln.get("login").toString());
-        cancelButton.setText(Translator.ln.get("cancel").toString());
-        passwordLabel.setText(Translator.ln.get("password").toString());
-        locationLabel.setText(Translator.ln.get("location").toString());
-        usernameLabel.setText(Translator.ln.get("username").toString());
+        loginButton.setText(Translator.ln.get("login"));
+        cancelButton.setText(Translator.ln.get("cancel"));
+        passwordLabel.setText(Translator.ln.get("password"));
+        locationLabel.setText(Translator.ln.get("location"));
+        usernameLabel.setText(Translator.ln.get("username"));
 
         // Move the french objects if needed
         if (loginButton.getText().equals("Connectez-vous")) {
@@ -122,7 +122,7 @@ public class LoginController {
                 // Log connecting to the DB
                 SchedulerLogger.addToLog("Successfully connected to DB", "info");
             } catch (Exception exception) {
-                String errorString = Translator.ln.get("dbFailed").toString() + exception;
+                String errorString = Translator.ln.get("dbFailed") + exception;
 
                 // Log the error
                 SchedulerLogger.addToLog(errorString, "severe");
@@ -157,8 +157,8 @@ public class LoginController {
 
                 // Wrong Password
                 Alert incorrectPassword = new Alert(Alert.AlertType.WARNING);
-                incorrectPassword.setHeaderText(Translator.ln.get("invalidPasswordTitle").toString());
-                incorrectPassword.setContentText(Translator.ln.get("invalidPassword").toString());
+                incorrectPassword.setHeaderText(Translator.ln.get("invalidPasswordTitle"));
+                incorrectPassword.setContentText(Translator.ln.get("invalidPassword"));
                 incorrectPassword.showAndWait();
             }
         }
@@ -168,8 +168,8 @@ public class LoginController {
 
             // Print a username failure
             Alert invalidUser = new Alert(Alert.AlertType.WARNING);
-            invalidUser.setHeaderText(Translator.ln.get("invalidUsernameTitle").toString());
-            invalidUser.setContentText(Translator.ln.get("invalidUsername").toString());
+            invalidUser.setHeaderText(Translator.ln.get("invalidUsernameTitle"));
+            invalidUser.setContentText(Translator.ln.get("invalidUsername"));
             invalidUser.showAndWait();
         }
     }
