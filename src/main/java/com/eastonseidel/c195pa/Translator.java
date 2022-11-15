@@ -15,7 +15,7 @@ public class Translator {
         ln.put("password", "Password:");
 
         // location label
-        ln.put("location", "Location:");
+        ln.put("location:", "Location:");
 
         // login button
         ln.put("login", "Login");
@@ -87,7 +87,44 @@ public class Translator {
         ln.put("address", "Address");
 
         // id
-        ln.put("id", "Customer ID");
+        ln.put("CustomerId", "Customer ID");
+
+        // Appointment Variables
+        // View Schedule By:
+        ln.put("viewScheduleBy", "View Schedule By:");
+
+        // Appointment Actions
+        ln.put("appointmentActions", "Appointment Actions:");
+
+        // Week
+        ln.put("week", "Week");
+
+        // Month
+        ln.put("month", "Month");
+
+        // Title
+        ln.put("title", "Title");
+
+        // Description
+        ln.put("description", "Description");
+
+        // Location
+        ln.put("location", "Location");
+
+        // Contact ID
+        ln.put("contactId", "Contact ID");
+
+        // Type
+        ln.put("type", "Type");
+
+        // Start Date and Time
+        ln.put("startTime", "Start Date and Time");
+
+        // End Date and Time
+        ln.put("endTime", "End Date and Time");
+
+        // User ID
+        ln.put("userId", "User ID");
 
         // Error opening customer
         ln.put("editCustomerTitleError", "Error Opening Customer!");
@@ -110,7 +147,7 @@ public class Translator {
         ln.put("password", "Mot de Passe:");
 
         // location label
-        ln.put("location", "Emplacement:");
+        ln.put("location:", "Emplacement:");
 
         // login button
         ln.put("login", "Connectez-vous");
@@ -182,11 +219,48 @@ public class Translator {
         ln.put("address", "Adresse");
 
         // id
-        ln.put("id", "N ° de client");
+        ln.put("customerId", "N ° de client");
+
+        // Appointment Variables
+        // View Schedule By:
+        ln.put("viewScheduleBy", "Afficher le calendrier par:");
+
+        // Appointment Actions
+        ln.put("appointmentActions", "Actions de rendez-vous:");
+
+        // Week
+        ln.put("week", "Semaine");
+
+        // Month
+        ln.put("month", "Mois");
+
+        // Title
+        ln.put("title", "Titre");
+
+        // Description
+        ln.put("description", "Description");
+
+        // Location
+        ln.put("location", "Emplacement");
+
+        // Contact ID
+        ln.put("contactId", "ID de Contact");
+
+        // Type
+        ln.put("type", "Catégorie");
+
+        // Start Date and Time
+        ln.put("startTime", "Date et heure de début");
+
+        // End Date and Time
+        ln.put("endTime", "Date et heure de fin");
+
+        // User ID
+        ln.put("userId", "Identifiant d'utilisateur");
 
         // Error opening customer
-        ln.put("editCustomerTitleError", "Error Opening Customer!");
-        ln.put("editCustomerErrorText", "There was an error opening this customer for modification!\n");
+        ln.put("editCustomerTitleError", "Erreur lors de l'ouverture du client!");
+        ln.put("editCustomerErrorText", "Une erreur s'est produite lors de l'ouverture de ce client pour modification!\n");
 
         // Error writing change to customer
         ln.put("writeCustomerError", "Une erreur s'est produite lors de l'écriture des modifications dans la base de données!\n");

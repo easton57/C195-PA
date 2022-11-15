@@ -52,7 +52,7 @@ public class CustomersController {
      */
     public void initialize() {
         // Set up the table cells
-        idColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
+        idColumn.setCellValueFactory(new PropertyValueFactory<>("CustomerId"));
         customerColumn.setCellValueFactory(new PropertyValueFactory<Customer, String>("name"));
         addressColumn.setCellValueFactory(new PropertyValueFactory<Customer, String>("modifiedAddress"));
         postalCodeColumn.setCellValueFactory(new PropertyValueFactory<Customer, String>("postalCode"));
