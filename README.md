@@ -2,6 +2,7 @@
 Performance Assessment for Software II at WGU
 
 <H2>To Do:</H2>
+
 ~~1.  Create a log-in form with the following capabilities:~~
 
 ~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  accepts a user ID and password and provides an appropriate error message~~
