@@ -54,7 +54,7 @@ public class LoginController {
         loginButton.setText(Translator.ln.get("login"));
         cancelButton.setText(Translator.ln.get("cancel"));
         passwordLabel.setText(Translator.ln.get("password"));
-        locationLabel.setText(Translator.ln.get("location"));
+        locationLabel.setText(Translator.ln.get("location:"));
         usernameLabel.setText(Translator.ln.get("username"));
 
         // Move the french objects if needed
