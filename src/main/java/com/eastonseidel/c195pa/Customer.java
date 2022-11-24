@@ -10,7 +10,7 @@ import java.util.Dictionary;
 import java.util.Hashtable;
 
 public class Customer {
-    private int id;
+    private int customerId;
     private String name;
     private String address;
     private String modifiedAddress;
@@ -27,7 +27,7 @@ public class Customer {
     private static Dictionary<String, Integer> divisionNames = new Hashtable();
 
     public Customer(int id, String name, String address, String postalCode, String phone, String creationDate, String createdBy, String lastUpdate, String lastUpdatedBy, int divisionId) {
-        this.id = id;
+        this.customerId = id;
         this.name = name;
         this.address = address;
         this.postalCode = postalCode;
@@ -51,12 +51,12 @@ public class Customer {
         }
     }
 
-    public int getId() {
-        return id;
+    public int getCustomerId() {
+        return customerId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setCustomerId(int customerId) {
+        this.customerId = customerId;
     }
 
     public String getName() {

@@ -3,7 +3,6 @@ package com.eastonseidel.c195pa;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -52,7 +51,7 @@ public class CustomersController {
      */
     public void initialize() {
         // Set up the table cells
-        idColumn.setCellValueFactory(new PropertyValueFactory<>("CustomerId"));
+        idColumn.setCellValueFactory(new PropertyValueFactory<>("customerId"));
         customerColumn.setCellValueFactory(new PropertyValueFactory<Customer, String>("name"));
         addressColumn.setCellValueFactory(new PropertyValueFactory<Customer, String>("modifiedAddress"));
         postalCodeColumn.setCellValueFactory(new PropertyValueFactory<Customer, String>("postalCode"));
@@ -241,7 +240,7 @@ public class CustomersController {
             statement = localDb.createStatement();
             boolean result;
             result = statement.execute(
-                    "DELETE FROM customers WHERE Customer_ID=" + oldCustomer.getId()
+                    "DELETE FROM customers WHERE Customer_ID=" + oldCustomer.getCustomerId()
             );
 
             if (!result) {
@@ -309,7 +308,7 @@ public class CustomersController {
             statement = localDb.createStatement();
             boolean result;
             result = statement.execute("UPDATE customers SET Customer_Name=\"" + oldCustomer.getName() +
-                    "\" WHERE Customer_ID=" + oldCustomer.getId() + ";");
+                    "\" WHERE Customer_ID=" + oldCustomer.getCustomerId() + ";");
 
             statement.close();
             localDb.close();
@@ -365,7 +364,7 @@ public class CustomersController {
             statement = localDb.createStatement();
             boolean result;
             result = statement.execute("UPDATE customers SET Address=\"" + oldCustomer.getAddress() +
-                    "\" WHERE Customer_ID=" + oldCustomer.getId() + ";");
+                    "\" WHERE Customer_ID=" + oldCustomer.getCustomerId() + ";");
 
             statement.close();
             localDb.close();
@@ -424,7 +423,7 @@ public class CustomersController {
             statement = localDb.createStatement();
             boolean result;
             result = statement.execute("UPDATE customers SET Postal_Code=\"" + oldCustomer.getPostalCode() +
-                    "\" WHERE Customer_ID=" + oldCustomer.getId() + ";");
+                    "\" WHERE Customer_ID=" + oldCustomer.getCustomerId() + ";");
 
             statement.close();
             localDb.close();
@@ -480,7 +479,7 @@ public class CustomersController {
             statement = localDb.createStatement();
             boolean result;
             result = statement.execute("UPDATE customers SET Phone=\"" + oldCustomer.getPhone() +
-                    "\" WHERE Customer_ID=" + oldCustomer.getId() + ";");
+                    "\" WHERE Customer_ID=" + oldCustomer.getCustomerId() + ";");
 
             statement.close();
             localDb.close();

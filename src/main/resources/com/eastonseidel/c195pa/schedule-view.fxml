@@ -29,4 +29,7 @@
          <TableColumn fx:id="userId" prefWidth="50.0" />
          <TableColumn fx:id="appointmentContact" prefWidth="50.0" />
       </columns></TableView>
+   <Text fx:id="rangeText" layoutX="532.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="102.68599700927734" />
+   <Button fx:id="leftArrow" layoutX="507.0" layoutY="47.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="25.0" text="&lt;" />
+   <Button fx:id="rightArrow" layoutX="634.0" layoutY="47.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="18.0" text="&gt;" />
 </Pane>

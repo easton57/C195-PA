@@ -74,7 +74,7 @@ public class CustomerActionsController {
         addressInputBad.setText(oldCustomer.getAddress());
         postalCodeInputBad.setText(oldCustomer.getPostalCode());
         phoneNumberInputBad.setText(oldCustomer.getPhone());
-        customerIdInputBad.setText(Integer.toString(oldCustomer.getId()));
+        customerIdInputBad.setText(Integer.toString(oldCustomer.getCustomerId()));
         countryIdBad.setValue(divisionToCountryId.get(Integer.toString(oldCustomer.getDivisionId())));
         divisionIdBad.setValue(divisionIds.get(Integer.toString(oldCustomer.getDivisionId())));
 
