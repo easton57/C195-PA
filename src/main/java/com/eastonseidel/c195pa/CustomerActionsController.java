@@ -106,7 +106,7 @@ public class CustomerActionsController {
         postalCodeLabel.setText(Translator.ln.get("postalCode"));
         addressLabel.setText(Translator.ln.get("address"));
         customerNameLabel.setText(Translator.ln.get("customerName"));
-        customerIdLabel.setText(Translator.ln.get("id"));
+        customerIdLabel.setText(Translator.ln.get("customerId"));
         saveButton.setText(Translator.ln.get("save"));
         cancelButton.setText(Translator.ln.get("cancel"));
 
@@ -333,7 +333,7 @@ public class CustomerActionsController {
         }
 
         // refresh db on previous page?
-        CustomersController.dbRefresh();
+        CustomersController.customerTableRefresh();
     }
 
     /**
@@ -342,7 +342,7 @@ public class CustomerActionsController {
     @FXML
     protected void onCancelButtonClick(ActionEvent event) {
         // refresh db on previous page?
-        CustomersController.dbRefresh();
+        CustomersController.customerTableRefresh();
 
         // close the active window
         Node node = (Node) event.getSource();

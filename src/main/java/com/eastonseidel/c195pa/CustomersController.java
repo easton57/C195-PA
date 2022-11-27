@@ -99,7 +99,7 @@ public class CustomersController {
         }
 
         // Fill the tableview
-        dbRefresh();
+        customerTableRefresh();
 
         // set the table view to the list
         customerTable.setItems(customers);
@@ -108,7 +108,7 @@ public class CustomersController {
     /**
      * Method to refresh the table data after edits
      */
-    public static void dbRefresh() {
+    public static void customerTableRefresh() {
         // Empty the var and table
         customers.removeAll();
 
@@ -246,7 +246,7 @@ public class CustomersController {
             if (!result) {
                 // Refresh the table
                 customerTable.getItems().clear();
-                dbRefresh();
+                customerTableRefresh();
             }
             else {
                 String errorString = Translator.ln.get("WriteCustomerError");

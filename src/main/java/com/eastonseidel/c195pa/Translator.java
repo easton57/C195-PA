@@ -87,7 +87,7 @@ public class Translator {
         ln.put("address", "Address");
 
         // id
-        ln.put("CustomerId", "Customer ID");
+        ln.put("customerId", "Customer ID");
 
         // Appointment Variables
         // View Schedule By:
@@ -136,6 +136,9 @@ public class Translator {
         // Customer Deleted Alert Text
         ln.put("deleteCustomerTitleAlert", "Customer Deleted");
         ln.put("deleteCustomerAlertText", "Successfully deleted the following customer: ");
+
+        // Current Month
+        ln.put("currentMonth", "Current Month");
     }
 
     public static void French() {
@@ -268,5 +271,8 @@ public class Translator {
         // Customer Deleted Alert Text
         ln.put("deleteCustomerTitleAlert", "Client supprimé");
         ln.put("deleteCustomerAlertText", "Le client suivant a bien été supprimé: ");
+
+        // Current Month
+        ln.put("currentMonth", "Mois en Cours");
     }
 }
