@@ -14,7 +14,6 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.time.ZoneId;
-import java.util.Dictionary;
 import java.util.Hashtable;
 
 public class LoginController {
@@ -28,7 +27,7 @@ public class LoginController {
     @FXML private Label passwordLabel;
     @FXML private Label locationLabel;
 
-    private final Dictionary creds = new Hashtable();
+    private final Hashtable<String, String> creds = new Hashtable<>();
 
     public static void LoginWindow() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(LoginController.class.getResource("login-view.fxml"));

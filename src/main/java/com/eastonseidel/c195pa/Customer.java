@@ -21,10 +21,10 @@ public class Customer {
     private String lastUpdate;
     private String lastUpdatedBy;
     private int divisionId;
-    private static Dictionary<Integer, String> divisionIdToCountry = new Hashtable();
-    private static Dictionary<Integer, String> countryIds = new Hashtable();
-    private static Dictionary<Integer, String> divisionIds = new Hashtable();
-    private static Dictionary<String, Integer> divisionNames = new Hashtable();
+    private final static Dictionary<Integer, String> divisionIdToCountry = new Hashtable<>();
+    private final static Dictionary<Integer, String> countryIds = new Hashtable<>();
+    private final static Dictionary<Integer, String> divisionIds = new Hashtable<>();
+    private final static Dictionary<String, Integer> divisionNames = new Hashtable<>();
 
     public Customer(int id, String name, String address, String postalCode, String phone, String creationDate, String createdBy, String lastUpdate, String lastUpdatedBy, int divisionId) {
         this.customerId = id;
