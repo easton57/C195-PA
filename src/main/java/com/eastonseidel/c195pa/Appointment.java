@@ -1,7 +1,9 @@
 package com.eastonseidel.c195pa;
 
-import java.sql.Date;
 import java.sql.Timestamp;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Appointment {
     private int appointmentId;
@@ -21,8 +23,8 @@ public class Appointment {
         this.description = description;
         this.location = location;
         this.type = type;
-        this.start = start;
-        this.end = end;
+        this.start = convertFromUtc(start, "local");
+        this.end = convertFromUtc(end, "local");
         this.customerId = customerId;
         this.userId = userId;
         this.contactId = contactId;
@@ -106,5 +108,51 @@ public class Appointment {
 
     public void setContactId(int contactId) {
             this.contactId = contactId;
+    }
+
+    public static Timestamp convertFromUtc(Timestamp oldTime, String timeZone) {
+        DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss");
+        ZoneId zoneId;
+
+        // Get the zone ID from the computer
+        ZoneId utcZoneId = ZoneId.of("UTC");
+        ZonedDateTime utcTime = oldTime.toLocalDateTime().atZone(utcZoneId);
+
+        // Check to see which timezone was forwarded in
+        if (timeZone.equals("EST")) {
+            // Get the zone ID from the computer
+            zoneId = ZoneId.of("America/New_York");
+        }
+        else {
+            // Get the zone ID from the computer
+            zoneId = ZoneId.of(ZoneId.systemDefault().getId());
+        }
+
+        ZonedDateTime tempTime = utcTime.withZoneSameInstant(zoneId);
+
+        return Timestamp.valueOf(format.format(tempTime));
+    }
+
+    public static Timestamp convertToUtc(Timestamp oldTime, String timeZone) {
+        DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss");
+        ZonedDateTime tempTime;
+        ZoneId zoneId;
+
+        // Check to see which timezone was forwarded in
+        if (timeZone.equals("EST")) {
+            // Get the zone ID from the computer
+            zoneId = ZoneId.of("America/New_York");
+        }
+        else {
+            // Get the zone ID from the computer
+            zoneId = ZoneId.of(ZoneId.systemDefault().getId());
+        }
+
+        // Get the zone ID from the computer
+        tempTime = oldTime.toLocalDateTime().atZone(zoneId);
+        ZoneId utcZoneId = ZoneId.of("UTC");
+        ZonedDateTime utcZone = tempTime.withZoneSameInstant(utcZoneId);
+
+        return Timestamp.valueOf(format.format(utcZone));
     }
 }

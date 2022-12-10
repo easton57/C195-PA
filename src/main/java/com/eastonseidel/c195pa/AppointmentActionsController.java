@@ -262,9 +262,10 @@ public class AppointmentActionsController {
             );
 
             // Some Time conversion/setup
-            // TODO: Timezone conversion and input validation verify start is before end NOTE: Validation for numbers < 12 not necessary, 0's get filled in.
-            Timestamp start = Timestamp.valueOf(startDateInput.getValue() + " " + startTimeInput.getText() + ":00");
-            Timestamp end = Timestamp.valueOf(endDateInput.getValue() + " " + endTimeInput.getText() + ":00");
+            Timestamp start = Appointment.convertToUtc(Timestamp.valueOf(startDateInput.getValue() + " " + startTimeInput.getText() + ":00"), "local");
+            Timestamp end = Appointment.convertToUtc(Timestamp.valueOf(endDateInput.getValue() + " " + endTimeInput.getText() + ":00"), "local");
+
+            // Make sure there aren't any time conflicts
 
             if (title.contains("Edit") || title.contains("Modifier")) {
                 sqlStatement = "UPDATE appointments SET Title=\"" + appointmentTitleInput.getText() +
