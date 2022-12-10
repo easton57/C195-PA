@@ -14,10 +14,10 @@ public class Scheduler extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         // test variable for french without needing to change system language for now
-        boolean frTest = true;
+        boolean frTest = false;
 
         // Get the locale and set the language
-        if (Locale.getDefault().getLanguage().equals("fr") || frTest)  //french
+        if (Locale.getDefault().getLanguage().contains("fr") || frTest)  //french
         {
             Translator.French();
         }

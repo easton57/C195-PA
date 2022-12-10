@@ -139,6 +139,46 @@ public class Translator {
 
         // Current Month
         ln.put("currentMonth", "Current Month");
+
+        // Text for the schedule view
+        // edit appointment error
+        ln.put("editApptTitleError", "Error Opening Appointment!");
+        ln.put("editApptErrorText", "There was an error modifying the selected appointment!\n");
+
+        // write appointment error
+        ln.put("writeApptError", "There was an error writing changes to the database!");
+
+        // delete successful
+        ln.put("deleteApptTitleAlert", "Appointment Canceled");
+        ln.put("deleteApptAlertText", "Successfully canceled the following appointment with id and type: ");
+
+        // The months
+        ln.put("January", "January");
+        ln.put("February", "February");
+        ln.put("March", "March");
+        ln.put("April", "April");
+        ln.put("May", "May");
+        ln.put("June", "June");
+        ln.put("July", "July");
+        ln.put("August", "August");
+        ln.put("September", "September");
+        ln.put("October", "October");
+        ln.put("November", "November");
+        ln.put("December", "December");
+
+        // Appointment Creation/Edit Text
+        ln.put("startDateTime", "Start Date/Time");
+        ln.put("endDateTime", "End Date/Time");
+
+        ln.put("createAppointment", "Create Appointment");
+        ln.put("editAppointment", "Edit Appointment");
+
+        ln.put("id", "ID");
+
+        // Prompt text
+        ln.put("countryPromptText", "Select a Country");
+        ln.put("divisionPromptText", "Select a Division");
+
     }
 
     public static void French() {
@@ -274,5 +314,45 @@ public class Translator {
 
         // Current Month
         ln.put("currentMonth", "Mois en Cours");
+
+        // Text for the schedule view
+        // edit appointment error
+        ln.put("editApptTitleError", "Erreur d'ouverture de rendez-vous!");
+        ln.put("editApptErrorText", "Une erreur s'est produite lors de la modification du rendez-vous sélectionné!\n");
+
+        // write appointment error
+        ln.put("writeApptError", "Une erreur s'est produite lors de l'écriture des modifications dans la base de données!");
+
+        // delete successful
+        ln.put("deleteApptTitleAlert", "Rendez-vous annulé");
+        ln.put("deleteApptAlertText", "Le rendez-vous suivant a bien été annulé avec l'identifiant et le type: ");
+
+        // The months
+        ln.put("January", "Janvier");
+        ln.put("February", "Fevrier");
+        ln.put("March", "Mars");
+        ln.put("April", "Avril");
+        ln.put("May", "Mai");
+        ln.put("June", "Juin");
+        ln.put("July", "Julliet");
+        ln.put("August", "Aout");
+        ln.put("September", "Septembre");
+        ln.put("October", "Octobre");
+        ln.put("November", "Novembre");
+        ln.put("December", "Decembre");
+
+        // Appointment Creation/Edit Text
+        ln.put("startDateTime", "Date/heure de début");
+        ln.put("endDateTime", "Date/heure de fin");
+
+        ln.put("createAppointment", "Créer un rendez-vous");
+        ln.put("editAppointment", "Modifier le rendez-vous");
+
+        ln.put("id", "ID");
+
+        // Prompt text
+        ln.put("countryPromptText", "Choisissez un pays");
+        ln.put("divisionPromptText", "Sélectionnez un département");
+
     }
 }

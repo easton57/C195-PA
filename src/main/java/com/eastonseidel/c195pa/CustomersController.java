@@ -170,7 +170,12 @@ public class CustomersController {
      */
     @FXML
     protected void onNewButtonClick(ActionEvent event) throws IOException {
-        customerTable.getItems().clear();
+        try {
+            customerTable.getItems().clear();
+        }
+        catch (NullPointerException e) {
+            SchedulerLogger.addToLog("Table is Empty" + e, "info");
+        }
 
         CustomerActionsController.NewCustomer();
     }
@@ -198,7 +203,7 @@ public class CustomersController {
             errorAlert.showAndWait();
 
             // Log the error
-            SchedulerLogger.addToLog("warning", "There was an error attempting to edit a customer" + e);
+            SchedulerLogger.addToLog("There was an error attempting to edit a customer" + e, "warning");
         }
     }
 
@@ -223,7 +228,7 @@ public class CustomersController {
             errorAlert.showAndWait();
 
             // Log the error
-            SchedulerLogger.addToLog("warning", "There was an error attempting to edit a customer" + e);
+            SchedulerLogger.addToLog("There was an error attempting to edit a customer" + e, "warning");
         }
 
         // Delete the selected user
@@ -485,7 +490,7 @@ public class CustomersController {
             localDb.close();
 
             if (result) {
-                String errorString = Translator.ln.get("WriteCustomerError");
+                String errorString = Translator.ln.get("writeCustomerError");
 
                 // Log the error
                 SchedulerLogger.addToLog(errorString, "severe");

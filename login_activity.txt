@@ -355,3 +355,968 @@ java.sql.SQLSyntaxErrorException: Unknown database 'client_schedule'
 [2022-11-09 19:34:58] [INFO] Log in successful by: admin 
 [2022-11-09 19:35:00] [INFO] Successfully connected to DB 
 [2022-11-09 19:35:30] [INFO] App closed 
+[2022-11-12 10:50:20] [INFO] App launched successfully! 
+[2022-11-12 10:50:26] [INFO] Successfully connected to DB 
+[2022-11-12 10:50:26] [INFO] Log in successful by: admin 
+[2022-11-12 10:50:27] [INFO] Successfully connected to DB 
+[2022-11-12 10:50:34] [INFO] App closed 
+[2022-11-12 11:29:56] [INFO] App launched successfully! 
+[2022-11-12 11:30:16] [INFO] Successfully connected to DB 
+[2022-11-12 11:30:16] [INFO] Log in successful by: admin 
+[2022-11-12 11:30:17] [INFO] Successfully connected to DB 
+[2022-11-12 11:31:34] [INFO] Successfully connected to DB 
+[2022-11-12 11:36:13] [INFO] App launched successfully! 
+[2022-11-12 11:36:16] [INFO] Successfully connected to DB 
+[2022-11-12 11:36:16] [INFO] Log in successful by: admin 
+[2022-11-12 11:36:18] [INFO] Successfully connected to DB 
+[2022-11-12 11:36:20] [INFO] Successfully connected to DB 
+[2022-11-12 11:36:37] [INFO] App closed 
+[2022-11-12 11:57:16] [INFO] App launched successfully! 
+[2022-11-12 11:57:20] [INFO] Successfully connected to DB 
+[2022-11-12 11:57:20] [INFO] Log in successful by: admin 
+[2022-11-12 11:57:21] [INFO] Successfully connected to DB 
+[2022-11-12 11:57:23] [INFO] Successfully connected to DB 
+[2022-11-12 11:57:34] [INFO] App closed 
+[2022-11-12 12:00:25] [INFO] App launched successfully! 
+[2022-11-12 12:00:28] [INFO] Successfully connected to DB 
+[2022-11-12 12:00:28] [INFO] Log in successful by: admin 
+[2022-11-12 12:00:29] [INFO] Successfully connected to DB 
+[2022-11-12 12:03:47] [INFO] Successfully connected to DB 
+[2022-11-12 12:04:03] [INFO] App launched successfully! 
+[2022-11-12 12:04:08] [INFO] Successfully connected to DB 
+[2022-11-12 12:04:08] [INFO] Log in successful by: admin 
+[2022-11-12 12:04:10] [INFO] Successfully connected to DB 
+[2022-11-12 12:04:11] [INFO] Successfully connected to DB 
+[2022-11-12 12:04:22] [INFO] App closed 
+[2022-11-12 12:12:48] [INFO] App launched successfully! 
+[2022-11-12 12:12:51] [INFO] Successfully connected to DB 
+[2022-11-12 12:12:51] [INFO] Log in successful by: admin 
+[2022-11-12 12:13:02] [INFO] App launched successfully! 
+[2022-11-12 12:13:05] [INFO] Successfully connected to DB 
+[2022-11-12 12:13:05] [INFO] Log in successful by: admin 
+[2022-11-12 12:13:07] [INFO] Successfully connected to DB 
+[2022-11-12 12:13:09] [INFO] Successfully connected to DB 
+[2022-11-12 12:13:17] [INFO] App closed 
+[2022-11-12 14:04:04] [INFO] App launched successfully! 
+[2022-11-12 14:04:10] [INFO] Successfully connected to DB 
+[2022-11-12 14:04:10] [INFO] Log in successful by: admin 
+[2022-11-12 14:04:11] [INFO] Successfully connected to DB 
+[2022-11-12 14:04:12] [INFO] Successfully connected to DB 
+[2022-11-12 14:05:52] [SEVERE] Please verify the local database is running and accessible!
+java.lang.NumberFormatException: Cannot parse null string 
+[2022-11-12 14:05:57] [INFO] App launched successfully! 
+[2022-11-12 14:10:47] [INFO] Successfully connected to DB 
+[2022-11-12 14:10:47] [INFO] Log in successful by: admin 
+[2022-11-12 14:10:48] [INFO] Successfully connected to DB 
+[2022-11-12 14:10:50] [INFO] Successfully connected to DB 
+[2022-11-12 14:10:52] [SEVERE] Please verify the local database is running and accessible!
+java.lang.NumberFormatException: Cannot parse null string 
+[2022-11-12 14:10:55] [SEVERE] Please verify the local database is running and accessible!
+java.lang.NumberFormatException: Cannot parse null string 
+[2022-11-12 14:11:02] [INFO] Successfully connected to DB 
+[2022-11-12 14:11:03] [SEVERE] Please verify the local database is running and accessible!
+java.lang.NumberFormatException: Cannot parse null string 
+[2022-11-12 14:11:47] [SEVERE] Please verify the local database is running and accessible!
+java.lang.NumberFormatException: Cannot parse null string 
+[2022-11-12 14:16:48] [INFO] App launched successfully! 
+[2022-11-12 14:16:52] [INFO] Successfully connected to DB 
+[2022-11-12 14:16:52] [INFO] Log in successful by: admin 
+[2022-11-12 14:16:54] [INFO] Successfully connected to DB 
+[2022-11-12 14:16:56] [INFO] Successfully connected to DB 
+[2022-11-12 14:20:34] [SEVERE] Please verify the local database is running and accessible!
+java.lang.NumberFormatException: Cannot parse null string 
+[2022-11-12 14:20:36] [INFO] App launched successfully! 
+[2022-11-12 14:20:41] [INFO] Successfully connected to DB 
+[2022-11-12 14:20:41] [INFO] Log in successful by: admin 
+[2022-11-12 14:20:42] [INFO] Successfully connected to DB 
+[2022-11-12 14:20:44] [INFO] Successfully connected to DB 
+[2022-11-12 14:20:45] [SEVERE] Please verify the local database is running and accessible!
+java.lang.NullPointerException: Cannot invoke "javafx.scene.control.ComboBox.getValue()" because "this.divisionIdBox" is null 
+[2022-11-12 14:20:47] [SEVERE] Please verify the local database is running and accessible!
+java.lang.NullPointerException: Cannot invoke "javafx.scene.control.ComboBox.getValue()" because "this.divisionIdBox" is null 
+[2022-11-12 14:20:49] [SEVERE] Please verify the local database is running and accessible!
+java.lang.NullPointerException: Cannot invoke "javafx.scene.control.ComboBox.getValue()" because "this.divisionIdBox" is null 
+[2022-11-12 14:20:59] [SEVERE] Please verify the local database is running and accessible!
+java.lang.NullPointerException: Cannot invoke "javafx.scene.control.ComboBox.getValue()" because "this.divisionIdBox" is null 
+[2022-11-12 14:21:11] [INFO] App closed 
+[2022-11-12 14:21:25] [INFO] App launched successfully! 
+[2022-11-12 14:21:28] [INFO] Successfully connected to DB 
+[2022-11-12 14:21:28] [INFO] Log in successful by: admin 
+[2022-11-12 14:21:29] [INFO] Successfully connected to DB 
+[2022-11-12 14:21:31] [INFO] Successfully connected to DB 
+[2022-11-12 14:22:19] [SEVERE] Please verify the local database is running and accessible!
+java.lang.NumberFormatException: Cannot parse null string 
+[2022-11-12 14:23:20] [INFO] App launched successfully! 
+[2022-11-12 14:23:24] [INFO] Successfully connected to DB 
+[2022-11-12 14:23:24] [INFO] Log in successful by: admin 
+[2022-11-12 14:23:26] [INFO] Successfully connected to DB 
+[2022-11-12 14:23:27] [INFO] Successfully connected to DB 
+[2022-11-12 14:34:27] [SEVERE] Please verify the local database is running and accessible!
+java.sql.SQLException: Statement.executeQuery() cannot issue statements that do not produce result sets. 
+[2022-11-12 14:37:29] [INFO] App launched successfully! 
+[2022-11-12 14:37:32] [INFO] Successfully connected to DB 
+[2022-11-12 14:37:32] [INFO] Log in successful by: admin 
+[2022-11-12 14:37:33] [INFO] Successfully connected to DB 
+[2022-11-12 14:37:36] [INFO] Successfully connected to DB 
+[2022-11-12 14:38:24] [SEVERE] Please verify the local database is running and accessible!
+java.sql.SQLException: Statement.executeQuery() cannot issue statements that do not produce result sets. 
+[2022-11-12 14:43:19] [INFO] App launched successfully! 
+[2022-11-12 14:43:26] [INFO] Successfully connected to DB 
+[2022-11-12 14:43:26] [INFO] Log in successful by: admin 
+[2022-11-12 14:43:27] [INFO] Successfully connected to DB 
+[2022-11-12 14:43:29] [INFO] Successfully connected to DB 
+[2022-11-12 14:43:33] [SEVERE] Please verify the local database is running and accessible!
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Warbucks, Address=2020 Boardwalk, Postal_Code=01291, Phone=898-908-1875, Divi...' at line 1 
+[2022-11-12 14:43:50] [INFO] App closed 
+[2022-11-12 14:45:08] [INFO] App launched successfully! 
+[2022-11-12 14:45:11] [INFO] Successfully connected to DB 
+[2022-11-12 14:45:11] [INFO] Log in successful by: admin 
+[2022-11-12 14:45:12] [INFO] Successfully connected to DB 
+[2022-11-12 14:45:13] [INFO] Successfully connected to DB 
+[2022-11-12 14:45:38] [INFO] App closed 
+[2022-11-12 14:49:44] [INFO] App launched successfully! 
+[2022-11-12 14:49:52] [INFO] Successfully connected to DB 
+[2022-11-12 14:49:52] [INFO] Log in successful by: admin 
+[2022-11-12 14:49:53] [INFO] Successfully connected to DB 
+[2022-11-12 14:49:59] [INFO] Successfully connected to DB 
+[2022-11-12 14:50:17] [SEVERE] Please verify the local database is running and accessible!
+java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "java.util.Dictionary.get(Object)" is null 
+[2022-11-12 14:50:22] [SEVERE] Please verify the local database is running and accessible!
+java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "java.util.Dictionary.get(Object)" is null 
+[2022-11-12 14:50:39] [INFO] App closed 
+[2022-11-12 14:50:58] [INFO] App launched successfully! 
+[2022-11-12 14:51:02] [INFO] Login Cancelled 
+[2022-11-12 14:51:22] [INFO] App launched successfully! 
+[2022-11-12 14:51:28] [INFO] Successfully connected to DB 
+[2022-11-12 14:51:28] [INFO] Log in successful by: admin 
+[2022-11-12 14:51:30] [INFO] Successfully connected to DB 
+[2022-11-12 14:51:32] [INFO] Successfully connected to DB 
+[2022-11-12 14:51:36] [SEVERE] Please verify the local database is running and accessible!
+java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "java.util.Dictionary.get(Object)" is null 
+[2022-11-12 14:52:05] [SEVERE] Please verify the local database is running and accessible!
+java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "java.util.Dictionary.get(Object)" is null 
+[2022-11-12 14:52:09] [INFO] App launched successfully! 
+[2022-11-12 14:52:16] [INFO] Successfully connected to DB 
+[2022-11-12 14:52:16] [INFO] Log in successful by: admin 
+[2022-11-12 14:52:17] [INFO] Successfully connected to DB 
+[2022-11-12 14:52:19] [INFO] Successfully connected to DB 
+[2022-11-12 14:52:36] [INFO] Successfully connected to DB 
+[2022-11-12 14:52:40] [INFO] Successfully connected to DB 
+[2022-11-12 14:52:48] [INFO] Successfully connected to DB 
+[2022-11-12 14:53:02] [INFO] App closed 
+[2022-11-12 14:54:20] [INFO] App launched successfully! 
+[2022-11-12 14:54:23] [INFO] Successfully connected to DB 
+[2022-11-12 14:54:23] [INFO] Log in successful by: admin 
+[2022-11-12 14:54:24] [INFO] Successfully connected to DB 
+[2022-11-12 14:54:26] [INFO] Successfully connected to DB 
+[2022-11-12 14:54:26] [INFO] Successfully connected to DB 
+[2022-11-12 14:54:36] [INFO] Successfully connected to DB 
+[2022-11-12 14:54:36] [INFO] Successfully connected to DB 
+[2022-11-12 14:54:40] [INFO] Successfully connected to DB 
+[2022-11-12 14:54:40] [INFO] Successfully connected to DB 
+[2022-11-12 14:54:44] [INFO] Successfully connected to DB 
+[2022-11-12 14:54:44] [INFO] Successfully connected to DB 
+[2022-11-12 14:54:47] [INFO] App closed 
+[2022-11-12 14:55:59] [INFO] App launched successfully! 
+[2022-11-12 14:56:02] [INFO] Successfully connected to DB 
+[2022-11-12 14:56:02] [INFO] Log in successful by: admin 
+[2022-11-12 14:56:03] [INFO] Successfully connected to DB 
+[2022-11-12 14:56:05] [INFO] Successfully connected to DB 
+[2022-11-12 14:56:05] [INFO] Successfully connected to DB 
+[2022-11-12 14:56:16] [INFO] Successfully connected to DB 
+[2022-11-12 14:56:16] [INFO] Successfully connected to DB 
+[2022-11-12 14:56:20] [INFO] Successfully connected to DB 
+[2022-11-12 14:56:20] [INFO] Successfully connected to DB 
+[2022-11-12 14:56:24] [INFO] Successfully connected to DB 
+[2022-11-12 14:56:24] [INFO] Successfully connected to DB 
+[2022-11-12 14:56:26] [INFO] App closed 
+[2022-11-12 14:57:32] [INFO] App launched successfully! 
+[2022-11-12 14:57:35] [INFO] Successfully connected to DB 
+[2022-11-12 14:57:35] [INFO] Log in successful by: admin 
+[2022-11-12 14:57:36] [INFO] Successfully connected to DB 
+[2022-11-12 14:57:38] [INFO] Successfully connected to DB 
+[2022-11-12 14:57:38] [INFO] Successfully connected to DB 
+[2022-11-12 14:57:42] [INFO] Successfully connected to DB 
+[2022-11-12 14:57:42] [INFO] Successfully connected to DB 
+[2022-11-12 14:57:43] [INFO] Successfully connected to DB 
+[2022-11-12 14:57:43] [INFO] Successfully connected to DB 
+[2022-11-12 14:57:45] [INFO] App closed 
+[2022-11-12 14:58:34] [INFO] App launched successfully! 
+[2022-11-12 14:58:38] [INFO] Successfully connected to DB 
+[2022-11-12 14:58:38] [INFO] Log in successful by: admin 
+[2022-11-12 14:58:39] [INFO] Successfully connected to DB 
+[2022-11-12 14:58:42] [INFO] Successfully connected to DB 
+[2022-11-12 14:58:57] [INFO] warning 
+[2022-11-12 14:59:02] [INFO] App closed 
+[2022-11-12 15:00:27] [INFO] App launched successfully! 
+[2022-11-12 15:00:29] [INFO] Login Cancelled 
+[2022-11-12 15:00:42] [INFO] App launched successfully! 
+[2022-11-12 15:00:45] [INFO] Successfully connected to DB 
+[2022-11-12 15:00:45] [INFO] Log in successful by: admin 
+[2022-11-12 15:00:47] [INFO] Successfully connected to DB 
+[2022-11-12 15:00:48] [INFO] Successfully connected to DB 
+[2022-11-12 15:00:53] [INFO] Successfully connected to DB 
+[2022-11-12 15:00:55] [INFO] Successfully connected to DB 
+[2022-11-12 15:00:58] [INFO] Successfully connected to DB 
+[2022-11-12 15:01:00] [INFO] Successfully connected to DB 
+[2022-11-12 15:01:07] [INFO] App closed 
+[2022-11-12 15:03:09] [INFO] App launched successfully! 
+[2022-11-12 15:03:14] [INFO] Successfully connected to DB 
+[2022-11-12 15:03:14] [INFO] Log in successful by: admin 
+[2022-11-12 15:03:15] [INFO] Successfully connected to DB 
+[2022-11-12 15:03:16] [INFO] Successfully connected to DB 
+[2022-11-12 15:03:17] [INFO] Successfully connected to DB 
+[2022-11-12 15:03:22] [INFO] App closed 
+[2022-11-12 15:03:44] [INFO] App launched successfully! 
+[2022-11-12 15:03:52] [INFO] Successfully connected to DB 
+[2022-11-12 15:03:52] [INFO] Log in successful by: admin 
+[2022-11-12 15:03:53] [INFO] Successfully connected to DB 
+[2022-11-12 15:03:55] [INFO] Successfully connected to DB 
+[2022-11-12 15:03:57] [INFO] Successfully connected to DB 
+[2022-11-12 15:04:00] [INFO] Successfully connected to DB 
+[2022-11-12 15:04:09] [INFO] Successfully connected to DB 
+[2022-11-12 15:04:11] [INFO] App closed 
+[2022-11-12 15:04:44] [INFO] App launched successfully! 
+[2022-11-12 15:04:48] [INFO] Successfully connected to DB 
+[2022-11-12 15:04:48] [INFO] Log in successful by: admin 
+[2022-11-12 15:05:04] [INFO] warning 
+[2022-11-12 15:05:09] [INFO] App closed 
+[2022-11-12 15:10:09] [INFO] App launched successfully! 
+[2022-11-12 15:10:13] [INFO] Successfully connected to DB 
+[2022-11-12 15:10:13] [INFO] Log in successful by: admin 
+[2022-11-12 15:10:16] [INFO] warning 
+[2022-11-12 15:10:24] [INFO] App closed 
+[2022-11-12 15:35:58] [INFO] App launched successfully! 
+[2022-11-12 15:36:03] [INFO] Successfully connected to DB 
+[2022-11-12 15:36:03] [INFO] Log in successful by: admin 
+[2022-11-12 15:36:16] [INFO] App closed 
+[2022-11-12 15:36:19] [INFO] App launched successfully! 
+[2022-11-12 15:36:24] [INFO] Successfully connected to DB 
+[2022-11-12 15:36:24] [INFO] Log in successful by: admin 
+[2022-11-12 15:38:14] [INFO] App launched successfully! 
+[2022-11-12 15:38:17] [INFO] Successfully connected to DB 
+[2022-11-12 15:38:17] [INFO] Log in successful by: admin 
+[2022-11-12 15:38:38] [INFO] App launched successfully! 
+[2022-11-12 15:38:42] [INFO] Successfully connected to DB 
+[2022-11-12 15:38:42] [INFO] Log in successful by: admin 
+[2022-11-12 15:38:50] [INFO] App closed 
+[2022-11-12 15:41:09] [INFO] App launched successfully! 
+[2022-11-12 15:41:12] [INFO] Successfully connected to DB 
+[2022-11-12 15:41:12] [INFO] Log in successful by: admin 
+[2022-11-12 15:41:26] [INFO] App closed 
+[2022-11-12 15:43:01] [INFO] App launched successfully! 
+[2022-11-12 15:43:04] [INFO] Successfully connected to DB 
+[2022-11-12 15:43:04] [INFO] Log in successful by: admin 
+[2022-11-12 15:44:11] [INFO] App launched successfully! 
+[2022-11-12 15:44:15] [INFO] Successfully connected to DB 
+[2022-11-12 15:44:15] [INFO] Log in successful by: admin 
+[2022-11-12 15:44:23] [INFO] App closed 
+[2022-11-12 15:57:18] [INFO] App launched successfully! 
+[2022-11-12 15:57:23] [INFO] Successfully connected to DB 
+[2022-11-12 15:57:23] [INFO] Log in successful by: admin 
+[2022-11-12 15:57:48] [INFO] App closed 
+[2022-11-12 15:58:49] [INFO] App launched successfully! 
+[2022-11-12 15:58:52] [INFO] Successfully connected to DB 
+[2022-11-12 15:58:52] [INFO] Log in successful by: admin 
+[2022-11-12 15:59:01] [INFO] App closed 
+[2022-11-12 15:59:04] [INFO] App launched successfully! 
+[2022-11-12 15:59:09] [INFO] Successfully connected to DB 
+[2022-11-12 15:59:09] [INFO] Log in successful by: admin 
+[2022-11-12 15:59:16] [INFO] App closed 
+[2022-11-12 15:59:27] [INFO] App launched successfully! 
+[2022-11-12 15:59:31] [INFO] Successfully connected to DB 
+[2022-11-12 15:59:31] [INFO] Log in successful by: admin 
+[2022-11-12 16:00:15] [SEVERE] Please verify the local database is running and accessible!
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 
+[2022-11-12 16:00:32] [INFO] App closed 
+[2022-11-12 16:01:30] [INFO] App launched successfully! 
+[2022-11-12 16:01:34] [INFO] Successfully connected to DB 
+[2022-11-12 16:01:34] [INFO] Log in successful by: admin 
+[2022-11-12 16:02:00] [SEVERE] Please verify the local database is running and accessible!
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 
+[2022-11-12 16:02:26] [INFO] App launched successfully! 
+[2022-11-12 16:02:31] [INFO] Successfully connected to DB 
+[2022-11-12 16:02:31] [INFO] Log in successful by: admin 
+[2022-11-12 16:07:55] [INFO] App launched successfully! 
+[2022-11-12 16:07:58] [INFO] Successfully connected to DB 
+[2022-11-12 16:07:58] [INFO] Log in successful by: admin 
+[2022-11-12 16:08:01] [SEVERE] Please verify the local database is running and accessible!
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`client_schedule`.`appointments`, CONSTRAINT `fk_customer_id` FOREIGN KEY (`Customer_ID`) REFERENCES `customers` (`Customer_ID`) ON UPDATE CASCADE) 
+[2022-11-12 16:08:07] [INFO] App closed 
+[2022-11-12 16:08:41] [INFO] App launched successfully! 
+[2022-11-12 16:08:45] [INFO] Successfully connected to DB 
+[2022-11-12 16:08:45] [INFO] Log in successful by: admin 
+[2022-11-12 16:08:50] [SEVERE] Please verify the local database is running and accessible!
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`client_schedule`.`appointments`, CONSTRAINT `fk_customer_id` FOREIGN KEY (`Customer_ID`) REFERENCES `customers` (`Customer_ID`) ON UPDATE CASCADE) 
+[2022-11-12 16:09:01] [SEVERE] Please verify the local database is running and accessible!
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`client_schedule`.`appointments`, CONSTRAINT `fk_customer_id` FOREIGN KEY (`Customer_ID`) REFERENCES `customers` (`Customer_ID`) ON UPDATE CASCADE) 
+[2022-11-12 16:09:06] [INFO] App closed 
+[2022-11-13 14:43:31] [INFO] App launched successfully! 
+[2022-11-13 14:43:36] [INFO] Successfully connected to DB 
+[2022-11-13 14:43:36] [INFO] Log in successful by: admin 
+[2022-11-13 14:43:53] [INFO] App closed 
+[2022-11-13 14:45:13] [INFO] App launched successfully! 
+[2022-11-13 14:45:17] [INFO] Successfully connected to DB 
+[2022-11-13 14:45:17] [INFO] Log in successful by: admin 
+[2022-11-13 14:56:44] [INFO] App launched successfully! 
+[2022-11-13 14:56:48] [INFO] Successfully connected to DB 
+[2022-11-13 14:56:48] [INFO] Log in successful by: admin 
+[2022-11-13 14:58:59] [INFO] App launched successfully! 
+[2022-11-13 14:59:02] [INFO] Successfully connected to DB 
+[2022-11-13 14:59:02] [INFO] Log in successful by: admin 
+[2022-11-13 15:08:43] [INFO] App launched successfully! 
+[2022-11-13 15:08:47] [INFO] Successfully connected to DB 
+[2022-11-13 15:08:47] [INFO] Log in successful by: admin 
+[2022-11-13 15:09:19] [INFO] App closed 
+[2022-11-13 15:29:49] [INFO] App launched successfully! 
+[2022-11-13 15:29:53] [INFO] Successfully connected to DB 
+[2022-11-13 15:29:53] [INFO] Log in successful by: admin 
+[2022-11-13 15:30:04] [INFO] App closed 
+[2022-11-13 15:30:13] [INFO] App launched successfully! 
+[2022-11-13 15:30:16] [INFO] Successfully connected to DB 
+[2022-11-13 15:30:16] [INFO] Log in successful by: admin 
+[2022-11-13 15:30:22] [INFO] App closed 
+[2022-11-13 15:39:13] [INFO] App launched successfully! 
+[2022-11-13 15:39:16] [INFO] Successfully connected to DB 
+[2022-11-13 15:39:16] [INFO] Log in successful by: admin 
+[2022-11-13 15:39:26] [INFO] App closed 
+[2022-11-13 15:57:01] [INFO] App launched successfully! 
+[2022-11-13 15:57:05] [INFO] Successfully connected to DB 
+[2022-11-13 15:57:05] [WARNING] Log in failed: Invalid Password 
+[2022-11-13 15:57:07] [INFO] Log in successful by: admin 
+[2022-11-13 15:57:20] [INFO] App closed 
+[2022-11-13 16:31:48] [INFO] App launched successfully! 
+[2022-11-13 16:31:54] [INFO] Successfully connected to DB 
+[2022-11-13 16:31:54] [INFO] Log in successful by: admin 
+[2022-11-13 16:32:29] [INFO] App closed 
+[2022-11-13 16:33:04] [INFO] App launched successfully! 
+[2022-11-13 16:33:07] [INFO] Successfully connected to DB 
+[2022-11-13 16:33:07] [INFO] Log in successful by: admin 
+[2022-11-13 16:33:44] [INFO] App closed 
+[2022-11-13 16:35:29] [INFO] App launched successfully! 
+[2022-11-13 16:35:35] [INFO] Successfully connected to DB 
+[2022-11-13 16:35:35] [INFO] Log in successful by: admin 
+[2022-11-13 16:36:10] [INFO] App closed 
+[2022-11-13 16:36:57] [INFO] App launched successfully! 
+[2022-11-13 16:37:00] [INFO] Successfully connected to DB 
+[2022-11-13 16:37:00] [INFO] Log in successful by: admin 
+[2022-11-13 16:38:04] [INFO] App closed 
+[2022-11-13 16:39:03] [INFO] App launched successfully! 
+[2022-11-13 16:39:07] [INFO] Successfully connected to DB 
+[2022-11-13 16:39:07] [INFO] Log in successful by: admin 
+[2022-11-13 16:39:17] [INFO] App closed 
+[2022-11-13 16:39:46] [INFO] App launched successfully! 
+[2022-11-13 16:39:49] [INFO] Successfully connected to DB 
+[2022-11-13 16:39:49] [INFO] Log in successful by: admin 
+[2022-11-13 16:40:01] [INFO] App closed 
+[2022-11-13 16:40:43] [INFO] App launched successfully! 
+[2022-11-13 16:40:47] [INFO] Successfully connected to DB 
+[2022-11-13 16:40:47] [INFO] Log in successful by: admin 
+[2022-11-13 16:41:02] [INFO] App closed 
+[2022-11-13 16:41:21] [INFO] App launched successfully! 
+[2022-11-13 16:41:25] [INFO] Successfully connected to DB 
+[2022-11-13 16:41:25] [INFO] Log in successful by: admin 
+[2022-11-13 16:41:29] [INFO] App closed 
+[2022-11-13 16:41:57] [INFO] App launched successfully! 
+[2022-11-13 16:42:00] [INFO] Successfully connected to DB 
+[2022-11-13 16:42:00] [INFO] Log in successful by: admin 
+[2022-11-13 16:42:07] [INFO] App closed 
+[2022-11-13 16:56:57] [INFO] App launched successfully! 
+[2022-11-13 16:57:01] [INFO] Successfully connected to DB 
+[2022-11-13 16:57:01] [INFO] Log in successful by: admin 
+[2022-11-13 17:01:02] [INFO] App launched successfully! 
+[2022-11-13 17:01:11] [INFO] Successfully connected to DB 
+[2022-11-13 17:01:11] [INFO] Log in successful by: admin 
+[2022-11-13 17:01:27] [INFO] App launched successfully! 
+[2022-11-13 17:01:30] [INFO] Successfully connected to DB 
+[2022-11-13 17:01:30] [INFO] Log in successful by: admin 
+[2022-11-13 17:06:01] [INFO] App launched successfully! 
+[2022-11-13 17:06:15] [INFO] Successfully connected to DB 
+[2022-11-13 17:06:15] [INFO] Log in successful by: admin 
+[2022-11-13 17:06:54] [INFO] App closed 
+[2022-11-13 17:08:46] [INFO] App launched successfully! 
+[2022-11-13 17:08:49] [INFO] Successfully connected to DB 
+[2022-11-13 17:08:49] [INFO] Log in successful by: admin 
+[2022-11-13 17:08:56] [INFO] App closed 
+[2022-11-13 17:09:04] [INFO] App launched successfully! 
+[2022-11-13 17:09:07] [INFO] Successfully connected to DB 
+[2022-11-13 17:09:07] [INFO] Log in successful by: admin 
+[2022-11-13 17:09:14] [INFO] App closed 
+[2022-11-13 17:11:22] [INFO] App launched successfully! 
+[2022-11-13 17:11:25] [INFO] Successfully connected to DB 
+[2022-11-13 17:11:25] [INFO] Log in successful by: admin 
+[2022-11-13 17:13:35] [INFO] App launched successfully! 
+[2022-11-13 17:13:38] [INFO] Successfully connected to DB 
+[2022-11-13 17:13:38] [INFO] Log in successful by: admin 
+[2022-11-13 17:13:45] [INFO] App closed 
+[2022-11-13 17:15:12] [INFO] App launched successfully! 
+[2022-11-13 17:15:17] [INFO] Successfully connected to DB 
+[2022-11-13 17:15:17] [INFO] Log in successful by: admin 
+[2022-11-13 17:15:36] [INFO] App closed 
+[2022-11-13 17:15:48] [INFO] App launched successfully! 
+[2022-11-13 17:15:51] [INFO] Successfully connected to DB 
+[2022-11-13 17:15:51] [INFO] Log in successful by: admin 
+[2022-11-13 17:16:14] [INFO] App closed 
+[2022-11-13 17:29:54] [INFO] App launched successfully! 
+[2022-11-13 17:29:58] [INFO] Successfully connected to DB 
+[2022-11-13 17:29:58] [INFO] Log in successful by: admin 
+[2022-11-13 17:30:59] [INFO] App closed 
+[2022-11-13 17:31:17] [INFO] App launched successfully! 
+[2022-11-13 17:31:21] [INFO] Successfully connected to DB 
+[2022-11-13 17:31:21] [INFO] Log in successful by: admin 
+[2022-11-13 17:31:57] [INFO] App closed 
+[2022-11-13 17:37:19] [INFO] App launched successfully! 
+[2022-11-13 17:37:22] [INFO] Successfully connected to DB 
+[2022-11-13 17:37:22] [INFO] Log in successful by: admin 
+[2022-11-13 17:52:06] [INFO] App launched successfully! 
+[2022-11-13 17:52:15] [INFO] Successfully connected to DB 
+[2022-11-13 17:52:15] [INFO] Log in successful by: admin 
+[2022-11-13 17:52:42] [INFO] App closed 
+[2022-11-13 17:53:08] [INFO] App launched successfully! 
+[2022-11-13 17:53:13] [INFO] Successfully connected to DB 
+[2022-11-13 17:53:13] [INFO] Log in successful by: admin 
+[2022-11-13 17:53:17] [INFO] App closed 
+[2022-11-13 17:54:02] [INFO] App launched successfully! 
+[2022-11-13 17:54:05] [INFO] Successfully connected to DB 
+[2022-11-13 17:54:05] [INFO] Log in successful by: admin 
+[2022-11-13 17:54:08] [INFO] App closed 
+[2022-11-13 17:57:03] [INFO] App launched successfully! 
+[2022-11-13 17:57:07] [INFO] Successfully connected to DB 
+[2022-11-13 17:57:07] [INFO] Log in successful by: admin 
+[2022-11-13 17:57:30] [INFO] App closed 
+[2022-11-13 17:58:04] [INFO] App launched successfully! 
+[2022-11-13 17:58:07] [INFO] Successfully connected to DB 
+[2022-11-13 17:58:07] [INFO] Log in successful by: admin 
+[2022-11-13 17:58:59] [INFO] App closed 
+[2022-11-13 17:59:52] [INFO] App launched successfully! 
+[2022-11-13 17:59:55] [INFO] Successfully connected to DB 
+[2022-11-13 17:59:55] [INFO] Log in successful by: admin 
+[2022-11-13 18:00:29] [INFO] App closed 
+[2022-11-13 18:01:19] [INFO] App launched successfully! 
+[2022-11-13 18:01:22] [INFO] Successfully connected to DB 
+[2022-11-13 18:01:22] [INFO] Log in successful by: admin 
+[2022-11-13 18:01:36] [INFO] App closed 
+[2022-11-14 18:11:30] [INFO] App launched successfully! 
+[2022-11-14 18:11:33] [INFO] Successfully connected to DB 
+[2022-11-14 18:11:33] [INFO] Log in successful by: admin 
+[2022-11-14 18:11:40] [INFO] App closed 
+[2022-11-14 18:39:35] [INFO] App launched successfully! 
+[2022-11-14 18:39:39] [INFO] Successfully connected to DB 
+[2022-11-14 18:39:39] [INFO] Log in successful by: admin 
+[2022-11-14 18:39:48] [INFO] App closed 
+[2022-11-14 19:32:17] [INFO] App launched successfully! 
+[2022-11-14 19:32:23] [INFO] Successfully connected to DB 
+[2022-11-14 19:32:23] [INFO] Log in successful by: admin 
+[2022-11-14 19:32:26] [SEVERE] Please verify the local database is running and accessible!
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`client_schedule`.`appointments`, CONSTRAINT `fk_customer_id` FOREIGN KEY (`Customer_ID`) REFERENCES `customers` (`Customer_ID`) ON UPDATE CASCADE) 
+[2022-11-14 19:32:33] [INFO] App closed 
+[2022-11-21 13:36:27] [INFO] App launched successfully! 
+[2022-11-21 13:36:31] [INFO] Successfully connected to DB 
+[2022-11-21 13:36:31] [INFO] Log in successful by: admin 
+[2022-11-21 13:37:38] [INFO] App closed 
+[2022-11-28 21:31:53] [INFO] App launched successfully! 
+[2022-11-28 21:31:57] [INFO] Login Cancelled 
+[2022-11-28 21:32:21] [INFO] App launched successfully! 
+[2022-11-28 21:32:35] [SEVERE] Please verify the local database is running and accessible!
+java.sql.SQLSyntaxErrorException: Unknown database 'client_schedule' 
+[2022-11-28 21:32:38] [WARNING] Log in failed: Invalid Username 
+[2022-11-28 21:33:25] [INFO] Successfully connected to DB 
+[2022-11-28 21:33:25] [INFO] Log in successful by: admin 
+[2022-11-28 21:34:18] [INFO] App closed 
+[2022-11-28 21:35:52] [INFO] App launched successfully! 
+[2022-11-28 21:35:55] [INFO] Successfully connected to DB 
+[2022-11-28 21:35:55] [INFO] Log in successful by: admin 
+[2022-11-28 21:36:07] [INFO] App closed 
+[2022-11-28 21:36:38] [INFO] App launched successfully! 
+[2022-11-28 21:36:43] [INFO] Successfully connected to DB 
+[2022-11-28 21:36:43] [INFO] Log in successful by: admin 
+[2022-11-28 21:36:54] [INFO] App closed 
+[2022-11-28 21:41:56] [INFO] App launched successfully! 
+[2022-11-28 21:41:59] [INFO] Successfully connected to DB 
+[2022-11-28 21:41:59] [INFO] Log in successful by: admin 
+[2022-11-28 21:42:03] [INFO] App closed 
+[2022-11-28 21:42:10] [INFO] App launched successfully! 
+[2022-11-28 21:42:14] [INFO] Successfully connected to DB 
+[2022-11-28 21:42:14] [INFO] Log in successful by: admin 
+[2022-11-28 21:42:24] [INFO] App closed 
+[2022-11-29 17:21:44] [INFO] App launched successfully! 
+[2022-11-29 17:21:49] [INFO] Successfully connected to DB 
+[2022-11-29 17:21:49] [INFO] Log in successful by: admin 
+[2022-11-29 17:21:58] [INFO] App closed 
+[2022-12-01 20:36:27] [INFO] App launched successfully! 
+[2022-12-01 20:36:35] [INFO] Successfully connected to DB 
+[2022-12-01 20:36:35] [INFO] Log in successful by: admin 
+[2022-12-01 20:37:11] [INFO] App closed 
+[2022-12-03 09:01:41] [INFO] App launched successfully! 
+[2022-12-03 09:01:48] [INFO] Successfully connected to DB 
+[2022-12-03 09:01:48] [INFO] Log in successful by: admin 
+[2022-12-03 09:01:55] [INFO] App closed 
+[2022-12-03 09:02:52] [INFO] App launched successfully! 
+[2022-12-03 09:02:55] [INFO] Successfully connected to DB 
+[2022-12-03 09:02:55] [INFO] Log in successful by: admin 
+[2022-12-03 09:03:18] [INFO] App closed 
+[2022-12-03 09:12:35] [INFO] App launched successfully! 
+[2022-12-03 09:12:40] [INFO] Successfully connected to DB 
+[2022-12-03 09:12:40] [INFO] Log in successful by: admin 
+[2022-12-03 09:13:02] [INFO] App closed 
+[2022-12-03 09:36:12] [INFO] App launched successfully! 
+[2022-12-03 09:36:16] [INFO] Successfully connected to DB 
+[2022-12-03 09:36:16] [INFO] Log in successful by: admin 
+[2022-12-03 09:38:21] [INFO] App closed 
+[2022-12-03 09:38:25] [INFO] App launched successfully! 
+[2022-12-03 09:38:28] [INFO] Successfully connected to DB 
+[2022-12-03 09:38:28] [INFO] Log in successful by: admin 
+[2022-12-03 10:43:27] [INFO] App launched successfully! 
+[2022-12-03 10:43:30] [INFO] Successfully connected to DB 
+[2022-12-03 10:43:30] [INFO] Log in successful by: admin 
+[2022-12-03 10:48:39] [INFO] App launched successfully! 
+[2022-12-03 10:48:43] [INFO] Successfully connected to DB 
+[2022-12-03 10:48:43] [INFO] Log in successful by: admin 
+[2022-12-03 10:49:07] [INFO] App closed 
+[2022-12-03 10:55:16] [INFO] App launched successfully! 
+[2022-12-03 10:55:21] [INFO] Successfully connected to DB 
+[2022-12-03 10:55:21] [INFO] Log in successful by: admin 
+[2022-12-03 10:55:30] [INFO] App closed 
+[2022-12-03 10:55:45] [INFO] App launched successfully! 
+[2022-12-03 10:55:52] [INFO] Successfully connected to DB 
+[2022-12-03 10:55:52] [INFO] Log in successful by: admin 
+[2022-12-03 10:55:57] [INFO] App closed 
+[2022-12-03 10:56:21] [INFO] App launched successfully! 
+[2022-12-03 10:56:24] [INFO] Successfully connected to DB 
+[2022-12-03 10:56:24] [INFO] Log in successful by: admin 
+[2022-12-03 10:56:31] [INFO] App closed 
+[2022-12-03 11:05:13] [INFO] App launched successfully! 
+[2022-12-03 11:05:22] [INFO] Successfully connected to DB 
+[2022-12-03 11:05:22] [INFO] Log in successful by: admin 
+[2022-12-03 11:05:31] [INFO] App closed 
+[2022-12-03 11:05:52] [INFO] App launched successfully! 
+[2022-12-03 11:05:56] [INFO] Successfully connected to DB 
+[2022-12-03 11:05:56] [INFO] Log in successful by: admin 
+[2022-12-03 11:06:22] [INFO] App closed 
+[2022-12-03 11:08:22] [INFO] App launched successfully! 
+[2022-12-03 11:08:25] [INFO] Successfully connected to DB 
+[2022-12-03 11:08:25] [INFO] Log in successful by: admin 
+[2022-12-03 11:08:27] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.collections.ObservableList.clear()" because the return value of "javafx.scene.control.TableView.getItems()" is null 
+[2022-12-03 11:08:44] [INFO] App closed 
+[2022-12-03 11:08:52] [INFO] App launched successfully! 
+[2022-12-03 11:08:55] [INFO] Login Cancelled 
+[2022-12-03 11:09:06] [INFO] App launched successfully! 
+[2022-12-03 11:09:09] [INFO] Successfully connected to DB 
+[2022-12-03 11:09:09] [INFO] Log in successful by: admin 
+[2022-12-03 11:09:11] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.collections.ObservableList.clear()" because the return value of "javafx.scene.control.TableView.getItems()" is null 
+[2022-12-03 11:09:24] [INFO] App closed 
+[2022-12-03 11:09:39] [INFO] App launched successfully! 
+[2022-12-03 11:09:43] [INFO] Successfully connected to DB 
+[2022-12-03 11:09:43] [INFO] Log in successful by: admin 
+[2022-12-03 11:09:44] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.collections.ObservableList.clear()" because the return value of "javafx.scene.control.TableView.getItems()" is null 
+[2022-12-03 14:14:31] [INFO] App launched successfully! 
+[2022-12-03 14:14:40] [INFO] Successfully connected to DB 
+[2022-12-03 14:14:40] [INFO] Log in successful by: admin 
+[2022-12-03 14:14:43] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.collections.ObservableList.clear()" because the return value of "javafx.scene.control.TableView.getItems()" is null 
+[2022-12-03 14:15:57] [INFO] App launched successfully! 
+[2022-12-03 14:17:00] [INFO] Successfully connected to DB 
+[2022-12-03 14:17:00] [INFO] Log in successful by: admin 
+[2022-12-03 14:17:00] [INFO] App closed 
+[2022-12-03 14:17:09] [INFO] App launched successfully! 
+[2022-12-03 14:17:14] [INFO] Successfully connected to DB 
+[2022-12-03 14:17:14] [INFO] Log in successful by: admin 
+[2022-12-03 14:17:17] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.collections.ObservableList.clear()" because the return value of "javafx.scene.control.TableView.getItems()" is null 
+[2022-12-03 14:18:41] [INFO] App closed 
+[2022-12-03 14:27:00] [INFO] App launched successfully! 
+[2022-12-03 14:27:05] [INFO] Successfully connected to DB 
+[2022-12-03 14:27:05] [INFO] Log in successful by: admin 
+[2022-12-03 14:27:08] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.collections.ObservableList.clear()" because the return value of "javafx.scene.control.TableView.getItems()" is null 
+[2022-12-03 14:27:29] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.collections.ObservableList.clear()" because the return value of "javafx.scene.control.TableView.getItems()" is null 
+[2022-12-03 14:32:18] [INFO] App launched successfully! 
+[2022-12-03 14:32:27] [INFO] Successfully connected to DB 
+[2022-12-03 14:32:27] [INFO] Log in successful by: admin 
+[2022-12-03 14:33:07] [INFO] App closed 
+[2022-12-03 14:35:34] [INFO] App launched successfully! 
+[2022-12-03 14:35:38] [INFO] Successfully connected to DB 
+[2022-12-03 14:35:38] [WARNING] Log in failed: Invalid Password 
+[2022-12-03 14:35:41] [WARNING] Log in failed: Invalid Password 
+[2022-12-03 14:35:45] [INFO] Log in successful by: admin 
+[2022-12-03 14:36:28] [INFO] App launched successfully! 
+[2022-12-03 14:36:33] [INFO] Successfully connected to DB 
+[2022-12-03 14:36:33] [INFO] Log in successful by: admin 
+[2022-12-03 14:36:40] [INFO] App closed 
+[2022-12-03 16:33:43] [INFO] App launched successfully! 
+[2022-12-03 16:33:48] [INFO] Successfully connected to DB 
+[2022-12-03 16:33:48] [INFO] Log in successful by: admin 
+[2022-12-03 21:24:24] [INFO] App launched successfully! 
+[2022-12-03 21:24:31] [INFO] Successfully connected to DB 
+[2022-12-03 21:24:31] [INFO] Log in successful by: admin 
+[2022-12-03 21:24:57] [INFO] App closed 
+[2022-12-05 21:28:36] [INFO] App launched successfully! 
+[2022-12-05 21:28:40] [INFO] Successfully connected to DB 
+[2022-12-05 21:28:40] [INFO] Log in successful by: admin 
+[2022-12-05 21:30:39] [INFO] App launched successfully! 
+[2022-12-05 21:30:43] [INFO] Successfully connected to DB 
+[2022-12-05 21:30:43] [INFO] Log in successful by: admin 
+[2022-12-05 21:34:09] [INFO] App launched successfully! 
+[2022-12-05 21:34:15] [INFO] Successfully connected to DB 
+[2022-12-05 21:34:15] [INFO] Log in successful by: admin 
+[2022-12-05 21:34:42] [INFO] App launched successfully! 
+[2022-12-05 21:34:46] [INFO] Successfully connected to DB 
+[2022-12-05 21:34:46] [INFO] Log in successful by: admin 
+[2022-12-05 21:44:34] [INFO] App launched successfully! 
+[2022-12-05 21:44:35] [INFO] Login Cancelled 
+[2022-12-05 21:45:11] [INFO] App launched successfully! 
+[2022-12-05 21:45:14] [INFO] Successfully connected to DB 
+[2022-12-05 21:45:14] [INFO] Log in successful by: admin 
+[2022-12-05 21:47:38] [INFO] App launched successfully! 
+[2022-12-05 21:47:42] [INFO] Successfully connected to DB 
+[2022-12-05 21:47:42] [INFO] Log in successful by: admin 
+[2022-12-06 08:17:04] [INFO] App launched successfully! 
+[2022-12-06 08:17:08] [INFO] Successfully connected to DB 
+[2022-12-06 08:17:08] [INFO] Log in successful by: admin 
+[2022-12-06 08:28:12] [INFO] App launched successfully! 
+[2022-12-06 08:28:18] [INFO] Successfully connected to DB 
+[2022-12-06 08:28:18] [INFO] Log in successful by: admin 
+[2022-12-06 08:29:31] [INFO] App launched successfully! 
+[2022-12-06 08:29:35] [INFO] Successfully connected to DB 
+[2022-12-06 08:29:35] [INFO] Log in successful by: admin 
+[2022-12-06 09:31:57] [INFO] App launched successfully! 
+[2022-12-06 09:32:01] [INFO] Successfully connected to DB 
+[2022-12-06 09:32:01] [INFO] Log in successful by: admin 
+[2022-12-06 09:32:57] [SEVERE] Please verify the local database is running and accessible!
+java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2 
+[2022-12-06 09:33:23] [INFO] App launched successfully! 
+[2022-12-06 09:33:27] [INFO] Successfully connected to DB 
+[2022-12-06 09:33:27] [INFO] Log in successful by: admin 
+[2022-12-06 09:34:30] [SEVERE] Please verify the local database is running and accessible!
+java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2 
+[2022-12-06 09:34:52] [INFO] App launched successfully! 
+[2022-12-06 09:34:55] [INFO] Successfully connected to DB 
+[2022-12-06 09:34:55] [INFO] Log in successful by: admin 
+[2022-12-06 09:35:26] [SEVERE] Please verify the local database is running and accessible!
+java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2 
+[2022-12-06 09:35:33] [INFO] App launched successfully! 
+[2022-12-06 09:35:55] [INFO] Successfully connected to DB 
+[2022-12-06 09:35:55] [INFO] Log in successful by: admin 
+[2022-12-06 09:37:37] [SEVERE] Please verify the local database is running and accessible!
+java.lang.NumberFormatException: For input string: "03-01" 
+[2022-12-06 09:37:46] [INFO] App launched successfully! 
+[2022-12-06 09:42:21] [INFO] Successfully connected to DB 
+[2022-12-06 09:42:21] [INFO] Log in successful by: admin 
+[2022-12-06 09:44:41] [INFO] App launched successfully! 
+[2022-12-06 09:44:45] [INFO] Successfully connected to DB 
+[2022-12-06 09:44:45] [INFO] Log in successful by: admin 
+[2022-12-06 09:48:06] [INFO] App launched successfully! 
+[2022-12-06 09:48:15] [INFO] Successfully connected to DB 
+[2022-12-06 09:48:15] [INFO] Log in successful by: admin 
+[2022-12-06 09:53:52] [INFO] App launched successfully! 
+[2022-12-06 09:53:57] [INFO] Successfully connected to DB 
+[2022-12-06 09:53:57] [INFO] Log in successful by: admin 
+[2022-12-06 09:56:02] [INFO] App launched successfully! 
+[2022-12-06 09:56:05] [INFO] Successfully connected to DB 
+[2022-12-06 09:56:05] [INFO] Log in successful by: admin 
+[2022-12-06 10:32:31] [INFO] App launched successfully! 
+[2022-12-06 10:32:35] [INFO] Successfully connected to DB 
+[2022-12-06 10:32:35] [INFO] Log in successful by: admin 
+[2022-12-06 10:35:11] [INFO] App launched successfully! 
+[2022-12-06 10:35:16] [INFO] Successfully connected to DB 
+[2022-12-06 10:35:16] [INFO] Log in successful by: admin 
+[2022-12-06 10:35:54] [INFO] App launched successfully! 
+[2022-12-06 10:35:59] [INFO] Successfully connected to DB 
+[2022-12-06 10:35:59] [INFO] Log in successful by: admin 
+[2022-12-06 10:36:10] [INFO] App closed 
+[2022-12-06 10:47:23] [INFO] App launched successfully! 
+[2022-12-06 10:47:26] [INFO] Successfully connected to DB 
+[2022-12-06 10:47:26] [INFO] Log in successful by: admin 
+[2022-12-06 10:49:16] [INFO] App launched successfully! 
+[2022-12-06 10:49:26] [INFO] Successfully connected to DB 
+[2022-12-06 10:49:26] [INFO] Log in successful by: admin 
+[2022-12-06 10:59:28] [INFO] App launched successfully! 
+[2022-12-06 10:59:39] [INFO] Successfully connected to DB 
+[2022-12-06 10:59:39] [INFO] Log in successful by: admin 
+[2022-12-06 11:02:49] [INFO] App launched successfully! 
+[2022-12-06 11:02:56] [INFO] Successfully connected to DB 
+[2022-12-06 11:02:56] [INFO] Log in successful by: admin 
+[2022-12-06 11:03:51] [INFO] App closed 
+[2022-12-07 10:30:21] [INFO] App launched successfully! 
+[2022-12-07 10:30:30] [INFO] Successfully connected to DB 
+[2022-12-07 10:30:30] [INFO] Log in successful by: admin 
+[2022-12-07 10:30:53] [INFO] App closed 
+[2022-12-07 10:32:53] [INFO] App launched successfully! 
+[2022-12-07 10:32:57] [INFO] Successfully connected to DB 
+[2022-12-07 10:32:57] [INFO] Log in successful by: admin 
+[2022-12-07 10:33:07] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.collections.ObservableList.clear()" because the return value of "javafx.scene.control.TableView.getItems()" is null 
+[2022-12-07 10:33:17] [INFO] App closed 
+[2022-12-07 10:35:06] [INFO] App launched successfully! 
+[2022-12-07 10:35:12] [INFO] Successfully connected to DB 
+[2022-12-07 10:35:12] [INFO] Log in successful by: admin 
+[2022-12-07 10:35:14] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.collections.ObservableList.clear()" because the return value of "javafx.scene.control.TableView.getItems()" is null 
+[2022-12-07 10:35:48] [INFO] App launched successfully! 
+[2022-12-07 10:35:53] [INFO] Successfully connected to DB 
+[2022-12-07 10:35:53] [INFO] Log in successful by: admin 
+[2022-12-07 10:35:56] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.collections.ObservableList.clear()" because the return value of "javafx.scene.control.TableView.getItems()" is null 
+[2022-12-07 10:36:38] [INFO] App launched successfully! 
+[2022-12-07 10:36:42] [INFO] Successfully connected to DB 
+[2022-12-07 10:36:42] [WARNING] Log in failed: Invalid Password 
+[2022-12-07 10:36:46] [INFO] Log in successful by: admin 
+[2022-12-07 10:36:52] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.collections.ObservableList.clear()" because the return value of "javafx.scene.control.TableView.getItems()" is null 
+[2022-12-07 10:37:07] [INFO] App closed 
+[2022-12-07 10:49:20] [INFO] App launched successfully! 
+[2022-12-07 10:49:26] [INFO] Successfully connected to DB 
+[2022-12-07 10:49:26] [INFO] Log in successful by: admin 
+[2022-12-07 10:49:28] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.collections.ObservableList.clear()" because the return value of "javafx.scene.control.TableView.getItems()" is null 
+[2022-12-07 10:49:53] [INFO] App closed 
+[2022-12-07 10:53:18] [INFO] App launched successfully! 
+[2022-12-07 10:53:22] [INFO] Successfully connected to DB 
+[2022-12-07 10:53:22] [INFO] Log in successful by: admin 
+[2022-12-07 10:53:28] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.collections.ObservableList.clear()" because the return value of "javafx.scene.control.TableView.getItems()" is null 
+[2022-12-07 10:53:46] [INFO] warning 
+[2022-12-07 10:53:58] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.collections.ObservableList.clear()" because the return value of "javafx.scene.control.TableView.getItems()" is null 
+[2022-12-07 10:55:42] [INFO] App closed 
+[2022-12-07 11:04:28] [INFO] App launched successfully! 
+[2022-12-07 11:04:32] [INFO] Successfully connected to DB 
+[2022-12-07 11:04:32] [INFO] Log in successful by: admin 
+[2022-12-07 11:04:35] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.collections.ObservableList.clear()" because the return value of "javafx.scene.control.TableView.getItems()" is null 
+[2022-12-07 11:04:35] [SEVERE] Please verify the local database is running and accessible!
+java.sql.SQLException: Column 'Customer_ID' not found. 
+[2022-12-07 11:04:41] [INFO] App closed 
+[2022-12-07 11:05:47] [INFO] App launched successfully! 
+[2022-12-07 11:05:51] [INFO] Successfully connected to DB 
+[2022-12-07 11:05:51] [INFO] Log in successful by: admin 
+[2022-12-07 11:05:53] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.collections.ObservableList.clear()" because the return value of "javafx.scene.control.TableView.getItems()" is null 
+[2022-12-07 11:06:01] [INFO] App closed 
+[2022-12-07 11:06:59] [INFO] App launched successfully! 
+[2022-12-07 11:09:42] [INFO] Successfully connected to DB 
+[2022-12-07 11:09:42] [WARNING] Log in failed: Invalid Password 
+[2022-12-07 11:09:45] [INFO] Log in successful by: admin 
+[2022-12-07 11:09:49] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.collections.ObservableList.clear()" because the return value of "javafx.scene.control.TableView.getItems()" is null 
+[2022-12-07 11:09:53] [INFO] App closed 
+[2022-12-07 11:56:38] [INFO] App launched successfully! 
+[2022-12-07 11:56:43] [INFO] Successfully connected to DB 
+[2022-12-07 11:56:43] [INFO] Log in successful by: admin 
+[2022-12-07 11:56:45] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.collections.ObservableList.clear()" because the return value of "javafx.scene.control.TableView.getItems()" is null 
+[2022-12-07 11:56:45] [SEVERE] Please verify the local database is running and accessible!
+java.sql.SQLException: Column 'Country' not found. 
+[2022-12-07 11:56:50] [INFO] App closed 
+[2022-12-07 11:57:02] [INFO] App launched successfully! 
+[2022-12-07 11:57:07] [INFO] Successfully connected to DB 
+[2022-12-07 11:57:07] [WARNING] Log in failed: Invalid Password 
+[2022-12-07 11:57:09] [WARNING] Log in failed: Invalid Password 
+[2022-12-07 11:57:13] [INFO] Log in successful by: admin 
+[2022-12-07 11:57:15] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.collections.ObservableList.clear()" because the return value of "javafx.scene.control.TableView.getItems()" is null 
+[2022-12-07 11:57:29] [INFO] App closed 
+[2022-12-07 12:04:35] [INFO] App launched successfully! 
+[2022-12-07 12:04:39] [INFO] Successfully connected to DB 
+[2022-12-07 12:04:39] [INFO] Log in successful by: admin 
+[2022-12-07 12:04:42] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.collections.ObservableList.clear()" because the return value of "javafx.scene.control.TableView.getItems()" is null 
+[2022-12-07 12:05:00] [INFO] warning 
+[2022-12-07 12:05:08] [INFO] warning 
+[2022-12-07 12:05:21] [INFO] App closed 
+[2022-12-07 12:06:06] [INFO] App launched successfully! 
+[2022-12-07 12:06:10] [INFO] Successfully connected to DB 
+[2022-12-07 12:06:10] [INFO] Log in successful by: admin 
+[2022-12-07 12:06:28] [INFO] App closed 
+[2022-12-07 12:08:14] [INFO] App launched successfully! 
+[2022-12-07 12:08:18] [INFO] Successfully connected to DB 
+[2022-12-07 12:08:18] [INFO] Log in successful by: admin 
+[2022-12-07 12:08:41] [INFO] App launched successfully! 
+[2022-12-07 12:08:57] [INFO] Successfully connected to DB 
+[2022-12-07 12:08:57] [INFO] Log in successful by: admin 
+[2022-12-07 12:09:16] [INFO] warning 
+[2022-12-07 12:09:24] [INFO] App closed 
+[2022-12-07 12:10:42] [INFO] App launched successfully! 
+[2022-12-07 12:10:46] [INFO] Successfully connected to DB 
+[2022-12-07 12:10:46] [INFO] Log in successful by: admin 
+[2022-12-07 12:10:54] [INFO] warning 
+[2022-12-07 12:11:12] [INFO] warning 
+[2022-12-07 12:12:15] [INFO] App launched successfully! 
+[2022-12-07 12:12:18] [INFO] Successfully connected to DB 
+[2022-12-07 12:12:18] [INFO] Log in successful by: admin 
+[2022-12-07 12:12:25] [INFO] App closed 
+[2022-12-07 12:14:09] [INFO] App launched successfully! 
+[2022-12-07 12:14:12] [INFO] Successfully connected to DB 
+[2022-12-07 12:14:12] [INFO] Log in successful by: admin 
+[2022-12-07 12:14:19] [INFO] App closed 
+[2022-12-07 12:14:47] [INFO] App launched successfully! 
+[2022-12-07 12:14:51] [INFO] Successfully connected to DB 
+[2022-12-07 12:14:51] [INFO] Log in successful by: admin 
+[2022-12-07 12:18:14] [INFO] App launched successfully! 
+[2022-12-07 12:18:18] [INFO] Successfully connected to DB 
+[2022-12-07 12:18:18] [INFO] Log in successful by: admin 
+[2022-12-07 12:19:23] [INFO] App launched successfully! 
+[2022-12-07 12:20:12] [INFO] Successfully connected to DB 
+[2022-12-07 12:20:12] [INFO] Log in successful by: admin 
+[2022-12-07 12:20:45] [INFO] App launched successfully! 
+[2022-12-07 12:20:52] [INFO] Successfully connected to DB 
+[2022-12-07 12:20:52] [INFO] Log in successful by: admin 
+[2022-12-07 12:21:08] [INFO] App closed 
+[2022-12-07 13:35:56] [INFO] App launched successfully! 
+[2022-12-07 13:36:00] [INFO] Successfully connected to DB 
+[2022-12-07 13:36:00] [INFO] Log in successful by: admin 
+[2022-12-07 13:36:22] [INFO] warning 
+[2022-12-07 13:36:59] [INFO] warning 
+[2022-12-07 13:37:51] [INFO] warning 
+[2022-12-07 13:40:15] [INFO] warning 
+[2022-12-07 13:41:29] [INFO] App launched successfully! 
+[2022-12-07 13:41:33] [INFO] Successfully connected to DB 
+[2022-12-07 13:41:33] [INFO] Log in successful by: admin 
+[2022-12-07 13:41:56] [INFO] warning 
+[2022-12-07 13:43:43] [INFO] App launched successfully! 
+[2022-12-07 13:43:47] [INFO] Successfully connected to DB 
+[2022-12-07 13:43:47] [INFO] Log in successful by: admin 
+[2022-12-07 13:44:35] [INFO] App launched successfully! 
+[2022-12-07 13:44:39] [INFO] Successfully connected to DB 
+[2022-12-07 13:44:39] [INFO] Log in successful by: admin 
+[2022-12-07 13:44:52] [INFO] warning 
+[2022-12-07 13:44:56] [INFO] App closed 
+[2022-12-07 13:45:03] [INFO] App launched successfully! 
+[2022-12-07 13:45:06] [INFO] Successfully connected to DB 
+[2022-12-07 13:45:06] [INFO] Log in successful by: admin 
+[2022-12-07 13:46:21] [INFO] App launched successfully! 
+[2022-12-07 13:46:25] [INFO] Successfully connected to DB 
+[2022-12-07 13:46:25] [INFO] Log in successful by: admin 
+[2022-12-07 13:48:32] [INFO] App launched successfully! 
+[2022-12-07 13:49:05] [INFO] Successfully connected to DB 
+[2022-12-07 13:49:05] [INFO] Log in successful by: admin 
+[2022-12-07 13:49:42] [INFO] App launched successfully! 
+[2022-12-07 13:49:46] [INFO] Successfully connected to DB 
+[2022-12-07 13:49:46] [INFO] Log in successful by: admin 
+[2022-12-07 13:50:06] [INFO] App closed 
+[2022-12-07 13:50:40] [INFO] App launched successfully! 
+[2022-12-07 13:50:44] [INFO] Successfully connected to DB 
+[2022-12-07 13:50:44] [INFO] Log in successful by: admin 
+[2022-12-07 13:50:47] [INFO] warning 
+[2022-12-07 13:51:07] [INFO] App closed 
+[2022-12-07 17:08:14] [INFO] App launched successfully! 
+[2022-12-07 17:08:18] [INFO] Successfully connected to DB 
+[2022-12-07 17:08:18] [INFO] Log in successful by: admin 
+[2022-12-07 17:08:32] [SEVERE] Please verify the local database is running and accessible!
+java.lang.IllegalArgumentException: Timestamp format must be yyyy-mm-dd hh:mm:ss[.fffffffff] 
+[2022-12-07 17:08:42] [INFO] App closed 
+[2022-12-07 17:09:15] [INFO] App launched successfully! 
+[2022-12-07 17:09:20] [INFO] Successfully connected to DB 
+[2022-12-07 17:09:20] [INFO] Log in successful by: admin 
+[2022-12-07 17:09:34] [SEVERE] Please verify the local database is running and accessible!
+java.lang.IllegalArgumentException: Timestamp format must be yyyy-mm-dd hh:mm:ss[.fffffffff] 
+[2022-12-07 17:10:00] [INFO] App closed 
+[2022-12-07 17:10:15] [INFO] App launched successfully! 
+[2022-12-07 17:10:19] [INFO] Successfully connected to DB 
+[2022-12-07 17:10:19] [INFO] Log in successful by: admin 
+[2022-12-07 17:10:59] [SEVERE] Please verify the local database is running and accessible!
+java.lang.IllegalArgumentException: Timestamp format must be yyyy-mm-dd hh:mm:ss[.fffffffff] 
+[2022-12-07 17:11:41] [INFO] App launched successfully! 
+[2022-12-07 17:11:45] [INFO] Successfully connected to DB 
+[2022-12-07 17:11:45] [INFO] Log in successful by: admin 
+[2022-12-07 17:13:35] [SEVERE] Please verify the local database is running and accessible!
+java.lang.IllegalArgumentException: Timestamp format must be yyyy-mm-dd hh:mm:ss[.fffffffff] 
+[2022-12-07 17:13:38] [INFO] App launched successfully! 
+[2022-12-07 17:13:42] [INFO] Successfully connected to DB 
+[2022-12-07 17:13:42] [INFO] Log in successful by: admin 
+[2022-12-07 17:14:05] [SEVERE] Please verify the local database is running and accessible!
+java.lang.IllegalArgumentException: Timestamp format must be yyyy-mm-dd hh:mm:ss[.fffffffff] 
+[2022-12-07 17:14:09] [INFO] App launched successfully! 
+[2022-12-07 17:14:13] [INFO] Successfully connected to DB 
+[2022-12-07 17:14:13] [INFO] Log in successful by: admin 
+[2022-12-07 17:15:07] [SEVERE] Please verify the local database is running and accessible!
+java.lang.IllegalArgumentException: Timestamp format must be yyyy-mm-dd hh:mm:ss[.fffffffff] 
+[2022-12-07 17:15:10] [INFO] App launched successfully! 
+[2022-12-07 17:15:14] [INFO] Successfully connected to DB 
+[2022-12-07 17:15:14] [INFO] Log in successful by: admin 
+[2022-12-07 17:15:18] [WARNING] There was an error attempting to edit an appointmentjava.lang.IndexOutOfBoundsException 
+[2022-12-07 17:16:37] [INFO] App launched successfully! 
+[2022-12-07 17:16:41] [INFO] Successfully connected to DB 
+[2022-12-07 17:16:41] [INFO] Log in successful by: admin 
+[2022-12-07 17:17:32] [SEVERE] Please verify the local database is running and accessible!
+java.lang.NumberFormatException: For input string: "test" 
+[2022-12-07 17:20:44] [SEVERE] Please verify the local database is running and accessible!
+java.lang.IllegalArgumentException: Timestamp format must be yyyy-mm-dd hh:mm:ss[.fffffffff] 
+[2022-12-07 17:20:49] [SEVERE] Please verify the local database is running and accessible!
+java.lang.IllegalArgumentException: Timestamp format must be yyyy-mm-dd hh:mm:ss[.fffffffff] 
+[2022-12-07 17:21:07] [SEVERE] Please verify the local database is running and accessible!
+java.lang.IllegalArgumentException: Timestamp format must be yyyy-mm-dd hh:mm:ss[.fffffffff] 
+[2022-12-07 17:21:18] [SEVERE] Please verify the local database is running and accessible!
+java.lang.IllegalArgumentException: Timestamp format must be yyyy-mm-dd hh:mm:ss[.fffffffff] 
+[2022-12-07 17:21:40] [SEVERE] Please verify the local database is running and accessible!
+java.lang.IllegalArgumentException: Timestamp format must be yyyy-mm-dd hh:mm:ss[.fffffffff] 
+[2022-12-07 17:22:01] [SEVERE] Please verify the local database is running and accessible!
+java.lang.IllegalArgumentException: Timestamp format must be yyyy-mm-dd hh:mm:ss[.fffffffff] 
+[2022-12-07 17:22:45] [INFO] App launched successfully! 
+[2022-12-07 17:23:13] [INFO] Successfully connected to DB 
+[2022-12-07 17:23:13] [INFO] Log in successful by: admin 
+[2022-12-07 17:24:31] [INFO] App launched successfully! 
+[2022-12-07 17:24:35] [INFO] Successfully connected to DB 
+[2022-12-07 17:24:35] [INFO] Log in successful by: admin 
+[2022-12-07 17:30:09] [INFO] App closed 
+[2022-12-07 17:31:19] [INFO] App launched successfully! 
+[2022-12-07 17:31:27] [INFO] Successfully connected to DB 
+[2022-12-07 17:31:27] [INFO] Log in successful by: admin 
+[2022-12-07 17:33:14] [INFO] App launched successfully! 
+[2022-12-07 17:33:19] [INFO] Successfully connected to DB 
+[2022-12-07 17:33:19] [INFO] Log in successful by: admin 
+[2022-12-07 17:37:18] [INFO] App closed 
+[2022-12-09 16:14:49] [INFO] App launched successfully! 
+[2022-12-09 16:14:53] [INFO] Successfully connected to DB 
+[2022-12-09 16:14:53] [INFO] Log in successful by: admin 
+[2022-12-09 16:14:59] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.scene.control.TableView.getItems()" because "com.eastonseidel.c195pa.ScheduleController.appointmentTable" is null 
+[2022-12-09 16:14:59] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.scene.control.TableView.getItems()" because "com.eastonseidel.c195pa.ScheduleController.appointmentTable" is null 
+[2022-12-09 16:14:59] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.scene.control.TableView.getItems()" because "com.eastonseidel.c195pa.ScheduleController.appointmentTable" is null 
+[2022-12-09 16:15:00] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.scene.control.TableView.getItems()" because "com.eastonseidel.c195pa.ScheduleController.appointmentTable" is null 
+[2022-12-09 16:15:00] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.scene.control.TableView.getItems()" because "com.eastonseidel.c195pa.ScheduleController.appointmentTable" is null 
+[2022-12-09 16:15:00] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.scene.control.TableView.getItems()" because "com.eastonseidel.c195pa.ScheduleController.appointmentTable" is null 
+[2022-12-09 16:15:00] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.scene.control.TableView.getItems()" because "com.eastonseidel.c195pa.ScheduleController.appointmentTable" is null 
+[2022-12-09 16:15:01] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.scene.control.TableView.getItems()" because "com.eastonseidel.c195pa.ScheduleController.appointmentTable" is null 
+[2022-12-09 16:15:01] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.scene.control.TableView.getItems()" because "com.eastonseidel.c195pa.ScheduleController.appointmentTable" is null 
+[2022-12-09 16:15:01] [INFO] Table is Emptyjava.lang.NullPointerException: Cannot invoke "javafx.scene.control.TableView.getItems()" because "com.eastonseidel.c195pa.ScheduleController.appointmentTable" is null 
+[2022-12-09 16:15:05] [INFO] App closed 
+[2022-12-09 16:23:27] [INFO] App launched successfully! 
+[2022-12-09 16:23:31] [INFO] Successfully connected to DB 
+[2022-12-09 16:23:31] [INFO] Log in successful by: admin 
+[2022-12-09 16:23:58] [INFO] App launched successfully! 
+[2022-12-09 16:24:01] [INFO] Successfully connected to DB 
+[2022-12-09 16:24:01] [INFO] Log in successful by: admin 
+[2022-12-09 16:24:08] [INFO] App closed 
+[2022-12-09 16:28:27] [INFO] App launched successfully! 
+[2022-12-09 16:28:30] [INFO] Successfully connected to DB 
+[2022-12-09 16:28:30] [INFO] Log in successful by: admin 
+[2022-12-09 16:28:37] [INFO] App closed 
+[2022-12-09 16:31:46] [INFO] App launched successfully! 
+[2022-12-09 16:31:50] [INFO] Successfully connected to DB 
+[2022-12-09 16:31:50] [INFO] Log in successful by: admin 
+[2022-12-09 16:32:00] [INFO] App closed 
+[2022-12-09 16:32:41] [INFO] App launched successfully! 
+[2022-12-09 16:32:45] [INFO] Successfully connected to DB 
+[2022-12-09 16:32:45] [INFO] Log in successful by: admin 
+[2022-12-09 16:34:48] [INFO] App launched successfully! 
+[2022-12-09 16:34:52] [INFO] Successfully connected to DB 
+[2022-12-09 16:34:52] [INFO] Log in successful by: admin 
+[2022-12-09 16:35:56] [INFO] App launched successfully! 
+[2022-12-09 16:35:59] [INFO] Successfully connected to DB 
+[2022-12-09 16:35:59] [INFO] Log in successful by: admin 
+[2022-12-09 16:36:04] [INFO] App closed 
+[2022-12-09 16:36:14] [INFO] App launched successfully! 
+[2022-12-09 16:36:18] [INFO] Successfully connected to DB 
+[2022-12-09 16:36:18] [INFO] Log in successful by: admin 
+[2022-12-09 16:36:23] [INFO] App closed 
+[2022-12-09 16:36:42] [INFO] App launched successfully! 
+[2022-12-09 16:36:46] [INFO] Successfully connected to DB 
+[2022-12-09 16:36:46] [INFO] Log in successful by: admin 
+[2022-12-09 16:47:52] [INFO] App launched successfully! 
+[2022-12-09 16:47:59] [INFO] Successfully connected to DB 
+[2022-12-09 16:47:59] [INFO] Log in successful by: admin 
+[2022-12-09 16:49:35] [INFO] App launched successfully! 
+[2022-12-09 16:49:39] [INFO] Successfully connected to DB 
+[2022-12-09 16:49:39] [INFO] Log in successful by: admin 
+[2022-12-09 16:54:41] [INFO] App launched successfully! 
+[2022-12-09 16:54:46] [INFO] Successfully connected to DB 
+[2022-12-09 16:54:46] [INFO] Log in successful by: admin 
+[2022-12-09 16:57:34] [INFO] App launched successfully! 
+[2022-12-09 16:57:38] [INFO] Successfully connected to DB 
+[2022-12-09 16:57:38] [INFO] Log in successful by: admin 
+[2022-12-09 17:00:38] [INFO] App launched successfully! 
+[2022-12-09 17:00:42] [INFO] Successfully connected to DB 
+[2022-12-09 17:00:42] [INFO] Log in successful by: admin 
+[2022-12-09 17:01:41] [INFO] App launched successfully! 
+[2022-12-09 17:01:44] [INFO] Successfully connected to DB 
+[2022-12-09 17:01:44] [INFO] Log in successful by: admin 
+[2022-12-09 17:03:50] [INFO] App launched successfully! 
+[2022-12-09 17:03:55] [INFO] Successfully connected to DB 
+[2022-12-09 17:03:55] [INFO] Log in successful by: admin 
+[2022-12-09 17:06:21] [INFO] App launched successfully! 
+[2022-12-09 17:06:26] [INFO] Successfully connected to DB 
+[2022-12-09 17:06:26] [INFO] Log in successful by: admin 

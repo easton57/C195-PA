@@ -57,19 +57,19 @@ Performance Assessment for Software II at WGU
 
 3.  Add scheduling functionalities to the GUI-based application by doing the following:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.  Write code that enables the user to add, update, and delete appointments. The code should also include the following functionalities:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.  Write code that enables the user to add, update, and ~~delete appointments~~. The code should also include the following functionalities:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  A contact name is assigned to an appointment using a drop-down menu or combo box.
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  A contact name is assigned to an appointment using a drop-down menu or combo box.~~
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  A custom message is displayed in the user interface with the Appointment_ID and type of appointment canceled.
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  A custom message is displayed in the user interface with the Appointment_ID and type of appointment canceled.~~
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  The Appointment_ID is auto-generated and disabled throughout the application.
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  The Appointment_ID is auto-generated and disabled throughout the application.~~
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  When adding and updating an appointment, record the following data: Appointment_ID, title, description, location, contact, type, start date and time, end date and time, Customer_ID, and User_ID.
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  When adding and updating an appointment, record the following data: Appointment_ID, title, description, location, contact, type, start date and time, end date and time, Customer_ID, and User_ID.~~
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  All of the original appointment information is displayed on the update form in local time zone.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  All of the appointment fields can be updated except Appointment_ID, which must be disabled.
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  All of the appointment fields can be updated except Appointment_ID, which must be disabled.~~
 
 
 ~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b.  Write code that enables the user to view appointment schedules by month and week using a TableView and allows the user to choose between these two options using tabs or radio buttons for filtering appointments. Please include each of the following requirements as columns:~~
@@ -119,7 +119,7 @@ Performance Assessment for Software II at WGU
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f.  Write code that generates accurate information in each of the following reports and will display the reports in the user interface:
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Note: You do not need to save and print the reports to a file or provide a screenshot.
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Note: You do not need to save and print the reports to a file or provide a screenshot.~~
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  the total number of customer appointments by type and month
@@ -141,19 +141,19 @@ B.  Write at least two different lambda expressions to improve your code.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Note: The comments on the lambda need to be located in the comments describing the method where it is located for it to export properly.
 
 
-E.  Create a README.txt file that includes the following information:
+~~E.  Create a README.txt file that includes the following information:~~
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  title and purpose of the application
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  title and purpose of the application~~
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  author, contact information, student application version, and date
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  author, contact information, student application version, and date~~
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  IDE including version number (e.g., IntelliJ Community 2020.01), full JDK of version used (e.g., Java SE 17.0.1), and JavaFX version compatible with JDK version (e.g. JavaFX-SDK-17.0.1)
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  IDE including version number (e.g., IntelliJ Community 2020.01), full JDK of version used (e.g., Java SE 17.0.1), and JavaFX version compatible with JDK version (e.g. JavaFX-SDK-17.0.1)~~
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  directions for how to run the program
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  directions for how to run the program~~
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  a description of the additional report of your choice you ran in part A3f
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  a description of the additional report of your choice you ran in part A3f~~
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  the MySQL Connector driver version number, including the update number (e.g., mysql-connector-java-8.1.23)
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  the MySQL Connector driver version number, including the update number (e.g., mysql-connector-java-8.1.23)~~
 
 
 ~~F.  Demonstrate professional communication in the content and presentation of your submission.~~

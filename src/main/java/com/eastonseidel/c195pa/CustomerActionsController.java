@@ -67,16 +67,7 @@ public class CustomerActionsController {
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         stage.setTitle(title);
-        pageElements(scene);
-
-        // fill in the old info
-        customerNameInputBad.setText(oldCustomer.getName());
-        addressInputBad.setText(oldCustomer.getAddress());
-        postalCodeInputBad.setText(oldCustomer.getPostalCode());
-        phoneNumberInputBad.setText(oldCustomer.getPhone());
-        customerIdInputBad.setText(Integer.toString(oldCustomer.getCustomerId()));
-        countryIdBad.setValue(divisionToCountryId.get(Integer.toString(oldCustomer.getDivisionId())));
-        divisionIdBad.setValue(divisionIds.get(Integer.toString(oldCustomer.getDivisionId())));
+        pageElements(scene, oldCustomer);
 
         // Show the scene
         stage.setScene(scene);
@@ -228,11 +219,15 @@ public class CustomerActionsController {
             errorAlert.showAndWait();
         }
 
+
         // Set the country id
         countryIdBox.setItems(FXCollections.observableArrayList(countryList));
+        countryIdBox.setPromptText(Translator.ln.get("countryPromptText"));
 
         // first level division ID
+        divisionList.add(Translator.ln.get("countryPromptText"));
         divisionIdBox.setItems(FXCollections.observableArrayList(divisionList));
+        divisionIdBox.setPromptText(Translator.ln.get("divisionPromptText"));
 
         // change the button sizes if needed
         if (cancelButton.getText().equals("Annuler")) {
@@ -249,7 +244,7 @@ public class CustomerActionsController {
     /**
      * Method to support the bad workaround hhhhhh
      */
-    private static void pageElements(Scene scene) {
+    private static void pageElements(Scene scene, Customer oldCustomer) {
         // Setup the input fields
         phoneNumberInputBad = (TextField) scene.lookup("#phoneNumberInput");
         postalCodeInputBad = (TextField) scene.lookup("#postalCodeInput");
@@ -258,6 +253,32 @@ public class CustomerActionsController {
         customerIdInputBad = (TextField) scene.lookup("#customerIdInput");
         countryIdBad = (ComboBox) scene.lookup("#countryId");
         divisionIdBad = (ComboBox) scene.lookup("#divisionId");
+
+        // fill in the old info
+        customerNameInputBad.setText(oldCustomer.getName());
+        addressInputBad.setText(oldCustomer.getAddress());
+        postalCodeInputBad.setText(oldCustomer.getPostalCode());
+        phoneNumberInputBad.setText(oldCustomer.getPhone());
+        customerIdInputBad.setText(Integer.toString(oldCustomer.getCustomerId()));
+        countryIdBad.setValue(divisionToCountryId.get(Integer.toString(oldCustomer.getDivisionId())));
+        divisionIdBad.setValue(divisionIds.get(Integer.toString(oldCustomer.getDivisionId())));
+
+        // fill the drop downs
+        String boxText = countryIdBad.getValue().toString();
+
+        // Determine the other list values
+        if (boxText.contains("U.S")) {
+            divisionList = usDivisions;
+        }
+        else if (boxText.contains("Canada")) {
+            divisionList = canadaDivisions;
+        }
+        else {
+            divisionList = ukDivisions;
+        }
+
+        // first level division ID
+        divisionIdBad.setItems(FXCollections.observableArrayList(divisionList));
     }
 
     /**
@@ -342,6 +363,7 @@ public class CustomerActionsController {
     @FXML
     protected void onCancelButtonClick(ActionEvent event) {
         // refresh db on previous page?
+        divisionList = new LinkedList<String>();
         CustomersController.customerTableRefresh();
 
         // close the active window
@@ -354,7 +376,7 @@ public class CustomerActionsController {
      * Method for hopefully checking the combo box value and changing the available values in the other box
      */
     @FXML
-    protected void onCountryComboBoxChange(ActionEvent event) {
+    protected void onCountryComboBoxChange() {
         String boxText = countryIdBox.getValue().toString();
 
         // Determine the other list values
