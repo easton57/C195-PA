@@ -4,22 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="867856f0-013f-4852-b0f1-1ecf452cb8ba" name="Changes" comment="Might be missing something here...">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/AppointmentActionsController.java" afterDir="false" />
+    <list default="true" id="867856f0-013f-4852-b0f1-1ecf452cb8ba" name="Changes" comment="Oh gosh, so many changes. I've really slacked on this commit.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login_activity.txt" beforeDir="false" afterPath="$PROJECT_DIR$/login_activity.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/Appointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/AppointmentActionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/AppointmentActionsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomerActionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomerActionsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomersController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/ScheduleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/ScheduleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/Scheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/Scheduler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/Translator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/Translator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa/appointment-view.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa/edit-appointment-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa/edit-appointment-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa/reports-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa/reports-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa/schedule-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa/schedule-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +189,7 @@
       <workItem from="1670465589859" duration="221000" />
       <workItem from="1670513598426" duration="600000" />
       <workItem from="1670610978920" duration="599000" />
-      <workItem from="1670631078524" duration="3299000" />
+      <workItem from="1670631078524" duration="6581000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Project Commit">
       <created>1664908358832</created>
@@ -416,7 +408,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669066563181</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Oh gosh, so many changes. I've really slacked on this commit.">
+      <created>1670634498060</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1670634498060</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Oh gosh, so many changes. I've really slacked on this commit.">
+      <created>1670634512083</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1670634512083</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,7 +440,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created Login Files" />
     <MESSAGE value="Started the code for login controller and app" />
     <MESSAGE value="Created login page functions and actions" />
     <MESSAGE value="Created and started implementing logger." />
@@ -459,18 +464,8 @@
     <MESSAGE value="Chagned schedule key for translator array" />
     <MESSAGE value="Added columns and fx:id" />
     <MESSAGE value="Might be missing something here..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Might be missing something here..." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/ScheduleController.java</url>
-          <line>235</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Oh gosh, so many changes. I've really slacked on this commit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Oh gosh, so many changes. I've really slacked on this commit." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

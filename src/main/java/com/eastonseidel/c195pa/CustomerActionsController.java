@@ -36,25 +36,17 @@ public class CustomerActionsController {
     @FXML private Text addressLabel;
     @FXML private Text customerNameLabel;
     @FXML private Text customerIdLabel;
-    @FXML private ComboBox countryIdBox;
-    @FXML private ComboBox divisionIdBox;
+    @FXML private ComboBox<String> countryIdBox;
+    @FXML private ComboBox<String> divisionIdBox;
 
-    // Bad workaround for now...
-    private static TextField phoneNumberInputBad;
-    private static TextField postalCodeInputBad;
-    private static TextField addressInputBad;
-    private static TextField customerNameInputBad;
-    private static TextField customerIdInputBad;
-    private static ComboBox countryIdBad;
-    private static ComboBox divisionIdBad;
-    private static Dictionary divisionToCountryId = new Hashtable();
-    private static Dictionary countryIds = new Hashtable();
-    private static Dictionary divisionIds = new Hashtable();
-    private static Dictionary divisionNames = new Hashtable();
-    private static List usDivisions = new LinkedList<String>();
-    private static List canadaDivisions = new LinkedList<String>();
-    private static List ukDivisions = new LinkedList<String>();
-    private static List divisionList = new LinkedList<String>();
+    private static final Dictionary<String, String> divisionToCountryId = new Hashtable<>();
+    private static final Dictionary<String, String> countryIds = new Hashtable<>();
+    private static final Dictionary<String, String> divisionIds = new Hashtable<>();
+    private static final Dictionary<String, String> divisionNames = new Hashtable<>();
+    private static final List<String> usDivisions = new LinkedList<>();
+    private static final List<String> canadaDivisions = new LinkedList<>();
+    private static final List<String> ukDivisions = new LinkedList<>();
+    private static List<String> divisionList = new LinkedList<>();
     private static String title;
 
     /**
@@ -105,7 +97,7 @@ public class CustomerActionsController {
 
         // find the new customer ID
         if (title.contains("Create") || title.contains("Créer")) {
-            List<Integer> customerIds = new LinkedList<Integer>();
+            List<Integer> customerIds = new LinkedList<>();
 
             // grab the id's and divisions from the db
             Connection localDb;
@@ -157,7 +149,7 @@ public class CustomerActionsController {
             customerIdInput.setText(Integer.toString(maxValue + 1));
         }
 
-        List countryList = new LinkedList<String>();
+        List<String> countryList = new LinkedList<>();
 
         // grab the id's and divisions from the db
         Connection localDb;
@@ -246,13 +238,14 @@ public class CustomerActionsController {
      */
     private static void pageElements(Scene scene, Customer oldCustomer) {
         // Setup the input fields
-        phoneNumberInputBad = (TextField) scene.lookup("#phoneNumberInput");
-        postalCodeInputBad = (TextField) scene.lookup("#postalCodeInput");
-        addressInputBad = (TextField) scene.lookup("#addressInput");
-        customerNameInputBad = (TextField) scene.lookup("#customerNameInput");
-        customerIdInputBad = (TextField) scene.lookup("#customerIdInput");
-        countryIdBad = (ComboBox) scene.lookup("#countryId");
-        divisionIdBad = (ComboBox) scene.lookup("#divisionId");
+        // Bad workaround for now...
+        TextField phoneNumberInputBad = (TextField) scene.lookup("#phoneNumberInput");
+        TextField postalCodeInputBad = (TextField) scene.lookup("#postalCodeInput");
+        TextField addressInputBad = (TextField) scene.lookup("#addressInput");
+        TextField customerNameInputBad = (TextField) scene.lookup("#customerNameInput");
+        TextField customerIdInputBad = (TextField) scene.lookup("#customerIdInput");
+        ComboBox countryIdBad = (ComboBox) scene.lookup("#countryId");
+        ComboBox divisionIdBad = (ComboBox) scene.lookup("#divisionId");
 
         // fill in the old info
         customerNameInputBad.setText(oldCustomer.getName());
@@ -302,14 +295,14 @@ public class CustomerActionsController {
                         "\", Address=\"" + addressInput.getText() +
                         "\", Postal_Code=\"" + postalCodeInput.getText() +
                         "\", Phone=\"" + phoneNumberInput.getText() +
-                        "\", Division_ID=" + Integer.parseInt(divisionNames.get(divisionIdBox.getValue()).toString()) +
+                        "\", Division_ID=" + Integer.parseInt(divisionNames.get(divisionIdBox.getValue())) +
                         " WHERE Customer_ID=" + Integer.parseInt(customerIdInput.getText()) + ";";
             }
             else {
                 sqlStatement = "INSERT INTO customers(Customer_Name, Address, Postal_Code, Phone, Division_ID)" +
                         " VALUES(\"" + customerNameInput.getText() + "\", \"" + addressInput.getText() + "\", \"" +
                         postalCodeInput.getText() + "\", \"" + phoneNumberInput.getText() + "\", " +
-                        Integer.parseInt(divisionNames.get(divisionIdBox.getValue()).toString()) + ");";
+                        Integer.parseInt(divisionNames.get(divisionIdBox.getValue())) + ");";
             }
 
             Statement statement;
@@ -363,7 +356,7 @@ public class CustomerActionsController {
     @FXML
     protected void onCancelButtonClick(ActionEvent event) {
         // refresh db on previous page?
-        divisionList = new LinkedList<String>();
+        divisionList = new LinkedList<>();
         CustomersController.customerTableRefresh();
 
         // close the active window
@@ -377,7 +370,7 @@ public class CustomerActionsController {
      */
     @FXML
     protected void onCountryComboBoxChange() {
-        String boxText = countryIdBox.getValue().toString();
+        String boxText = countryIdBox.getValue();
 
         // Determine the other list values
         if (boxText.contains("U.S")) {

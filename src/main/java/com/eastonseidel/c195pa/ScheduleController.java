@@ -30,21 +30,21 @@ public class ScheduleController {
     @FXML private Button updateButton;
     @FXML private Button deleteButton;
     @FXML private Button cancelButton;
-    @FXML private TableColumn appointmentId;
-    @FXML private TableColumn appointmentTitle;
-    @FXML private TableColumn appointmentDescription;
-    @FXML private TableColumn appointmentLocation;
-    @FXML private TableColumn appointmentType;
-    @FXML private TableColumn appointmentStart;
-    @FXML private TableColumn appointmentEnd;
-    @FXML private TableColumn appointmentCustomerId;
-    @FXML private TableColumn userId;
-    @FXML private TableColumn appointmentContact;
+    @FXML private TableColumn<Appointment, Integer> appointmentId;
+    @FXML private TableColumn<Appointment, String> appointmentTitle;
+    @FXML private TableColumn<Appointment, String> appointmentDescription;
+    @FXML private TableColumn<Appointment, String> appointmentLocation;
+    @FXML private TableColumn<Appointment, String> appointmentType;
+    @FXML private TableColumn<Appointment, Date> appointmentStart;
+    @FXML private TableColumn<Appointment, Date> appointmentEnd;
+    @FXML private TableColumn<Appointment, String> appointmentCustomerId;
+    @FXML private TableColumn<Appointment, String> userId;
+    @FXML private TableColumn<Appointment, String> appointmentContact;
     @FXML private TableView<Appointment> appointmentTable;
-    private static Dictionary<Integer, ObservableList<Appointment>> months = new Hashtable();
-    private static Dictionary<Integer, ObservableList<Appointment>> weeks = new Hashtable();
-    private static Dictionary<Integer, String> weekDates = new Hashtable();
-    private String[] monthNames = { Translator.ln.get("January"),  Translator.ln.get("February"),  Translator.ln.get("March"),  Translator.ln.get("April"),  Translator.ln.get("May"),  Translator.ln.get("June"),  Translator.ln.get("July"),  Translator.ln.get("August"),  Translator.ln.get("September"),  Translator.ln.get("October"),  Translator.ln.get("November"),  Translator.ln.get("December") };
+    private final static Dictionary<Integer, ObservableList<Appointment>> months = new Hashtable<>();
+    private final static Dictionary<Integer, ObservableList<Appointment>> weeks = new Hashtable<>();
+    private final static Dictionary<Integer, String> weekDates = new Hashtable<>();
+    private final String[] monthNames = { Translator.ln.get("January"),  Translator.ln.get("February"),  Translator.ln.get("March"),  Translator.ln.get("April"),  Translator.ln.get("May"),  Translator.ln.get("June"),  Translator.ln.get("July"),  Translator.ln.get("August"),  Translator.ln.get("September"),  Translator.ln.get("October"),  Translator.ln.get("November"),  Translator.ln.get("December") };
 
     /**
      * Code for the Home Screen window for the application
@@ -63,16 +63,16 @@ public class ScheduleController {
      */
     public void initialize() {
         // setup the table cells
-        appointmentId.setCellValueFactory(new PropertyValueFactory<Appointment, Integer>("appointmentId"));
-        appointmentTitle.setCellValueFactory(new PropertyValueFactory<Appointment, String>("title"));
-        appointmentDescription.setCellValueFactory(new PropertyValueFactory<Appointment, String>("description"));
-        appointmentLocation.setCellValueFactory(new PropertyValueFactory<Appointment, String>("location"));
-        appointmentType.setCellValueFactory(new PropertyValueFactory<Appointment, String>("type"));
-        appointmentStart.setCellValueFactory(new PropertyValueFactory<Appointment, Date>("start"));
-        appointmentEnd.setCellValueFactory(new PropertyValueFactory<Appointment, Date>("end"));
-        appointmentCustomerId.setCellValueFactory(new PropertyValueFactory<Appointment, String>("customerId"));
-        userId.setCellValueFactory(new PropertyValueFactory<Appointment, String>("userId"));
-        appointmentContact.setCellValueFactory(new PropertyValueFactory<Appointment, String>("contactId"));
+        appointmentId.setCellValueFactory(new PropertyValueFactory<>("appointmentId"));
+        appointmentTitle.setCellValueFactory(new PropertyValueFactory<>("title"));
+        appointmentDescription.setCellValueFactory(new PropertyValueFactory<>("description"));
+        appointmentLocation.setCellValueFactory(new PropertyValueFactory<>("location"));
+        appointmentType.setCellValueFactory(new PropertyValueFactory<>("type"));
+        appointmentStart.setCellValueFactory(new PropertyValueFactory<>("start"));
+        appointmentEnd.setCellValueFactory(new PropertyValueFactory<>("end"));
+        appointmentCustomerId.setCellValueFactory(new PropertyValueFactory<>("customerId"));
+        userId.setCellValueFactory(new PropertyValueFactory<>("userId"));
+        appointmentContact.setCellValueFactory(new PropertyValueFactory<>("contactId"));
 
         // set the labels for...
         // Buttons
@@ -160,7 +160,7 @@ public class ScheduleController {
             }
 
             // Check to see if it's also the end of that week
-            if(currentDay.get(Calendar.DAY_OF_WEEK) == Calendar.SATURDAY && tempKey != null || i==(calendar.getMaximum(Calendar.DAY_OF_YEAR) - 1) && tempKey != null) {
+            if(currentDay.get(Calendar.DAY_OF_WEEK) == Calendar.SATURDAY || i == (calendar.getMaximum(Calendar.DAY_OF_YEAR) - 1)) {
                 // Some small stuff
                 String month;
                 String day;
@@ -279,7 +279,7 @@ public class ScheduleController {
      * Method for creating a new customer
      */
     @FXML
-    protected void onNewButtonClick(ActionEvent event) throws IOException {
+    protected void onNewButtonClick() throws IOException {
         try {
             //appointmentTable.getItems().clear();
         }
@@ -294,7 +294,7 @@ public class ScheduleController {
      * Method for editing a customer
      */
     @FXML
-    protected void onEditButtonClick(ActionEvent event) throws IOException {
+    protected void onEditButtonClick() {
         // Get the table position and call the edit window
         try {
             TablePosition pos = appointmentTable.getSelectionModel().getSelectedCells().get(0);
@@ -319,7 +319,7 @@ public class ScheduleController {
      * Method for deleting a customer
      */
     @FXML
-    protected void onDeleteButtonClick(ActionEvent event) {
+    protected void onDeleteButtonClick() {
         Appointment oldAppointment = null;
 
         // Get the table position and call the edit window
@@ -352,6 +352,7 @@ public class ScheduleController {
             Statement statement;
             statement = localDb.createStatement();
             boolean result;
+            assert oldAppointment != null;
             result = statement.execute(
                     "DELETE FROM appointments WHERE Appointment_ID=" + oldAppointment.getAppointmentId()
             );
@@ -399,8 +400,7 @@ public class ScheduleController {
     }
 
     @FXML
-    protected void onLeftArrowClick(ActionEvent event) {
-        int location;
+    protected void onLeftArrowClick() {
         try {
             appointmentTable.getItems();
         }
@@ -416,13 +416,12 @@ public class ScheduleController {
                         // replace the table values and the string values
                         rangeText.setText(monthNames[11]);
                         appointmentTable.setItems(months.get(11));
-                        break;
                     } else {
                         // replace the table values and the string values
                         rangeText.setText(monthNames[i - 1]);
                         appointmentTable.setItems(months.get(i - 1));
-                        break;
                     }
+                    break;
                 }
             }
         }
@@ -434,21 +433,19 @@ public class ScheduleController {
                         // replace the table values and the string values
                         rangeText.setText(weekDates.get(weekDates.size() - 1));
                         appointmentTable.setItems(weeks.get(weekDates.size() - 1));
-                        break;
                     } else {
                         // replace the table values and the string values
                         rangeText.setText(weekDates.get(i - 1));
                         appointmentTable.setItems(weeks.get(i - 1));
-                        break;
                     }
+                    break;
                 }
             }
         }
     }
 
     @FXML
-    protected void onRightArrowClick(ActionEvent event) {
-        int location;
+    protected void onRightArrowClick() {
         try {
             appointmentTable.getItems();
         }
@@ -464,13 +461,12 @@ public class ScheduleController {
                         // replace the table values and the string values
                         rangeText.setText(monthNames[0]);
                         appointmentTable.setItems(months.get(0));
-                        break;
                     } else {
                         // replace the table values and the string values
                         rangeText.setText(monthNames[i + 1]);
                         appointmentTable.setItems(months.get(i + 1));
-                        break;
                     }
+                    break;
                 }
             }
         }
@@ -482,13 +478,12 @@ public class ScheduleController {
                         // replace the table values and the string values
                         rangeText.setText(weekDates.get(0));
                         appointmentTable.setItems(weeks.get(0));
-                        break;
                     } else {
                         // replace the table values and the string values
                         rangeText.setText(weekDates.get(i + 1));
                         appointmentTable.setItems(weeks.get(i + 1));
-                        break;
                     }
+                    break;
                 }
             }
         }
@@ -525,7 +520,9 @@ public class ScheduleController {
             int evalDay = Integer.parseInt(now.split("-")[2].split("T")[0]);
             String evalMonth = now.split("-")[1];
 
-            if ((evalMonth.equals(m1) && (d1 <= evalDay && evalDay <= d2)) || ((evalMonth.equals(m1) && !evalMonth.equals(m2)) && (d1 <= evalDay && evalDay >= d2))) {
+            if ((evalMonth.equals(m1) && (d1 <= evalDay && evalDay <= d2)) ||
+                    (evalMonth.equals(m1) && !evalMonth.equals(m2)) && (d1 >= evalDay && evalDay >= d2) ||
+                    (!evalMonth.equals(m1) && evalMonth.equals(m2)) && (d1 >= evalDay && evalDay <= d2)) {
                 appointmentTable.setItems(weeks.get(i));
                 rangeText.setText(weekDates.get(i));
                 break;

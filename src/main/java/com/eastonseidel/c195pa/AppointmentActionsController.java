@@ -14,8 +14,6 @@ import java.io.IOException;
 import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -33,10 +31,10 @@ public class AppointmentActionsController {
     @FXML private Button cancelButton;
     @FXML private DatePicker startDateInput;
     @FXML private DatePicker endDateInput;
-    @FXML private ComboBox appointmentContactIdComboBox;
+    @FXML private ComboBox<Object> appointmentContactIdComboBox;
     @FXML private Text appointmentIdLabel;
     @FXML private Text appointmentTitleLabel;
-    @FXML private Text appointmentDesctiptionLabel;
+    @FXML private Text appointmentDescriptionLabel;
     @FXML private Text startDateTime;
     @FXML private Text appointmentLocationLabel;
     @FXML private Text appointmentContactLabel;
@@ -44,20 +42,7 @@ public class AppointmentActionsController {
     @FXML private Text endDateTime;
     @FXML private Text appointmentCustomerIdLabel;
     @FXML private Text appointmentUserIdLabel;
-    private static List contactIds = new LinkedList<String>();
-    private static TextField appointmentIdInputBad;
-    private static TextField appointmentTitleInputBad;
-    private static TextField appointmentDescriptionInputBad;
-    private static TextField startTimeInputBad;
-    private static TextField endTimeInputBad;
-    private static TextField appointmentLocationInputBad;
-    private static TextField appointmentTypeInputBad;
-    private static TextField appointmentCustomerIdInputBad;
-    private static TextField appointmentUserIdInputBad;
-    private static DatePicker startDateInputBad;
-    private static DatePicker endDateInputBad;
-    private static ComboBox appointmentContactIdComboBoxBad;
-
+    private static List<String> contactIds = new LinkedList<>();
 
 
     private static String title;
@@ -100,7 +85,7 @@ public class AppointmentActionsController {
         // Set variable text
         appointmentIdLabel.setText(Translator.ln.get("id"));
         appointmentTitleLabel.setText(Translator.ln.get("title"));
-        appointmentDesctiptionLabel.setText(Translator.ln.get("description"));
+        appointmentDescriptionLabel.setText(Translator.ln.get("description"));
         startDateTime.setText(Translator.ln.get("startDateTime"));
         appointmentLocationLabel.setText(Translator.ln.get("location"));
         appointmentContactLabel.setText(Translator.ln.get("contactId"));
@@ -116,7 +101,7 @@ public class AppointmentActionsController {
 
         // find the new appointment ID
         if (title.contains("Create") || title.contains("Créer")) {
-            List<Integer> customerIds = new LinkedList<Integer>();
+            List<Integer> customerIds = new LinkedList<>();
 
             // grab the id's and divisions from the db
             Connection localDb;
@@ -226,18 +211,18 @@ public class AppointmentActionsController {
      */
     private static void pageElements(Scene scene, Appointment oldAppointment) {
         // Setup the input fields
-        appointmentIdInputBad = (TextField) scene.lookup("#appointmentIdInput");
-        appointmentTitleInputBad = (TextField) scene.lookup("#appointmentTitleInput");
-        appointmentDescriptionInputBad = (TextField) scene.lookup("#appointmentDescriptionInput");
-        startTimeInputBad = (TextField) scene.lookup("#startTimeInput");
-        endTimeInputBad = (TextField) scene.lookup("#endTimeInput");
-        appointmentLocationInputBad = (TextField) scene.lookup("#appointmentLocationInput");
-        appointmentTypeInputBad = (TextField) scene.lookup("#appointmentTypeInput");
-        appointmentCustomerIdInputBad = (TextField) scene.lookup("#appointmentCustomerIdInput");
-        appointmentUserIdInputBad = (TextField) scene.lookup("#appointmentUserIdInput");
-        startDateInputBad = (DatePicker) scene.lookup("#startDateInput");
-        endDateInputBad = (DatePicker) scene.lookup("#endDateInput");
-        appointmentContactIdComboBoxBad = (ComboBox) scene.lookup("#appointmentContactIdComboBox");
+        TextField appointmentIdInputBad = (TextField) scene.lookup("#appointmentIdInput");
+        TextField appointmentTitleInputBad = (TextField) scene.lookup("#appointmentTitleInput");
+        TextField appointmentDescriptionInputBad = (TextField) scene.lookup("#appointmentDescriptionInput");
+        TextField startTimeInputBad = (TextField) scene.lookup("#startTimeInput");
+        TextField endTimeInputBad = (TextField) scene.lookup("#endTimeInput");
+        TextField appointmentLocationInputBad = (TextField) scene.lookup("#appointmentLocationInput");
+        TextField appointmentTypeInputBad = (TextField) scene.lookup("#appointmentTypeInput");
+        TextField appointmentCustomerIdInputBad = (TextField) scene.lookup("#appointmentCustomerIdInput");
+        TextField appointmentUserIdInputBad = (TextField) scene.lookup("#appointmentUserIdInput");
+        DatePicker startDateInputBad = (DatePicker) scene.lookup("#startDateInput");
+        DatePicker endDateInputBad = (DatePicker) scene.lookup("#endDateInput");
+        ComboBox appointmentContactIdComboBoxBad = (ComboBox) scene.lookup("#appointmentContactIdComboBox");
 
         // Get the date and time setup
         LocalDate startDate = oldAppointment.getStart().toLocalDateTime().toLocalDate();
@@ -267,7 +252,6 @@ public class AppointmentActionsController {
     protected void onSaveButtonClick(ActionEvent event) {
         // Write the updated customer to the DB
         Connection localDb;
-        Appointment updateAppt = null;
         try {
             String sqlStatement;
 
@@ -353,7 +337,7 @@ public class AppointmentActionsController {
     @FXML
     protected void onCancelButtonClick(ActionEvent event) {
         // clear contact ID
-        contactIds = new LinkedList<String>();
+        contactIds = new LinkedList<>();
 
         // close the active window
         Node node = (Node) event.getSource();

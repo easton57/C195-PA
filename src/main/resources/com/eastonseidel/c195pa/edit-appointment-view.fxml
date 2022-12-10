@@ -24,7 +24,7 @@
   <Button fx:id="cancelButton" layoutX="420.0" layoutY="650.0" mnemonicParsing="false" onAction="#onCancelButtonClick" prefWidth="60.0" />
    <Text fx:id="appointmentIdLabel" layoutX="17.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="179.16799926757812" />
    <Text fx:id="appointmentTitleLabel" layoutX="17.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="179.16799926757812" />
-   <Text fx:id="appointmentDesctiptionLabel" layoutX="17.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="179.16799926757812" />
+   <Text fx:id="appointmentDescriptionLabel" layoutX="17.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="179.16799926757812" />
    <Text fx:id="startDateTime" layoutX="17.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="179.16799926757812" />
    <Text fx:id="appointmentLocationLabel" layoutX="17.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="179.16799926757812" />
    <Text fx:id="appointmentContactLabel" layoutX="17.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="179.16799926757812" />

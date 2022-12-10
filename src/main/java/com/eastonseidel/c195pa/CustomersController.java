@@ -26,13 +26,13 @@ public class CustomersController {
     @FXML private Button deleteButton;
     @FXML private Button editButton;
     @FXML private TableView<Customer> customerTable;
-    @FXML private TableColumn idColumn;
-    @FXML private TableColumn customerColumn;
-    @FXML private TableColumn addressColumn;
-    @FXML private TableColumn postalCodeColumn;
-    @FXML private TableColumn phoneColumn;
+    @FXML private TableColumn<Customer, Integer> idColumn;
+    @FXML private TableColumn<Customer, String> customerColumn;
+    @FXML private TableColumn<Customer, String> addressColumn;
+    @FXML private TableColumn<Customer, String> postalCodeColumn;
+    @FXML private TableColumn<Customer, String> phoneColumn;
     @FXML private Text customersTitle;
-    private static ObservableList<Customer> customers = FXCollections.observableArrayList();
+    private final static ObservableList<Customer> customers = FXCollections.observableArrayList();
 
     /**
      * Code for the Home Screen window for the application
@@ -52,10 +52,10 @@ public class CustomersController {
     public void initialize() {
         // Set up the table cells
         idColumn.setCellValueFactory(new PropertyValueFactory<>("customerId"));
-        customerColumn.setCellValueFactory(new PropertyValueFactory<Customer, String>("name"));
-        addressColumn.setCellValueFactory(new PropertyValueFactory<Customer, String>("modifiedAddress"));
-        postalCodeColumn.setCellValueFactory(new PropertyValueFactory<Customer, String>("postalCode"));
-        phoneColumn.setCellValueFactory(new PropertyValueFactory<Customer, String>("phone"));
+        customerColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
+        addressColumn.setCellValueFactory(new PropertyValueFactory<>("modifiedAddress"));
+        postalCodeColumn.setCellValueFactory(new PropertyValueFactory<>("postalCode"));
+        phoneColumn.setCellValueFactory(new PropertyValueFactory<>("phone"));
 
         customerColumn.setCellFactory(TextFieldTableCell.forTableColumn());
         addressColumn.setCellFactory(TextFieldTableCell.forTableColumn());
@@ -169,7 +169,7 @@ public class CustomersController {
      * Method for creating a new customer
      */
     @FXML
-    protected void onNewButtonClick(ActionEvent event) throws IOException {
+    protected void onNewButtonClick() throws IOException {
         try {
             customerTable.getItems().clear();
         }
@@ -184,7 +184,7 @@ public class CustomersController {
      * Method for editing a customer
      */
     @FXML
-    protected void onEditButtonClick(ActionEvent event) throws IOException {
+    protected void onEditButtonClick() {
         // Get the table position and call the edit window
         try {
             TablePosition pos = customerTable.getSelectionModel().getSelectedCells().get(0);
@@ -211,7 +211,7 @@ public class CustomersController {
      * Method for deleting a customer
      */
     @FXML
-    protected void onDeleteButtonClick(ActionEvent event) {
+    protected void onDeleteButtonClick() {
         Customer oldCustomer = null;
 
         // Get the table position and call the edit window
@@ -244,6 +244,7 @@ public class CustomersController {
             Statement statement;
             statement = localDb.createStatement();
             boolean result;
+            assert oldCustomer != null;
             result = statement.execute(
                     "DELETE FROM customers WHERE Customer_ID=" + oldCustomer.getCustomerId()
             );
@@ -301,8 +302,6 @@ public class CustomersController {
 
         Connection localDb;
         try {
-            String sqlStatement;
-
             Class.forName("com.mysql.cj.jdbc.Driver");
             localDb = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/client_schedule",
@@ -357,8 +356,6 @@ public class CustomersController {
 
         Connection localDb;
         try {
-            String sqlStatement;
-
             Class.forName("com.mysql.cj.jdbc.Driver");
             localDb = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/client_schedule",
@@ -416,8 +413,6 @@ public class CustomersController {
 
         Connection localDb;
         try {
-            String sqlStatement;
-
             Class.forName("com.mysql.cj.jdbc.Driver");
             localDb = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/client_schedule",
@@ -472,8 +467,6 @@ public class CustomersController {
 
         Connection localDb;
         try {
-            String sqlStatement;
-
             Class.forName("com.mysql.cj.jdbc.Driver");
             localDb = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/client_schedule",
