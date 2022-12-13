@@ -105,7 +105,7 @@ public class ScheduleController {
         monthRadio.setSelected(true);
 
         // fill the table view variable
-        appointmentTableRefresh();
+        appointmentTableCreation();
 
         // get the local date
         LocalDateTime now = LocalDateTime.now();
@@ -118,7 +118,7 @@ public class ScheduleController {
     /**
      * Method to refresh the table data after edits
      */
-    public static void appointmentTableRefresh() {
+    public static void appointmentTableCreation() {
         // Create the observable list for the months array
         for (int i=0; i<12; i++) {
             ObservableList<Appointment> temp = FXCollections.observableArrayList();
@@ -265,6 +265,89 @@ public class ScheduleController {
     }
 
     /**
+     * Method to refresh the table data after edits
+     */
+    public static void appointmentTableRefresh() {
+        Connection localDb;
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            localDb = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/client_schedule",
+                    "sqlUser", "Passw0rd!"
+            );
+
+            Statement statement;
+            statement = localDb.createStatement();
+            ResultSet resultSet;
+            resultSet = statement.executeQuery(
+                    "SELECT * FROM appointments"
+            );
+
+            while (resultSet.next()) {
+                // Add customer to array
+                Appointment temp = new Appointment(resultSet.getInt("Appointment_ID"), resultSet.getString("Title"),
+                        resultSet.getString("Description"), resultSet.getString("Location"), resultSet.getString("Type"),
+                        resultSet.getTimestamp("Start"), resultSet.getTimestamp("End"), resultSet.getInt("Customer_ID"),
+                        resultSet.getInt("User_ID"), resultSet.getInt("Contact_ID"));
+
+                // separate appointments month
+                for (int i = 0; i < months.size(); i++) {
+                    int j = 0;
+
+                    while (!months.get(i).isEmpty()) {
+                        try {
+                            if (months.get(i).get(j).getAppointmentId() == temp.getAppointmentId()) {
+                                months.get(i).set(j, temp);
+                                break;
+                            }
+                            else {
+                                j += 1;
+                            }
+                        }
+                        catch (Exception e) {
+                            break;
+                        }
+                    }
+                }
+
+                // separate appointments by week
+                for (int i = 0; i < weeks.size(); i++) {
+                    int j = 0;
+
+                    while (!weeks.get(i).isEmpty()) {
+                        try {
+                            if (weeks.get(i).get(j).getAppointmentId() == temp.getAppointmentId()) {
+                                weeks.get(i).set(j, temp);
+                                break;
+                            } else {
+                                j += 1;
+                            }
+                        }
+                        catch (Exception e) {
+                            break;
+                        }
+                    }
+                }
+            }
+            resultSet.close();
+            statement.close();
+            localDb.close();
+        } catch (Exception exception) {
+            String errorString = Translator.ln.get("dbFailed") + exception;
+
+            // Log the error
+            SchedulerLogger.addToLog(errorString, "severe");
+
+            // Alert that an error occured
+            // Create a popup
+            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+            errorAlert.setHeaderText("Database Error!");
+            errorAlert.setContentText(errorString);
+            errorAlert.showAndWait();
+        }
+    }
+
+    /**
      * Method to close the pop-up
      */
     @FXML
@@ -303,6 +386,8 @@ public class ScheduleController {
             Appointment oldAppointment = appointmentTable.getItems().get(row);
 
             AppointmentActionsController.EditAppointment(oldAppointment);
+
+            //appointmentTable.getItems().clear();
         }
         catch (Exception e) {
             Alert errorAlert = new Alert(Alert.AlertType.ERROR);
@@ -384,7 +469,8 @@ public class ScheduleController {
             deleteSuccess.setHeaderText(Translator.ln.get("deleteApptTitleAlert"));
             deleteSuccess.setContentText(Translator.ln.get("deleteApptAlertText") + oldAppointment.getAppointmentId() + " " + oldAppointment.getType());
             deleteSuccess.showAndWait();
-        } catch (Exception exception) {
+        }
+        catch (Exception exception) {
             String errorString = Translator.ln.get("dbFailed") + exception;
 
             // Log the error

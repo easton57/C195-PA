@@ -1352,3 +1352,352 @@ java.lang.IllegalArgumentException: Timestamp format must be yyyy-mm-dd hh:mm:ss
 [2022-12-09 18:01:08] [INFO] Successfully connected to DB 
 [2022-12-09 18:01:08] [INFO] Log in successful by: admin 
 [2022-12-09 18:01:22] [INFO] App closed 
+[2022-12-09 18:08:58] [INFO] App launched successfully! 
+[2022-12-09 18:09:01] [INFO] Successfully connected to DB 
+[2022-12-09 18:09:01] [INFO] Log in successful by: admin 
+[2022-12-09 18:09:15] [INFO] App closed 
+[2022-12-10 12:02:26] [INFO] App launched successfully! 
+[2022-12-10 12:02:32] [INFO] Successfully connected to DB 
+[2022-12-10 12:02:32] [INFO] Log in successful by: admin 
+[2022-12-10 12:03:10] [SEVERE] Please verify the local database is running and accessible!
+java.lang.IllegalArgumentException: Timestamp format must be yyyy-mm-dd hh:mm:ss[.fffffffff] 
+[2022-12-10 12:03:12] [INFO] App launched successfully! 
+[2022-12-10 12:03:16] [INFO] Successfully connected to DB 
+[2022-12-10 12:03:16] [INFO] Log in successful by: admin 
+[2022-12-10 12:03:46] [SEVERE] Please verify the local database is running and accessible!
+java.lang.IllegalArgumentException: Timestamp format must be yyyy-mm-dd hh:mm:ss[.fffffffff] 
+[2022-12-10 12:03:49] [INFO] App launched successfully! 
+[2022-12-10 12:03:55] [INFO] Successfully connected to DB 
+[2022-12-10 12:03:55] [INFO] Log in successful by: admin 
+[2022-12-10 12:05:32] [SEVERE] Please verify the local database is running and accessible!
+java.lang.IllegalArgumentException: Timestamp format must be yyyy-mm-dd hh:mm:ss[.fffffffff] 
+[2022-12-10 12:05:35] [INFO] App launched successfully! 
+[2022-12-10 12:05:36] [INFO] Login Cancelled 
+[2022-12-10 12:05:43] [INFO] App launched successfully! 
+[2022-12-10 12:05:46] [INFO] Successfully connected to DB 
+[2022-12-10 12:05:46] [INFO] Log in successful by: admin 
+[2022-12-10 12:07:55] [INFO] App launched successfully! 
+[2022-12-10 12:07:58] [INFO] Successfully connected to DB 
+[2022-12-10 12:07:58] [INFO] Log in successful by: admin 
+[2022-12-10 12:08:52] [SEVERE] Please verify the local database is running and accessible!
+java.time.DateTimeException: Invalid ID for region-based ZoneId, invalid format: 05:00 
+[2022-12-10 12:08:55] [INFO] App launched successfully! 
+[2022-12-10 12:08:59] [INFO] Successfully connected to DB 
+[2022-12-10 12:08:59] [INFO] Log in successful by: admin 
+[2022-12-10 12:10:04] [SEVERE] Please verify the local database is running and accessible!
+java.time.zone.ZoneRulesException: Unknown time-zone ID: EST 
+[2022-12-10 12:10:06] [INFO] App launched successfully! 
+[2022-12-10 12:10:14] [INFO] Successfully connected to DB 
+[2022-12-10 12:10:14] [INFO] Log in successful by: admin 
+[2022-12-10 12:13:29] [INFO] App launched successfully! 
+[2022-12-10 12:13:54] [INFO] Successfully connected to DB 
+[2022-12-10 12:13:54] [INFO] Log in successful by: admin 
+[2022-12-10 12:23:36] [INFO] App launched successfully! 
+[2022-12-10 12:23:39] [INFO] Successfully connected to DB 
+[2022-12-10 12:23:39] [INFO] Log in successful by: admin 
+[2022-12-10 12:49:48] [INFO] App launched successfully! 
+[2022-12-10 12:49:52] [INFO] Successfully connected to DB 
+[2022-12-10 12:49:52] [INFO] Log in successful by: admin 
+[2022-12-10 12:51:31] [INFO] App launched successfully! 
+[2022-12-10 12:51:35] [INFO] Successfully connected to DB 
+[2022-12-10 12:51:35] [INFO] Log in successful by: admin 
+[2022-12-10 13:00:19] [INFO] App launched successfully! 
+[2022-12-10 13:00:23] [INFO] Successfully connected to DB 
+[2022-12-10 13:00:23] [INFO] Log in successful by: admin 
+[2022-12-10 13:06:01] [INFO] App launched successfully! 
+[2022-12-10 13:06:04] [INFO] Successfully connected to DB 
+[2022-12-10 13:06:04] [INFO] Log in successful by: admin 
+[2022-12-10 13:10:20] [SEVERE] Please verify the local database is running and accessible!
+java.lang.NumberFormatException: Error at index 2 in: "00 AM" 
+[2022-12-10 13:15:09] [INFO] App launched successfully! 
+[2022-12-10 13:15:13] [INFO] Successfully connected to DB 
+[2022-12-10 13:15:13] [INFO] Log in successful by: admin 
+[2022-12-10 13:17:31] [WARNING] There was an error attempting to edit an appointmentjava.time.format.DateTimeParseException: Text '2022-11-30 09:00:00 PM' could not be parsed, unparsed text found at index 10 
+[2022-12-10 13:19:37] [INFO] App launched successfully! 
+[2022-12-10 13:19:41] [INFO] Successfully connected to DB 
+[2022-12-10 13:19:41] [INFO] Log in successful by: admin 
+[2022-12-10 13:21:17] [INFO] App launched successfully! 
+[2022-12-10 13:21:20] [INFO] Successfully connected to DB 
+[2022-12-10 13:21:20] [INFO] Log in successful by: admin 
+[2022-12-10 13:22:20] [INFO] App launched successfully! 
+[2022-12-10 13:22:24] [INFO] Successfully connected to DB 
+[2022-12-10 13:22:24] [INFO] Log in successful by: admin 
+[2022-12-10 13:23:28] [WARNING] There was an error attempting to edit an appointmentjava.lang.IllegalArgumentException: Cannot format given Object as a Date 
+[2022-12-10 13:25:43] [INFO] App launched successfully! 
+[2022-12-10 13:25:47] [INFO] Successfully connected to DB 
+[2022-12-10 13:25:47] [INFO] Log in successful by: admin 
+[2022-12-10 13:27:40] [INFO] App launched successfully! 
+[2022-12-10 13:27:43] [INFO] Successfully connected to DB 
+[2022-12-10 13:27:43] [INFO] Log in successful by: admin 
+[2022-12-10 13:28:28] [INFO] App launched successfully! 
+[2022-12-10 13:28:31] [INFO] Successfully connected to DB 
+[2022-12-10 13:28:31] [INFO] Log in successful by: admin 
+[2022-12-10 13:29:33] [INFO] App launched successfully! 
+[2022-12-10 13:29:37] [INFO] Successfully connected to DB 
+[2022-12-10 13:29:37] [INFO] Log in successful by: admin 
+[2022-12-10 13:31:14] [INFO] App launched successfully! 
+[2022-12-10 13:31:18] [INFO] Successfully connected to DB 
+[2022-12-10 13:31:18] [INFO] Log in successful by: admin 
+[2022-12-10 13:33:04] [INFO] App launched successfully! 
+[2022-12-10 13:33:08] [INFO] Successfully connected to DB 
+[2022-12-10 13:33:08] [INFO] Log in successful by: admin 
+[2022-12-10 13:33:08] [INFO] App closed 
+[2022-12-10 13:33:12] [INFO] App launched successfully! 
+[2022-12-10 13:33:15] [INFO] Successfully connected to DB 
+[2022-12-10 13:33:15] [INFO] Log in successful by: admin 
+[2022-12-10 13:34:16] [SEVERE] Please verify the local database is running and accessible!
+java.time.format.DateTimeParseException: Text '2022-11-30 09:00 PM' could not be parsed at index 10 
+[2022-12-10 13:43:57] [INFO] App launched successfully! 
+[2022-12-10 13:44:39] [INFO] Successfully connected to DB 
+[2022-12-10 13:44:39] [INFO] Log in successful by: admin 
+[2022-12-10 13:45:45] [SEVERE] Please verify the local database is running and accessible!
+java.time.format.DateTimeParseException: Text '2022-11-30 2100:00' could not be parsed at index 10 
+[2022-12-10 13:45:52] [INFO] App launched successfully! 
+[2022-12-10 13:45:56] [INFO] Successfully connected to DB 
+[2022-12-10 13:45:56] [INFO] Log in successful by: admin 
+[2022-12-10 13:47:06] [SEVERE] Please verify the local database is running and accessible!
+java.time.format.DateTimeParseException: Text '2022-11-30 21:00:00' could not be parsed at index 10 
+[2022-12-10 13:47:09] [INFO] App launched successfully! 
+[2022-12-10 13:47:12] [INFO] Successfully connected to DB 
+[2022-12-10 13:47:12] [INFO] Log in successful by: admin 
+[2022-12-10 13:48:55] [SEVERE] Please verify the local database is running and accessible!
+java.time.format.DateTimeParseException: Text '2022-11-30 21:00:00' could not be parsed: Invalid value for ClockHourOfAmPm (valid values 1 - 12): 21 
+[2022-12-10 13:49:45] [INFO] App launched successfully! 
+[2022-12-10 13:49:49] [INFO] Successfully connected to DB 
+[2022-12-10 13:49:49] [INFO] Log in successful by: admin 
+[2022-12-10 13:50:51] [SEVERE] Please verify the local database is running and accessible!
+java.lang.NumberFormatException: Error at index 2 in: "00 AM" 
+[2022-12-10 13:51:51] [SEVERE] Please verify the local database is running and accessible!
+java.lang.NumberFormatException: Error at index 2 in: "00 AM" 
+[2022-12-10 13:51:54] [INFO] App launched successfully! 
+[2022-12-10 13:52:02] [INFO] Successfully connected to DB 
+[2022-12-10 13:52:02] [INFO] Log in successful by: admin 
+[2022-12-10 13:52:52] [SEVERE] Please verify the local database is running and accessible!
+java.time.format.DateTimeParseException: Text '2022-11-30 09:00 PM' could not be parsed at index 16 
+[2022-12-10 13:55:50] [INFO] App launched successfully! 
+[2022-12-10 13:55:53] [INFO] Successfully connected to DB 
+[2022-12-10 13:55:53] [INFO] Log in successful by: admin 
+[2022-12-10 13:56:21] [SEVERE] Please verify the local database is running and accessible!
+java.time.format.DateTimeParseException: Text '2022-11-30 09:00 PM' could not be parsed at index 16 
+[2022-12-10 13:56:23] [INFO] App launched successfully! 
+[2022-12-10 13:56:26] [INFO] Successfully connected to DB 
+[2022-12-10 13:56:26] [INFO] Log in successful by: admin 
+[2022-12-10 13:56:55] [SEVERE] Please verify the local database is running and accessible!
+java.time.format.DateTimeParseException: Text '2022-11-30 09:00 PM' could not be parsed at index 16 
+[2022-12-10 13:56:58] [INFO] App launched successfully! 
+[2022-12-10 13:57:01] [INFO] Successfully connected to DB 
+[2022-12-10 13:57:01] [INFO] Log in successful by: admin 
+[2022-12-10 13:57:18] [SEVERE] Please verify the local database is running and accessible!
+java.time.format.DateTimeParseException: Text '2022-12-07 04:00:00AM' could not be parsed at index 19 
+[2022-12-10 13:57:21] [INFO] App launched successfully! 
+[2022-12-10 13:57:24] [INFO] Successfully connected to DB 
+[2022-12-10 13:57:24] [INFO] Log in successful by: admin 
+[2022-12-12 19:16:02] [INFO] App launched successfully! 
+[2022-12-12 19:16:06] [INFO] Successfully connected to DB 
+[2022-12-12 19:16:06] [INFO] Log in successful by: admin 
+[2022-12-12 19:16:36] [INFO] App closed 
+[2022-12-12 23:01:47] [INFO] App launched successfully! 
+[2022-12-12 23:01:51] [INFO] Successfully connected to DB 
+[2022-12-12 23:01:51] [INFO] Log in successful by: admin 
+[2022-12-12 23:02:04] [SEVERE] Please verify the local database is running and accessible!
+java.lang.NumberFormatException: Error at index 2 in: "00 AM" 
+[2022-12-12 23:04:24] [SEVERE] Please verify the local database is running and accessible!
+java.lang.NumberFormatException: Error at index 2 in: "00 AM" 
+[2022-12-12 23:04:36] [SEVERE] Please verify the local database is running and accessible!
+java.lang.NumberFormatException: Error at index 2 in: "00 AM" 
+[2022-12-12 23:07:26] [SEVERE] Please verify the local database is running and accessible!
+java.lang.NumberFormatException: Error at index 2 in: "00 AM" 
+[2022-12-12 23:08:32] [INFO] App launched successfully! 
+[2022-12-12 23:08:35] [INFO] Successfully connected to DB 
+[2022-12-12 23:08:35] [INFO] Log in successful by: admin 
+[2022-12-12 23:08:44] [SEVERE] Please verify the local database is running and accessible!
+java.time.format.DateTimeParseException: Text '2020-05-28 08:00:00 AM' could not be parsed at index 10 
+[2022-12-12 23:09:16] [SEVERE] Please verify the local database is running and accessible!
+java.time.format.DateTimeParseException: Text '2020-05-28 08:00:00 AM' could not be parsed at index 10 
+[2022-12-12 23:09:51] [SEVERE] Please verify the local database is running and accessible!
+java.time.format.DateTimeParseException: Text '2020-05-28 08:00:00 AM' could not be parsed at index 10 
+[2022-12-12 23:09:59] [INFO] App launched successfully! 
+[2022-12-12 23:10:04] [INFO] Successfully connected to DB 
+[2022-12-12 23:10:04] [INFO] Log in successful by: admin 
+[2022-12-12 23:11:32] [SEVERE] Please verify the local database is running and accessible!
+java.lang.NumberFormatException: Error at index 2 in: "00 AM" 
+[2022-12-12 23:11:39] [INFO] App launched successfully! 
+[2022-12-12 23:11:43] [INFO] Successfully connected to DB 
+[2022-12-12 23:11:43] [INFO] Log in successful by: admin 
+[2022-12-12 23:11:46] [WARNING] There was an error attempting to edit an appointmentjava.lang.IndexOutOfBoundsException 
+[2022-12-12 23:14:05] [SEVERE] Please verify the local database is running and accessible!
+java.time.format.DateTimeParseException: Text '08:00:00 am' could not be parsed, unparsed text found at index 8 
+[2022-12-12 23:14:13] [INFO] App launched successfully! 
+[2022-12-12 23:14:40] [INFO] Successfully connected to DB 
+[2022-12-12 23:14:40] [INFO] Log in successful by: admin 
+[2022-12-12 23:15:42] [SEVERE] Please verify the local database is running and accessible!
+java.time.format.DateTimeParseException: Text '08:00:00 am' could not be parsed at index 9 
+[2022-12-12 23:19:03] [SEVERE] Please verify the local database is running and accessible!
+java.time.format.DateTimeParseException: Text '08:00:00 am' could not be parsed at index 9 
+[2022-12-12 23:21:16] [INFO] App launched successfully! 
+[2022-12-12 23:21:51] [INFO] Successfully connected to DB 
+[2022-12-12 23:21:51] [INFO] Log in successful by: admin 
+[2022-12-12 23:22:52] [SEVERE] Please verify the local database is running and accessible!
+java.time.format.DateTimeParseException: Text '08:00:00' could not be parsed at index 8 
+[2022-12-12 23:22:59] [INFO] App launched successfully! 
+[2022-12-12 23:23:03] [INFO] Successfully connected to DB 
+[2022-12-12 23:23:03] [INFO] Log in successful by: admin 
+[2022-12-12 23:34:45] [INFO] App launched successfully! 
+[2022-12-12 23:34:49] [INFO] Successfully connected to DB 
+[2022-12-12 23:34:49] [INFO] Log in successful by: admin 
+[2022-12-12 23:36:36] [INFO] App launched successfully! 
+[2022-12-12 23:36:40] [INFO] Successfully connected to DB 
+[2022-12-12 23:36:40] [INFO] Log in successful by: admin 
+[2022-12-12 23:38:54] [INFO] App launched successfully! 
+[2022-12-12 23:38:58] [INFO] Successfully connected to DB 
+[2022-12-12 23:38:58] [INFO] Log in successful by: admin 
+[2022-12-12 23:39:20] [SEVERE] Please verify the local database is running and accessible!
+java.time.format.DateTimeParseException: Text '2020-05-29 4:00:00 pm' could not be parsed at index 11 
+[2022-12-12 23:39:32] [SEVERE] Please verify the local database is running and accessible!
+java.time.format.DateTimeParseException: Text '2020-05-29 04:00:00 pm' could not be parsed at index 20 
+[2022-12-12 23:40:25] [SEVERE] Please verify the local database is running and accessible!
+java.time.format.DateTimeParseException: Text '2020-05-29 04:00:00 pm' could not be parsed at index 20 
+[2022-12-12 23:42:08] [INFO] App launched successfully! 
+[2022-12-12 23:44:28] [INFO] Successfully connected to DB 
+[2022-12-12 23:44:28] [INFO] Log in successful by: admin 
+[2022-12-12 23:55:17] [INFO] App launched successfully! 
+[2022-12-12 23:55:21] [INFO] Successfully connected to DB 
+[2022-12-12 23:55:21] [INFO] Log in successful by: admin 
+[2022-12-13 00:03:31] [INFO] App launched successfully! 
+[2022-12-13 00:03:35] [INFO] Successfully connected to DB 
+[2022-12-13 00:03:35] [INFO] Log in successful by: admin 
+[2022-12-13 00:04:44] [INFO] App launched successfully! 
+[2022-12-13 00:04:48] [INFO] Successfully connected to DB 
+[2022-12-13 00:04:48] [INFO] Log in successful by: admin 
+[2022-12-13 00:06:42] [INFO] App launched successfully! 
+[2022-12-13 00:06:46] [INFO] Successfully connected to DB 
+[2022-12-13 00:06:46] [INFO] Log in successful by: admin 
+[2022-12-13 00:08:09] [INFO] App launched successfully! 
+[2022-12-13 00:08:13] [INFO] Successfully connected to DB 
+[2022-12-13 00:08:13] [INFO] Log in successful by: admin 
+[2022-12-13 07:44:19] [INFO] App launched successfully! 
+[2022-12-13 07:44:24] [INFO] Successfully connected to DB 
+[2022-12-13 07:44:24] [INFO] Log in successful by: admin 
+[2022-12-13 07:47:41] [INFO] App launched successfully! 
+[2022-12-13 07:47:45] [INFO] Successfully connected to DB 
+[2022-12-13 07:47:45] [INFO] Log in successful by: admin 
+[2022-12-13 07:47:54] [INFO] App closed 
+[2022-12-13 07:48:12] [INFO] App launched successfully! 
+[2022-12-13 07:48:38] [INFO] Successfully connected to DB 
+[2022-12-13 07:48:38] [INFO] Log in successful by: admin 
+[2022-12-13 07:48:54] [WARNING] There was an error attempting to edit an appointmentjava.lang.IndexOutOfBoundsException 
+[2022-12-13 07:49:01] [INFO] App closed 
+[2022-12-13 07:49:21] [INFO] App launched successfully! 
+[2022-12-13 07:49:24] [INFO] Successfully connected to DB 
+[2022-12-13 07:49:24] [INFO] Log in successful by: admin 
+[2022-12-13 07:49:34] [INFO] App closed 
+[2022-12-13 08:07:56] [INFO] App launched successfully! 
+[2022-12-13 08:07:58] [INFO] Login Cancelled 
+[2022-12-13 08:18:10] [INFO] App launched successfully! 
+[2022-12-13 08:18:31] [INFO] Successfully connected to DB 
+[2022-12-13 08:18:31] [INFO] Log in successful by: admin 
+[2022-12-13 08:19:13] [INFO] App launched successfully! 
+[2022-12-13 08:19:17] [INFO] Successfully connected to DB 
+[2022-12-13 08:19:17] [INFO] Log in successful by: admin 
+[2022-12-13 08:21:50] [INFO] App launched successfully! 
+[2022-12-13 08:21:52] [INFO] Login Cancelled 
+[2022-12-13 08:22:24] [INFO] App launched successfully! 
+[2022-12-13 08:22:27] [INFO] Successfully connected to DB 
+[2022-12-13 08:22:27] [INFO] Log in successful by: admin 
+[2022-12-13 08:23:13] [SEVERE] Please verify the local database is running and accessible!
+java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1 
+[2022-12-13 08:27:39] [INFO] App launched successfully! 
+[2022-12-13 08:27:43] [INFO] Successfully connected to DB 
+[2022-12-13 08:27:43] [INFO] Log in successful by: admin 
+[2022-12-13 08:28:47] [SEVERE] Please verify the local database is running and accessible!
+java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1 
+[2022-12-13 08:28:51] [INFO] App launched successfully! 
+[2022-12-13 08:29:53] [INFO] Successfully connected to DB 
+[2022-12-13 08:29:53] [WARNING] Log in failed: Invalid Password 
+[2022-12-13 08:29:56] [INFO] Log in successful by: admin 
+[2022-12-13 08:30:55] [INFO] App launched successfully! 
+[2022-12-13 08:30:59] [INFO] App launched successfully! 
+[2022-12-13 08:31:02] [INFO] Successfully connected to DB 
+[2022-12-13 08:31:02] [INFO] Log in successful by: admin 
+[2022-12-13 08:32:11] [INFO] App launched successfully! 
+[2022-12-13 08:32:19] [INFO] Login Cancelled 
+[2022-12-13 08:32:40] [INFO] App launched successfully! 
+[2022-12-13 08:32:44] [INFO] Successfully connected to DB 
+[2022-12-13 08:32:44] [INFO] Log in successful by: admin 
+[2022-12-13 08:34:03] [WARNING] There was an error attempting to edit an appointmentjava.lang.IndexOutOfBoundsException 
+[2022-12-13 08:36:52] [INFO] App launched successfully! 
+[2022-12-13 08:37:02] [INFO] Successfully connected to DB 
+[2022-12-13 08:37:02] [INFO] Log in successful by: admin 
+[2022-12-13 08:40:07] [INFO] App launched successfully! 
+[2022-12-13 08:40:13] [INFO] Successfully connected to DB 
+[2022-12-13 08:40:13] [INFO] Log in successful by: admin 
+[2022-12-13 08:41:44] [INFO] App launched successfully! 
+[2022-12-13 08:41:48] [INFO] Successfully connected to DB 
+[2022-12-13 08:41:48] [INFO] Log in successful by: admin 
+[2022-12-13 09:23:37] [INFO] App closed 
+[2022-12-13 09:31:14] [INFO] App launched successfully! 
+[2022-12-13 09:31:18] [INFO] Successfully connected to DB 
+[2022-12-13 09:31:18] [INFO] Log in successful by: admin 
+[2022-12-13 09:34:42] [INFO] App launched successfully! 
+[2022-12-13 09:34:45] [INFO] Login Cancelled 
+[2022-12-13 09:36:03] [INFO] App launched successfully! 
+[2022-12-13 09:36:08] [INFO] Successfully connected to DB 
+[2022-12-13 09:36:08] [INFO] Log in successful by: admin 
+[2022-12-13 09:37:53] [INFO] App launched successfully! 
+[2022-12-13 09:37:56] [INFO] Successfully connected to DB 
+[2022-12-13 09:37:56] [INFO] Log in successful by: admin 
+[2022-12-13 09:39:25] [INFO] App launched successfully! 
+[2022-12-13 09:39:29] [INFO] Successfully connected to DB 
+[2022-12-13 09:39:29] [INFO] Log in successful by: admin 
+[2022-12-13 09:40:39] [INFO] App launched successfully! 
+[2022-12-13 09:40:44] [INFO] Successfully connected to DB 
+[2022-12-13 09:40:44] [INFO] Log in successful by: admin 
+[2022-12-13 09:41:54] [INFO] App launched successfully! 
+[2022-12-13 09:42:00] [INFO] Successfully connected to DB 
+[2022-12-13 09:42:00] [WARNING] Log in failed: Invalid Password 
+[2022-12-13 09:42:03] [INFO] Log in successful by: admin 
+[2022-12-13 09:45:32] [INFO] App launched successfully! 
+[2022-12-13 09:45:36] [INFO] Successfully connected to DB 
+[2022-12-13 09:45:36] [INFO] Log in successful by: admin 
+[2022-12-13 09:46:00] [INFO] App launched successfully! 
+[2022-12-13 09:46:06] [INFO] Successfully connected to DB 
+[2022-12-13 09:46:06] [INFO] Log in successful by: admin 
+[2022-12-13 09:46:38] [SEVERE] Please verify the local database is running and accessible!
+java.time.format.DateTimeParseException: Text '2022-12-07 4:30:00 PM' could not be parsed at index 11 
+[2022-12-13 09:53:45] [INFO] App launched successfully! 
+[2022-12-13 09:54:02] [INFO] Successfully connected to DB 
+[2022-12-13 09:54:02] [INFO] Log in successful by: admin 
+[2022-12-13 09:55:30] [INFO] App launched successfully! 
+[2022-12-13 09:55:38] [INFO] Successfully connected to DB 
+[2022-12-13 09:55:38] [INFO] Log in successful by: admin 
+[2022-12-13 09:57:02] [SEVERE] Please verify the local database is running and accessible!
+java.time.format.DateTimeParseException: Text '2022-12-07 6:00:00 PM' could not be parsed at index 11 
+[2022-12-13 09:57:05] [SEVERE] Please verify the local database is running and accessible!
+java.time.format.DateTimeParseException: Text '2022-12-07 6:00:00 PM' could not be parsed at index 11 
+[2022-12-13 09:57:21] [SEVERE] Please verify the local database is running and accessible!
+java.time.format.DateTimeParseException: Text '2022-12-07 6:00:00 PM' could not be parsed at index 11 
+[2022-12-13 09:57:53] [SEVERE] Please verify the local database is running and accessible!
+java.time.format.DateTimeParseException: Text '2022-12-07 6:00:00 PM' could not be parsed at index 11 
+[2022-12-13 09:57:56] [INFO] App launched successfully! 
+[2022-12-13 09:57:59] [INFO] Successfully connected to DB 
+[2022-12-13 09:57:59] [INFO] Log in successful by: admin 
+[2022-12-13 10:00:22] [SEVERE] Please verify the local database is running and accessible!
+java.time.format.DateTimeParseException: Text '2022-12-07 6:00:00:00 PM' could not be parsed at index 11 
+[2022-12-13 10:00:26] [INFO] App launched successfully! 
+[2022-12-13 10:00:30] [INFO] Successfully connected to DB 
+[2022-12-13 10:00:30] [INFO] Log in successful by: admin 
+[2022-12-13 10:01:00] [SEVERE] Please verify the local database is running and accessible!
+java.time.format.DateTimeParseException: Text '2022-12-07 6:00:00 PM' could not be parsed at index 11 
+[2022-12-13 10:01:04] [INFO] App launched successfully! 
+[2022-12-13 10:01:07] [INFO] Successfully connected to DB 
+[2022-12-13 10:01:07] [INFO] Log in successful by: admin 
+[2022-12-13 10:01:23] [SEVERE] Please verify the local database is running and accessible!
+java.time.format.DateTimeParseException: Text '2022-12-07 06:00:00:00 PM' could not be parsed at index 19 
+[2022-12-13 10:03:00] [INFO] App launched successfully! 
+[2022-12-13 10:03:06] [INFO] Successfully connected to DB 
+[2022-12-13 10:03:06] [INFO] Log in successful by: admin 
+[2022-12-13 10:03:36] [SEVERE] Please verify the local database is running and accessible!
+java.time.format.DateTimeParseException: Text '2022-12-07 04:00:00PM' could not be parsed at index 19 
+[2022-12-13 10:03:39] [INFO] App launched successfully! 
+[2022-12-13 10:03:43] [INFO] Successfully connected to DB 
+[2022-12-13 10:03:43] [INFO] Log in successful by: admin 

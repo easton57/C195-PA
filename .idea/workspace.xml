@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="867856f0-013f-4852-b0f1-1ecf452cb8ba" name="Changes" comment="Oh gosh, so many changes. I've really slacked on this commit.">
+    <list default="true" id="867856f0-013f-4852-b0f1-1ecf452cb8ba" name="Changes" comment="Added time conversion functions, all data displayed as local, stored as UTC">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login_activity.txt" beforeDir="false" afterPath="$PROJECT_DIR$/login_activity.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/Appointment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/AppointmentActionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/AppointmentActionsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomerActionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomerActionsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomersController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/ScheduleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/ScheduleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa/edit-appointment-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa/edit-appointment-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/Translator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/Translator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa/schedule-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa/schedule-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +29,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
@@ -189,7 +189,11 @@
       <workItem from="1670465589859" duration="221000" />
       <workItem from="1670513598426" duration="600000" />
       <workItem from="1670610978920" duration="599000" />
-      <workItem from="1670631078524" duration="6581000" />
+      <workItem from="1670631078524" duration="7444000" />
+      <workItem from="1670638601138" duration="8000" />
+      <workItem from="1670698118001" duration="10737000" />
+      <workItem from="1670900650502" duration="6000000" />
+      <workItem from="1670944263773" duration="9552000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Project Commit">
       <created>1664908358832</created>
@@ -422,7 +426,35 @@
       <option name="project" value="LOCAL" />
       <updated>1670634512083</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="A little cleanup">
+      <created>1670637823831</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1670637823831</updated>
+    </task>
+    <task id="LOCAL-00035" summary="A little more cleanup">
+      <created>1670638181497</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1670638181497</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Updated Todo list on README">
+      <created>1670638298326</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1670638298326</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Added time conversion functions, all data displayed as local, stored as UTC">
+      <created>1670706010784</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1670706010784</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -440,10 +472,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Started the code for login controller and app" />
-    <MESSAGE value="Created login page functions and actions" />
-    <MESSAGE value="Created and started implementing logger." />
-    <MESSAGE value="Created next set of app files" />
     <MESSAGE value="removed children tags and javafx versioning" />
     <MESSAGE value="Added functionality to all buttons on the home page" />
     <MESSAGE value="Added functionality to all cancel and quit buttons" />
@@ -465,7 +493,11 @@
     <MESSAGE value="Added columns and fx:id" />
     <MESSAGE value="Might be missing something here..." />
     <MESSAGE value="Oh gosh, so many changes. I've really slacked on this commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="Oh gosh, so many changes. I've really slacked on this commit." />
+    <MESSAGE value="A little cleanup" />
+    <MESSAGE value="A little more cleanup" />
+    <MESSAGE value="Updated Todo list on README" />
+    <MESSAGE value="Added time conversion functions, all data displayed as local, stored as UTC" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added time conversion functions, all data displayed as local, stored as UTC" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

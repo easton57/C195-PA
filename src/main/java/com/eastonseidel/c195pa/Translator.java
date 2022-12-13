@@ -179,6 +179,19 @@ public class Translator {
         ln.put("countryPromptText", "Select a Country");
         ln.put("divisionPromptText", "Select a Division");
 
+        // Save appointment validation Errors
+        // Time format validation
+        ln.put("timeFormatHeader", "Time Format Error!");
+        ln.put("timeFormatText", "Please format your input times like the following examples: 12:00 pm or 4:00 am");
+
+        // Time conflict
+        ln.put("conflictingApptHeader", "Conflicting Appointment!");
+        ln.put("conflictingApptText", "Please verify your times aren't overlapping and try again");
+
+        // outside of business hours
+        ln.put("businessHoursHeader", "Out of Business Hours!");
+        ln.put("buisnessHoursText", "Please verify that your appointment is scheduled between 8am and 10pm EST");
+
     }
 
     public static void French() {
@@ -353,6 +366,18 @@ public class Translator {
         // Prompt text
         ln.put("countryPromptText", "Choisissez un pays");
         ln.put("divisionPromptText", "Sélectionnez un département");
+
+        // Time format validation
+        ln.put("timeFormatHeader", "Erreur de format d'heure!");
+        ln.put("timeFormatText", "Veuillez formater vos heures d'entrée comme les exemples suivants: 12:00 pm or 4:00 am");
+
+        // Time conflict
+        ln.put("conflictingApptHeader", "Rendez-vous conflictuel!");
+        ln.put("conflictingApptText", "Veuillez vérifier que vos heures ne se chevauchent pas et réessayer");
+
+        // outside of business hours
+        ln.put("businessHoursHeader", "En dehors des heures d'ouverture!");
+        ln.put("buisnessHoursText", "Veuillez vérifier que votre rendez-vous est prévu entre 8am et 10pm EST");
 
     }
 }

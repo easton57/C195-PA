@@ -14,6 +14,9 @@ import java.io.IOException;
 import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -225,10 +228,10 @@ public class AppointmentActionsController {
         ComboBox appointmentContactIdComboBoxBad = (ComboBox) scene.lookup("#appointmentContactIdComboBox");
 
         // Get the date and time setup
-        LocalDate startDate = oldAppointment.getStart().toLocalDateTime().toLocalDate();
-        LocalDate endDate = oldAppointment.getEnd().toLocalDateTime().toLocalDate();
-        String startTime = new SimpleDateFormat("HH:mm").format(oldAppointment.getStart());
-        String endTime = new SimpleDateFormat("HH:mm").format(oldAppointment.getEnd());
+        LocalDate startDate = LocalDate.parse(oldAppointment.getStart(), DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss a"));
+        LocalDate endDate = LocalDate.parse(oldAppointment.getEnd(), DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss a"));
+        String startTime = oldAppointment.getStart().split(" ")[1] + " " + oldAppointment.getStart().split(" ")[2];
+        String endTime = oldAppointment.getEnd().split(" ")[1] + " " + oldAppointment.getEnd().split(" ")[2];
 
         // fill in the old info
         appointmentIdInputBad.setText(Integer.toString(oldAppointment.getAppointmentId()));
@@ -260,12 +263,57 @@ public class AppointmentActionsController {
                     "jdbc:mysql://localhost:3306/client_schedule",
                     "sqlUser", "Passw0rd!"
             );
+            Timestamp start;
+            Timestamp end;
+            Statement statement;
+            statement = localDb.createStatement();
+            boolean writeResult;
+            ResultSet resultSet;
+            resultSet = statement.executeQuery(
+                    "SELECT Start, End, Appointment_ID FROM appointments"
+            );
 
-            // Some Time conversion/setup
-            Timestamp start = Appointment.convertToUtc(Timestamp.valueOf(startDateInput.getValue() + " " + startTimeInput.getText() + ":00"), "local");
-            Timestamp end = Appointment.convertToUtc(Timestamp.valueOf(endDateInput.getValue() + " " + endTimeInput.getText() + ":00"), "local");
+            try {
+                start = Appointment.convertToUtc(startDateInput.getValue() + " " + startTimeInput.getText(), "local");
+                end = Appointment.convertToUtc(endDateInput.getValue() + " " + endTimeInput.getText(), "local");
+            }
+            catch (Exception e) {
+                String errorString = Translator.ln.get("timeFormatText");
+                Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+                errorAlert.setHeaderText(Translator.ln.get("timeFormatHeader"));
+                errorAlert.setContentText(errorString);
+                errorAlert.showAndWait();
+                return;
+            }
 
-            // Make sure there aren't any time conflicts
+            // Make sure the times are during business hours
+            Timestamp startEst = Appointment.convertFromUtcTimeStamp(start, "EST");
+            Timestamp endEst = Appointment.convertFromUtcTimeStamp(end, "EST");
+
+            // return without saving if the times aren't within business hours
+            if (!(8 <= startEst.toLocalDateTime().getHour() && endEst.toLocalDateTime().getHour() <= 22)) {
+                String errorString = Translator.ln.get("businessHoursText");
+                Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+                errorAlert.setHeaderText(Translator.ln.get("businessHoursHeader"));
+                errorAlert.setContentText(errorString);
+                errorAlert.showAndWait();
+                return;
+            }
+
+            // Make sure times aren't overlapping with another appointment
+            while (resultSet.next()) {
+                Timestamp dbStart = resultSet.getTimestamp("Start");
+                Timestamp dbEnd = resultSet.getTimestamp("End");
+
+                if (!(start.after(dbEnd) || end.before(dbStart)) && !appointmentIdInput.getText().equals(resultSet.getString("Appointment_ID"))) {
+                    String errorString = Translator.ln.get("conflictingApptText");
+                    Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+                    errorAlert.setHeaderText(Translator.ln.get("conflictingApptHeader"));
+                    errorAlert.setContentText(errorString);
+                    errorAlert.showAndWait();
+                    return;
+                }
+            }
 
             if (title.contains("Edit") || title.contains("Modifier")) {
                 sqlStatement = "UPDATE appointments SET Title=\"" + appointmentTitleInput.getText() +
@@ -277,7 +325,7 @@ public class AppointmentActionsController {
                         "\", Customer_ID=" + Integer.parseInt(appointmentCustomerIdInput.getText()) +
                         ", User_ID=" + Integer.parseInt(appointmentUserIdInput.getText()) +
                         ", Contact_ID=" + Integer.parseInt(appointmentContactIdComboBox.getValue().toString()) +
-                        " WHERE Customer_ID=" + Integer.parseInt(appointmentIdInput.getText()) + ";";
+                        " WHERE Appointment_ID=" + Integer.parseInt(appointmentIdInput.getText()) + ";";
             }
             else {
                 sqlStatement = "INSERT INTO appointments(Title, Description, Location, Type, Start, End, Customer_ID, User_ID, Contact_ID)" +
@@ -287,15 +335,11 @@ public class AppointmentActionsController {
                         ", " + Integer.parseInt(appointmentUserIdInput.getText()) + ");";
             }
 
-            Statement statement;
-            statement = localDb.createStatement();
-            boolean result;
-            result = statement.execute(sqlStatement);
-
+            writeResult = statement.execute(sqlStatement);
             statement.close();
             localDb.close();
 
-            if (!result) {
+            if (!writeResult) {
                 // close the active window
                 Node node = (Node) event.getSource();
                 Stage active = (Stage) node.getScene().getWindow();
@@ -339,6 +383,7 @@ public class AppointmentActionsController {
     protected void onCancelButtonClick(ActionEvent event) {
         // clear contact ID
         contactIds = new LinkedList<>();
+        ScheduleController.appointmentTableRefresh();
 
         // close the active window
         Node node = (Node) event.getSource();
