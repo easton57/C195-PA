@@ -1,12 +1,16 @@
 package com.eastonseidel.c195pa;
 
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class HomeController {
 
@@ -26,6 +30,31 @@ public class HomeController {
         homeStage.setTitle(Translator.ln.get("homeTitle"));
         homeStage.setScene(scene);
         homeStage.show();
+
+        // Check for any incoming appointments
+        ObservableList<Appointment> warning = AppointmentActionsController.appointmentWarning();
+        LocalDateTime now = LocalDateTime.now();
+
+        if (!warning.isEmpty()) {
+            for (Appointment i : warning) {
+                LocalDateTime startTime = LocalDateTime.parse(i.getStart(), DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss a"));
+
+                if (startTime.isBefore(now.plusMinutes(15)) && startTime.isAfter(now)) {
+                    Alert apptAlert = new Alert(Alert.AlertType.INFORMATION);
+                    apptAlert.setHeaderText(Translator.ln.get("15MinuteHeader"));
+                    apptAlert.setContentText(Translator.ln.get("15MinuteText") +
+                            "ID: " + i.getAppointmentId() +
+                            "\n" + Translator.ln.get("startDateTime") + ": " + i.getStart());
+                    apptAlert.showAndWait();
+                }
+            }
+        }
+        else {
+            Alert apptAlert = new Alert(Alert.AlertType.INFORMATION);
+            apptAlert.setHeaderText(Translator.ln.get("NoApptHeader"));
+            apptAlert.setContentText(Translator.ln.get("NoApptText"));
+            apptAlert.showAndWait();
+        }
     }
 
     /**

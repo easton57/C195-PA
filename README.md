@@ -110,23 +110,23 @@ Performance Assessment for Software II at WGU
 ~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  entering an incorrect username and password~~
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.  Write code to provide an alert when there is an appointment within 15 minutes of the user’s log-in. A custom message should be displayed in the user interface and include the appointment ID, date, and time. If the user does not have any appointments within 15 minutes of logging in, display a custom message in the user interface indicating there are no upcoming appointments.
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.  Write code to provide an alert when there is an appointment within 15 minutes of the user’s log-in. A custom message should be displayed in the user interface and include the appointment ID, date, and time. If the user does not have any appointments within 15 minutes of logging in, display a custom message in the user interface indicating there are no upcoming appointments.~~
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Note: Since evaluation may be testing your application outside of business hours, your alerts must be robust enough to trigger an appointment within 15 minutes of the local time set on the user’s computer, which may or may not be EST.
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Note: Since evaluation may be testing your application outside of business hours, your alerts must be robust enough to trigger an appointment within 15 minutes of the local time set on the user’s computer, which may or may not be EST.~~
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f.  Write code that generates accurate information in each of the following reports and will display the reports in the user interface:
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f.  Write code that generates accurate information in each of the following reports and will display the reports in the user interface:
 
 
-~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Note: You do not need to save and print the reports to a file or provide a screenshot.~~
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Note: You do not need to save and print the reports to a file or provide a screenshot.
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  the total number of customer appointments by type and month
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  the total number of customer appointments by type and month
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  a schedule for each contact in your organization that includes appointment ID, title, type and description, start date and time, end date and time, and customer ID
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  a schedule for each contact in your organization that includes appointment ID, title, type and description, start date and time, end date and time, and customer ID
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  an additional report of your choice that is different from the two other required reports in this prompt and from the user log-in date and time stamp that will be tracked in part C
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  an additional report of your choice that is different from the two other required reports in this prompt and from the user log-in date and time stamp that will be tracked in part C
 
 
 B.  Write at least two different lambda expressions to improve your code.

@@ -192,6 +192,18 @@ public class Translator {
         ln.put("businessHoursHeader", "Out of Business Hours!");
         ln.put("buisnessHoursText", "Please verify that your appointment is scheduled between 8am and 10pm EST");
 
+        // 15 minute warning
+        ln.put("15MinuteHeader", "15 Minutes!");
+        ln.put("15MinuteText", "You have an appointment within the next 15 minutes for:\n");
+
+        // no appointments
+        ln.put("NoApptHeader", "No Appointment");
+        ln.put("NoApptText", "No upcoming appointments");
+
+        // Reports buttons
+        ln.put("apptsByType", "Total Appt. By Type");
+        ln.put("apptsByType", "Total Appt. By Type");
+        ln.put("apptsByType", "Total Appt. By Type");
     }
 
     public static void French() {
@@ -379,5 +391,12 @@ public class Translator {
         ln.put("businessHoursHeader", "En dehors des heures d'ouverture!");
         ln.put("buisnessHoursText", "Veuillez vérifier que votre rendez-vous est prévu entre 8am et 10pm EST");
 
+        // 15 minute warning
+        ln.put("15MinuteHeader", "15 Minutes!");
+        ln.put("15MinuteText", "Vous avez un rendez-vous dans les 15 prochaines minutes pour:\n");
+
+        // no appointments
+        ln.put("NoApptHeader", "Pas de rendez-vous");
+        ln.put("NoApptText", "Aucun rendez-vous à venir");
     }
 }

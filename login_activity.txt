@@ -1701,3 +1701,64 @@ java.time.format.DateTimeParseException: Text '2022-12-07 04:00:00PM' could not 
 [2022-12-13 10:03:39] [INFO] App launched successfully! 
 [2022-12-13 10:03:43] [INFO] Successfully connected to DB 
 [2022-12-13 10:03:43] [INFO] Log in successful by: admin 
+[2022-12-13 16:52:31] [INFO] App launched successfully! 
+[2022-12-13 16:52:35] [INFO] Successfully connected to DB 
+[2022-12-13 16:52:35] [INFO] Log in successful by: admin 
+[2022-12-13 16:52:35] [WARNING] Log in failed: Invalid Username 
+[2022-12-13 16:52:44] [INFO] App closed 
+[2022-12-13 16:52:57] [INFO] App launched successfully! 
+[2022-12-13 16:53:01] [INFO] Successfully connected to DB 
+[2022-12-13 16:53:01] [INFO] Log in successful by: admin 
+[2022-12-13 16:53:01] [WARNING] Log in failed: Invalid Username 
+[2022-12-13 16:53:07] [INFO] App closed 
+[2022-12-13 16:53:24] [INFO] App launched successfully! 
+[2022-12-13 16:53:27] [INFO] Successfully connected to DB 
+[2022-12-13 16:53:27] [INFO] Log in successful by: admin 
+[2022-12-13 16:53:48] [WARNING] Log in failed: Invalid Username 
+[2022-12-13 16:54:17] [INFO] App launched successfully! 
+[2022-12-13 16:54:21] [INFO] Successfully connected to DB 
+[2022-12-13 16:54:21] [INFO] Log in successful by: admin 
+[2022-12-13 16:55:03] [INFO] App closed 
+[2022-12-13 16:55:06] [INFO] App launched successfully! 
+[2022-12-13 16:55:10] [INFO] Successfully connected to DB 
+[2022-12-13 16:55:10] [INFO] Log in successful by: admin 
+[2022-12-13 16:56:14] [INFO] App launched successfully! 
+[2022-12-13 16:56:24] [INFO] Successfully connected to DB 
+[2022-12-13 16:56:24] [INFO] Log in successful by: admin 
+[2022-12-13 16:56:59] [INFO] App closed 
+[2022-12-13 16:57:03] [INFO] App launched successfully! 
+[2022-12-13 16:57:06] [INFO] Successfully connected to DB 
+[2022-12-13 16:57:06] [INFO] Log in successful by: admin 
+[2022-12-13 16:57:56] [INFO] App launched successfully! 
+[2022-12-13 16:58:00] [INFO] Successfully connected to DB 
+[2022-12-13 16:58:00] [INFO] Log in successful by: admin 
+[2022-12-13 16:59:19] [INFO] App closed 
+[2022-12-13 16:59:23] [INFO] App launched successfully! 
+[2022-12-13 16:59:26] [INFO] Successfully connected to DB 
+[2022-12-13 16:59:26] [INFO] Log in successful by: admin 
+[2022-12-13 16:59:37] [INFO] App closed 
+[2022-12-13 17:01:12] [INFO] App launched successfully! 
+[2022-12-13 17:01:16] [INFO] Successfully connected to DB 
+[2022-12-13 17:01:16] [INFO] Log in successful by: admin 
+[2022-12-13 17:06:58] [INFO] App launched successfully! 
+[2022-12-13 17:07:03] [INFO] Successfully connected to DB 
+[2022-12-13 17:07:03] [INFO] Log in successful by: admin 
+[2022-12-13 17:07:44] [INFO] App closed 
+[2022-12-13 17:07:49] [INFO] App launched successfully! 
+[2022-12-13 17:07:53] [INFO] Successfully connected to DB 
+[2022-12-13 17:07:53] [INFO] Log in successful by: admin 
+[2022-12-13 17:08:03] [INFO] App closed 
+[2022-12-13 17:08:41] [INFO] App launched successfully! 
+[2022-12-13 17:08:45] [INFO] Successfully connected to DB 
+[2022-12-13 17:08:45] [INFO] Log in successful by: admin 
+[2022-12-13 17:09:26] [INFO] App closed 
+[2022-12-13 17:09:30] [INFO] App launched successfully! 
+[2022-12-13 17:09:33] [INFO] Successfully connected to DB 
+[2022-12-13 17:09:33] [INFO] Log in successful by: admin 
+[2022-12-13 17:10:25] [INFO] App closed 
+[2022-12-13 17:15:23] [INFO] App launched successfully! 
+[2022-12-13 17:15:26] [INFO] Login Cancelled 
+[2022-12-13 17:15:32] [INFO] App launched successfully! 
+[2022-12-13 17:15:36] [INFO] Successfully connected to DB 
+[2022-12-13 17:15:36] [INFO] Log in successful by: admin 
+[2022-12-13 17:15:47] [INFO] App closed 

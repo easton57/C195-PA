@@ -1,6 +1,7 @@
 package com.eastonseidel.c195pa;
 
 import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -207,6 +208,55 @@ public class AppointmentActionsController {
             saveButton.setPrefWidth(100);
             saveButton.setLayoutX(190);
         }
+    }
+
+    /**
+     * Class to warn if there's an appointment within 15 minutes of logging on
+     */
+    public static ObservableList<Appointment> appointmentWarning() {
+        Connection localDb;
+        ObservableList<Appointment> appointments = FXCollections.observableArrayList();
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            localDb = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/client_schedule",
+                    "sqlUser", "Passw0rd!"
+            );
+
+            Statement statement;
+            statement = localDb.createStatement();
+            ResultSet resultSet;
+            resultSet = statement.executeQuery(
+                    "SELECT * FROM appointments WHERE WEEK(Start) = WEEK(CURRENT_DATE())"
+            );
+
+            while (resultSet.next()) {
+                // Add customer to array
+                Appointment temp = new Appointment(resultSet.getInt("Appointment_ID"), resultSet.getString("Title"),
+                        resultSet.getString("Description"), resultSet.getString("Location"), resultSet.getString("Type"),
+                        resultSet.getTimestamp("Start"), resultSet.getTimestamp("End"), resultSet.getInt("Customer_ID"),
+                        resultSet.getInt("User_ID"), resultSet.getInt("Contact_ID"));
+
+                appointments.add(temp);
+            }
+            resultSet.close();
+            statement.close();
+            localDb.close();
+        } catch (Exception exception) {
+            String errorString = Translator.ln.get("dbFailed") + exception;
+
+            // Log the error
+            SchedulerLogger.addToLog(errorString, "severe");
+
+            // Alert that an error occured
+            // Create a popup
+            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+            errorAlert.setHeaderText("Database Error!");
+            errorAlert.setContentText(errorString);
+            errorAlert.showAndWait();
+        }
+
+        return appointments;
     }
 
     /**
