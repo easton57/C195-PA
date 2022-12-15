@@ -48,6 +48,7 @@ public class ScheduleController {
 
     /**
      * Code for the Home Screen window for the application
+     * @exception IOException required by javafx
      */
     public static void ScheduleWindow() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(ScheduleController.class.getResource("schedule-view.fxml"));
@@ -116,7 +117,7 @@ public class ScheduleController {
     }
 
     /**
-     * Method to refresh the table data after edits
+     * Creates the table data and populates the arrays for the schedule
      */
     public static void appointmentTableCreation() {
         // Create the observable list for the months array
@@ -265,7 +266,7 @@ public class ScheduleController {
     }
 
     /**
-     * Method to refresh the table data after edits
+     * Method to refresh the table and retrieve fresh data from the database after edits
      */
     public static void appointmentTableRefresh() {
         Connection localDb;
@@ -349,6 +350,7 @@ public class ScheduleController {
 
     /**
      * Method to close the pop-up
+     * @param event used to close the window without further action
      */
     @FXML
     protected void onCancelButtonClick(ActionEvent event) {
@@ -359,7 +361,7 @@ public class ScheduleController {
     }
 
     /**
-     * Method for creating a new customer
+     * Opens the customer dialog to create and save a new customer record
      */
     @FXML
     protected void onNewButtonClick() throws IOException {
@@ -374,7 +376,7 @@ public class ScheduleController {
     }
 
     /**
-     * Method for editing a customer
+     * Edits the selected customer in the table
      */
     @FXML
     protected void onEditButtonClick() {
@@ -401,7 +403,7 @@ public class ScheduleController {
     }
 
     /**
-     * Method for deleting a customer
+     * Deletes the selected customer in the table
      */
     @FXML
     protected void onDeleteButtonClick() {
@@ -485,6 +487,9 @@ public class ScheduleController {
         }
     }
 
+    /**
+     * Changes the table schedule to show the previous week or month
+     */
     @FXML
     protected void onLeftArrowClick() {
         try {
@@ -530,6 +535,9 @@ public class ScheduleController {
         }
     }
 
+    /**
+     * Changes the table schedule to show the next week or month
+     */
     @FXML
     protected void onRightArrowClick() {
         try {
@@ -575,6 +583,9 @@ public class ScheduleController {
         }
     }
 
+    /**
+     * Method to change the shown schedule to be based on month opposed to week
+     */
     @FXML
     protected void onMonthRadioClick() {
         // Toggle the other radio
@@ -589,6 +600,9 @@ public class ScheduleController {
         rangeText.setText(monthNames[now.getMonthValue()-1]);
     }
 
+    /**
+     * Method to change the shown schedule to be based on week opposed to month
+     */
     @FXML
     protected void onWeekRadioClick() {
         // Toggle the other radio

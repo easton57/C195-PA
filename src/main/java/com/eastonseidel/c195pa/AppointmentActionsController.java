@@ -212,6 +212,7 @@ public class AppointmentActionsController {
 
     /**
      * Class to warn if there's an appointment within 15 minutes of logging on
+     * @return ObservableList with appointment details for popup
      */
     public static ObservableList<Appointment> appointmentWarning() {
         Connection localDb;
@@ -260,7 +261,9 @@ public class AppointmentActionsController {
     }
 
     /**
-     * Method to support the bad workaround hhhhhh
+     * Method to pull javafx elements from the scene opposed to using FXML
+     * @param scene the scene to pull the elements from
+     * @param oldAppointment old data to populate the fields and other inputs
      */
     private static void pageElements(Scene scene, Appointment oldAppointment) {
         // Setup the input fields
@@ -299,7 +302,8 @@ public class AppointmentActionsController {
     }
 
     /**
-     * Method for saving the customer
+     * Method for saving the customer to the database
+     * @param event used to close the window after saving
      */
     @FXML
     protected void onSaveButtonClick(ActionEvent event) {
@@ -428,6 +432,7 @@ public class AppointmentActionsController {
 
     /**
      * Method to close the pop-up
+     * @param event used to close the window without further action
      */
     @FXML
     protected void onCancelButtonClick(ActionEvent event) {

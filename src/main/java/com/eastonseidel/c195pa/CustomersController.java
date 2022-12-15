@@ -36,6 +36,7 @@ public class CustomersController {
 
     /**
      * Code for the Home Screen window for the application
+     * @exception IOException required by javafx
      */
     public static void CustomerWindow() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(CustomersController.class.getResource("customers-view.fxml"));
@@ -131,8 +132,7 @@ public class CustomersController {
                 // Add customer to table
                 customers.add(new Customer(resultSet.getInt("Customer_ID"), resultSet.getString("Customer_Name"),
                         resultSet.getString("Address"), resultSet.getString("Postal_Code"), resultSet.getString("Phone"),
-                        resultSet.getString("Create_Date"), resultSet.getString("Created_By"), resultSet.getString("Last_Update"),
-                        resultSet.getString("Last_Updated_By"), resultSet.getInt("Division_ID")));
+                        resultSet.getInt("Division_ID")));
             }
             resultSet.close();
             statement.close();
@@ -154,6 +154,7 @@ public class CustomersController {
 
     /**
      * Method to close the pop-up
+     * @param event used to close the window without further action
      */
     @FXML
     protected void onCancelButtonClick(ActionEvent event) {
@@ -166,7 +167,7 @@ public class CustomersController {
     }
 
     /**
-     * Method for creating a new customer
+     * Opens the dialogue to create a new customer record
      */
     @FXML
     protected void onNewButtonClick() throws IOException {
@@ -181,7 +182,7 @@ public class CustomersController {
     }
 
     /**
-     * Method for editing a customer
+     * Edits the selected customer
      */
     @FXML
     protected void onEditButtonClick() {
@@ -208,7 +209,7 @@ public class CustomersController {
     }
 
     /**
-     * Method for deleting a customer
+     * Deletes the selected customer from the application and database
      */
     @FXML
     protected void onDeleteButtonClick() {
@@ -291,6 +292,10 @@ public class CustomersController {
         }
     }
 
+    /**
+     * Detect and write changes to the database and other data storage on edits to the cell
+     * @param t the location of the cell that was edited
+     */
     @FXML
     protected void onEditCustomerColumn(TableColumn.CellEditEvent<Customer, String> t) {
         // Set the new value to the customer array
@@ -345,6 +350,10 @@ public class CustomersController {
         }
     }
 
+    /**
+     * Detect and write changes to the database and other data storage on edits to the cell
+     * @param t the location of the cell that was edited
+     */
     @FXML
     protected void onEditAddressColumn(TableColumn.CellEditEvent<Customer, String> t) {
         // Set the new value to the customer array
@@ -402,6 +411,10 @@ public class CustomersController {
         customerTable.refresh();
     }
 
+    /**
+     * Detect and write changes to the database and other data storage on edits to the cell
+     * @param t the location of the cell that was edited
+     */
     @FXML
     protected void onEditPostalCodeColumn(TableColumn.CellEditEvent<Customer, String> t) {
         // Set the new value to the customer array
@@ -456,6 +469,10 @@ public class CustomersController {
         }
     }
 
+    /**
+     * Detect and write changes to the database and other data storage on edits to the cell
+     * @param t the location of the cell that was edited
+     */
     @FXML
     protected void onEditPhoneColumn(TableColumn.CellEditEvent<Customer, String> t) {
         // Set the new value to the customer array

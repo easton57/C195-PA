@@ -29,6 +29,10 @@ public class LoginController {
 
     private final Hashtable<String, String> creds = new Hashtable<>();
 
+    /**
+     * class to launch the login window for the application
+     * @throws IOException required by javafx
+     */
     public static void LoginWindow() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(LoginController.class.getResource("login-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
@@ -76,7 +80,7 @@ public class LoginController {
     }
 
     /**
-     * Method for the cancel button
+     * Method for the cancel button and quit the program
      */
     @FXML
     protected void onCancelButtonClick() {
@@ -88,6 +92,7 @@ public class LoginController {
 
     /**
      * Method for the login button
+     * @param event used to close the window after a successful login
      */
     @FXML
     protected void onLoginButtonClick(ActionEvent event) {

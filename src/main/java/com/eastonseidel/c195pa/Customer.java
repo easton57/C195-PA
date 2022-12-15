@@ -16,26 +16,27 @@ public class Customer {
     private String modifiedAddress;
     private String postalCode;
     private String phone;
-    private String creationDate;
-    private String createdBy;
-    private String lastUpdate;
-    private String lastUpdatedBy;
     private int divisionId;
     private final static Dictionary<Integer, String> divisionIdToCountry = new Hashtable<>();
     private final static Dictionary<Integer, String> countryIds = new Hashtable<>();
     private final static Dictionary<Integer, String> divisionIds = new Hashtable<>();
     private final static Dictionary<String, Integer> divisionNames = new Hashtable<>();
 
-    public Customer(int id, String name, String address, String postalCode, String phone, String creationDate, String createdBy, String lastUpdate, String lastUpdatedBy, int divisionId) {
+    /**
+     * Constructor for customer object type
+     * @param id
+     * @param name
+     * @param address
+     * @param postalCode
+     * @param phone
+     * @param divisionId
+     */
+    public Customer(int id, String name, String address, String postalCode, String phone, int divisionId) {
         this.customerId = id;
         this.name = name;
         this.address = address;
         this.postalCode = postalCode;
         this.phone = phone;
-        this.creationDate = creationDate;
-        this.createdBy = createdBy;
-        this.lastUpdate = lastUpdate;
-        this.lastUpdatedBy = lastUpdatedBy;
         this.divisionId = divisionId;
 
         // set the modified Address up
@@ -51,26 +52,42 @@ public class Customer {
         }
     }
 
+    /**
+     * Retriever for customerId
+     * @return customerId
+     */
     public int getCustomerId() {
         return customerId;
     }
 
-    public void setCustomerId(int customerId) {
-        this.customerId = customerId;
-    }
-
+    /**
+     * Retriever for name
+     * @return name
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * Setter for name
+     * @param name new name for object
+     */
     public void setName(String name) {
         this.name = name;
     }
 
+    /**
+     * Retriever for address
+     * @return address
+     */
     public String getAddress() {
         return address;
     }
 
+    /**
+     * Setter for address
+     * @param address new address for object
+     */
     public void setAddress(String address) {
         this.address = address;
 
@@ -86,66 +103,65 @@ public class Customer {
         }
     }
 
+    /**
+     * Retriever for postalCode
+     * @return postalCode
+     */
     public String getPostalCode() {
         return postalCode;
     }
 
+    /**
+     * Setter for postalCode
+     * @param postalCode new postalCode for object
+     */
     public void setPostalCode(String postalCode) {
         this.postalCode = postalCode;
     }
 
+    /**
+     * Retriever for phone
+     * @return phone
+     */
     public String getPhone() {
         return phone;
     }
 
+    /**
+     * Setter for phone
+     * @param phone new phone for object
+     */
     public void setPhone(String phone) {
         this.phone = phone;
     }
 
-    public String getCreationDate() {
-        return creationDate;
-    }
-
-    public void setCreationDate(String creationDate) {
-        this.creationDate = creationDate;
-    }
-
-    public String getCreatedBy() {
-        return createdBy;
-    }
-
-    public void setCreatedBy(String createdBy) {
-        this.createdBy = createdBy;
-    }
-
-    public String getLastUpdate() {
-        return lastUpdate;
-    }
-
-    public void setLastUpdate(String lastUpdate) {
-        this.lastUpdate = lastUpdate;
-    }
-
-    public String getLastUpdatedBy() {
-        return lastUpdatedBy;
-    }
-
-    public void setLastUpdatedBy(String lastUpdatedBy) {
-        this.lastUpdatedBy = lastUpdatedBy;
-    }
-
+    /**
+     * Retriever for id
+     * @return id
+     */
     public int getDivisionId() {
         return divisionId;
     }
 
+    /**
+     * Setter for id
+     * @param id new id for object
+     */
     public void setDivisionId(int id) {
         this.divisionId = id;
     }
 
+    /**
+     * Retriever for modified address
+     * @return the modified address with the additional text
+     */
     public String getModifiedAddress() {
         return modifiedAddress;
     }
 
+    /**
+     * Method for getting the division and country id's from the database
+     */
     private void getDivisions() {
         // grab the id's and divisions from the db
         Connection localDb;

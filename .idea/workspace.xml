@@ -4,16 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="867856f0-013f-4852-b0f1-1ecf452cb8ba" name="Changes" comment="Some house keeping">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/OpenedReportController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa/opened-report-view.fxml" afterDir="false" />
+    <list default="true" id="867856f0-013f-4852-b0f1-1ecf452cb8ba" name="Changes" comment="Created reports page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login_activity.txt" beforeDir="false" afterPath="$PROJECT_DIR$/login_activity.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/Appointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/AppointmentActionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/AppointmentActionsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomerActionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomerActionsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/OpenedReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/OpenedReportController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/ReportsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/ReportsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/ScheduleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/ScheduleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/Scheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/Scheduler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/Translator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/Translator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa/reports-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/eastonseidel/c195pa/reports-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +199,8 @@
       <workItem from="1670638601138" duration="8000" />
       <workItem from="1670698118001" duration="10737000" />
       <workItem from="1670900650502" duration="6000000" />
-      <workItem from="1670944263773" duration="32574000" />
+      <workItem from="1670944263773" duration="33820000" />
+      <workItem from="1671081965500" duration="2498000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Project Commit">
       <created>1664908358832</created>
@@ -476,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670992799759</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Created reports page">
+      <created>1671081023520</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1671081023520</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -494,7 +507,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added controllers and basic functionality to" />
     <MESSAGE value="Created separate controllers for the login and the initializer, added locale to login page, created files for translator." />
     <MESSAGE value="Login page now translates to french based on system settings (hopefully)" />
     <MESSAGE value="Home page bilingual" />
@@ -519,7 +531,8 @@
     <MESSAGE value="Added time input validation, business hour verification, and appointment overlap verification." />
     <MESSAGE value="Added 15 minute warning when logging in" />
     <MESSAGE value="Some house keeping" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some house keeping" />
+    <MESSAGE value="Created reports page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created reports page" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

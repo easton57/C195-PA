@@ -21,6 +21,7 @@ public class ReportsController {
 
     /**
      * Code for the Home Screen window for the application
+     * @exception IOException required by javafx
      */
     public static void ReportsWindow() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(ReportsController.class.getResource("reports-view.fxml"));
@@ -49,6 +50,7 @@ public class ReportsController {
 
     /**
      * Method to close the pop-up
+     * @param event used to close the window without further action
      */
     @FXML
     protected void onCancelButtonClick(ActionEvent event) {
@@ -60,6 +62,7 @@ public class ReportsController {
 
     /**
      * Method to close the pop-up
+     * @param event used to get the text of the string that was clicked for use in the selected report
      */
     @FXML
     protected void onButtonClick(ActionEvent event) throws IOException {

@@ -6,6 +6,9 @@ import java.util.Hashtable;
 public class Translator {
     public static Dictionary<String, String> ln = new Hashtable();
 
+    /**
+     * English settings for the program
+     */
     public static void English() {
         // Login Strings
         // username label
@@ -212,6 +215,9 @@ public class Translator {
         ln.put("totalAppt", "Total Appointments");
     }
 
+    /**
+     * French settings for the program
+     */
     public static void French() {
         // Login Strings
         // username label

@@ -11,13 +11,14 @@ import java.util.Locale;
 
 public class Scheduler extends Application {
 
+    /**
+     * Start Javafx
+     * @throws IOException required by javafx
+     */
     @Override
     public void start(Stage stage) throws IOException {
-        // test variable for french without needing to change system language for now
-        boolean frTest = false;
-
         // Get the locale and set the language
-        if (Locale.getDefault().getLanguage().contains("fr") || frTest)  //french
+        if (Locale.getDefault().getLanguage().contains("fr"))  //french
         {
             Translator.French();
         }

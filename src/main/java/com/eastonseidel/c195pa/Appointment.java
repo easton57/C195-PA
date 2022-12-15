@@ -18,6 +18,19 @@ public class Appointment {
     private int userId;
     private int contactId;
 
+    /**
+     * Constructor for the appointment object type
+     * @param appointmentId
+     * @param title
+     * @param description
+     * @param location
+     * @param type
+     * @param start
+     * @param end
+     * @param customerId
+     * @param userId
+     * @param contactId
+     */
     public Appointment(int appointmentId, String title, String description, String location, String type, Timestamp start, Timestamp end, int customerId, int userId, int contactId) {
         this.appointmentId = appointmentId;
         this.title = title;
@@ -31,86 +44,164 @@ public class Appointment {
         this.contactId = contactId;
     }
 
+    /**
+     * retriever for appointmentId
+     * @return appointmentId
+     */
     public int getAppointmentId() {
         return appointmentId;
     }
 
-    public void setAppointmentId(int appointmentId) {
-        this.appointmentId = appointmentId;
-    }
-
+    /**
+     * retriever for title
+     * @return title
+     */
     public String getTitle() {
         return title;
     }
 
+    /**
+     * setter for title
+     * @param title for new appointment property value
+     */
     public void setTitle(String title) {
         this.title = title;
     }
 
+    /**
+     * retriever for description
+     * @return description
+     */
     public String getDescription() {
         return description;
     }
 
+    /**
+     * setter for description
+     * @param description for new appointment property value
+     */
     public void setDescription(String description) {
         this.description = description;
     }
 
+    /**
+     * retriever for location
+     * @return location
+     */
     public String getLocation() {
         return location;
     }
 
+    /**
+     * setter for location
+     * @param location for new appointment property value
+     */
     public void setLocation(String location) {
         this.location = location;
     }
 
+    /**
+     * retriever for type
+     * @return type
+     */
     public String getType() {
         return type;
     }
 
+    /**
+     * setter for type
+     * @param type for new appointment property value
+     */
     public void setType(String type) {
         this.type = type;
     }
 
+    /**
+     * retriever for start
+     * @return start
+     */
     public String getStart() {
         return start;
     }
 
+    /**
+     * setter for start
+     * @param start for new appointment property value
+     */
     public void setStart(Timestamp start) {
         this.start = convertFromUtc(start, "local");;
     }
 
+    /**
+     * retriever for end
+     * @return end
+     */
     public String getEnd() {
         return end;
     }
 
+    /**
+     * setter for end
+     * @param end for new appointment property value
+     */
     public void setEnd(Timestamp end) {
         this.end = convertFromUtc(end, "local");
     }
 
+    /**
+     * retriever for customerId
+     * @return customerId
+     */
     public int getCustomerId() {
         return customerId;
     }
 
+    /**
+     * setter for customerId
+     * @param customerId for new appointment property value
+     */
     public void setCustomerId(int customerId) {
         this.customerId = customerId;
     }
 
+    /**
+     * retriever for userId
+     * @return userId
+     */
     public int getUserId() {
         return userId;
     }
 
+    /**
+     * setter for userId
+     * @param userId for new appointment property value
+     */
     public void setUserId(int userId) {
         this.userId = userId;
     }
 
+    /**
+     * retriever for contactId
+     * @return contactId
+     */
     public int getContactId() {
         return contactId;
     }
 
+    /**
+     * setter for contactId
+     * @param contactId for new appointment property value
+     */
     public void setContactId(int contactId) {
             this.contactId = contactId;
     }
 
+    /**
+     * Converts timezone from UTC to a specified timezone
+     * @param oldTime to be converted
+     * @param timeZone timezone to be converted to
+     * @return converted time zone as string
+     */
     public static String convertFromUtc(Timestamp oldTime, String timeZone) {
         DateTimeFormatter outgoingFormat = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss a");
         ZoneId zoneId;
@@ -134,6 +225,12 @@ public class Appointment {
         return outgoingFormat.format(tempTime);
     }
 
+    /**
+     * Converts timezone from UTC to a specified timezone
+     * @param oldTime to be converted
+     * @param timeZone timezone to be converted to
+     * @return converted time zone as Timestamp
+     */
     public static Timestamp convertFromUtcTimeStamp(Timestamp oldTime, String timeZone) {
         DateTimeFormatter outgoingFormat = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         ZoneId zoneId;
@@ -158,6 +255,12 @@ public class Appointment {
         return Timestamp.valueOf(outgoingDate);
     }
 
+    /**
+     * converts a timezone from a specified timezone back to UTC for storing in the database
+     * @param oldTime to be converted
+     * @param timeZone timezone to be converted from
+     * @return converted time zone as Timestamp
+     */
     public static Timestamp convertToUtc(String oldTime, String timeZone) {
         DateTimeFormatter incomingFormat = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss a");
         DateTimeFormatter outgoingFormat = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");

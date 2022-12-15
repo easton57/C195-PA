@@ -33,7 +33,7 @@ public class OpenedReportController {
     private final String[] monthNames = { Translator.ln.get("January"),  Translator.ln.get("February"),  Translator.ln.get("March"),  Translator.ln.get("April"),  Translator.ln.get("May"),  Translator.ln.get("June"),  Translator.ln.get("July"),  Translator.ln.get("August"),  Translator.ln.get("September"),  Translator.ln.get("October"),  Translator.ln.get("November"),  Translator.ln.get("December") };
 
     /**
-     * Code for the Home Screen window for the application
+     * Used to launch the selected report and populate the table on the page
      */
     public static void OpenedReportWindow(String newSqlCommand, String newTitle) throws IOException {
         sqlCommand = newSqlCommand;
@@ -202,6 +202,7 @@ public class OpenedReportController {
 
     /**
      * Method to close the pop-up
+     * @param event used to close the window without further action
      */
     @FXML
     protected void onCancelButtonClick(ActionEvent event) {
@@ -213,29 +214,21 @@ public class OpenedReportController {
         active.close();
     }
 
+    /**
+     * class for reports table data objects
+     */
     public static class TableEvent {
 
-        private String left;
-        private String right;
+        private final String left;
+        private final String right;
 
+        /**
+         * Constructor for the table event class
+         * @param left column data for the left side
+         * @param right column data for the right side
+         */
         public TableEvent (String left, String right) {
             this.left = left;
-            this.right = right;
-        }
-
-        public String getLeft() {
-            return left;
-        }
-
-        public String getRight() {
-            return right;
-        }
-
-        public void setLeft(String left) {
-            this.left = left;
-        }
-
-        public void setRight(String right) {
             this.right = right;
         }
     }

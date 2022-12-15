@@ -22,6 +22,7 @@ public class HomeController {
 
     /**
      * Code for the Home Screen window for the application
+     * @exception IOException required by javafx
      */
     public static void HomeWindow() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HomeController.class.getResource("home-view.fxml"));
@@ -87,6 +88,7 @@ public class HomeController {
 
     /**
      * Method to open the Customers list dialog box
+     * @exception IOException required by javafx
      */
     @FXML
     protected void onCustomersButtonClick() throws IOException {
@@ -96,6 +98,7 @@ public class HomeController {
 
     /**
      * Method to open the reports window
+     * @exception IOException required by javafx
      */
     @FXML
     protected void onReportsButtonClick() throws IOException {
@@ -105,6 +108,7 @@ public class HomeController {
 
     /**
      * Method to open the schedule
+     * @exception IOException required by javafx
      */
     @FXML
     protected void onScheduleButtonClick() throws IOException {

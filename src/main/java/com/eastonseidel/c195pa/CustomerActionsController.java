@@ -234,7 +234,9 @@ public class CustomerActionsController {
     }
 
     /**
-     * Method to support the bad workaround hhhhhh
+     * Method to pull javafx elements from the scene opposed to using FXML
+     * @param scene the scene to pull the elements from
+     * @param oldCustomer old data to populate the fields and other inputs
      */
     private static void pageElements(Scene scene, Customer oldCustomer) {
         // Setup the input fields
@@ -275,7 +277,8 @@ public class CustomerActionsController {
     }
 
     /**
-     * Method for saving the customer
+     * Method for saving the customer to the database
+     * @param event used to close the dialogue after successfully saving
      */
     @FXML
     protected void onSaveButtonClick(ActionEvent event) {
@@ -352,6 +355,7 @@ public class CustomerActionsController {
 
     /**
      * Method to close the pop-up
+     * @param event used to close the window without further action
      */
     @FXML
     protected void onCancelButtonClick(ActionEvent event) {
@@ -366,7 +370,7 @@ public class CustomerActionsController {
     }
 
     /**
-     * Method for hopefully checking the combo box value and changing the available values in the other box
+     * Method for checking the combo box value and changing the available values in the division combobox
      */
     @FXML
     protected void onCountryComboBoxChange() {
