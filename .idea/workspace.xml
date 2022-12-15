@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="867856f0-013f-4852-b0f1-1ecf452cb8ba" name="Changes" comment="Javadoc for days" />
+    <list default="true" id="867856f0-013f-4852-b0f1-1ecf452cb8ba" name="Changes" comment="More javadoc">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/ScheduleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/ScheduleController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -186,6 +189,7 @@
       <workItem from="1670900650502" duration="6000000" />
       <workItem from="1670944263773" duration="33820000" />
       <workItem from="1671081965500" duration="2688000" />
+      <workItem from="1671084680077" duration="1172000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Project Commit">
       <created>1664908358832</created>
@@ -488,7 +492,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671084632850</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="More javadoc">
+      <created>1671085155707</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1671085155707</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +517,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Login page now translates to french based on system settings (hopefully)" />
     <MESSAGE value="Home page bilingual" />
     <MESSAGE value="Made some var's more friendly to use aside from their original purpose" />
     <MESSAGE value="Uploading stuff, files created, code added to view existing customers in a table and in the edit window." />
@@ -531,7 +541,8 @@
     <MESSAGE value="Some house keeping" />
     <MESSAGE value="Created reports page" />
     <MESSAGE value="Javadoc for days" />
-    <option name="LAST_COMMIT_MESSAGE" value="Javadoc for days" />
+    <MESSAGE value="More javadoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="More javadoc" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

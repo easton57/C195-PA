@@ -1925,3 +1925,7 @@ java.lang.NullPointerException: Cannot invoke "com.eastonseidel.c195pa.Appointme
 [2022-12-14 21:59:29] [INFO] Successfully connected to DB 
 [2022-12-14 21:59:29] [INFO] Log in successful by: admin 
 [2022-12-14 22:00:13] [INFO] App closed 
+[2022-12-14 22:32:19] [INFO] App launched successfully! 
+[2022-12-14 22:32:22] [INFO] Successfully connected to DB 
+[2022-12-14 22:32:22] [INFO] Log in successful by: admin 
+[2022-12-14 22:32:29] [INFO] App closed 

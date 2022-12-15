@@ -44,9 +44,9 @@ public class ScheduleController {
     @FXML private TableColumn<Appointment, String> userId;
     @FXML private TableColumn<Appointment, String> appointmentContact;
     @FXML private TableView<Appointment> appointmentTable;
-    private final static Dictionary<Integer, ObservableList<Appointment>> months = new Hashtable<>();
-    private final static Dictionary<Integer, ObservableList<Appointment>> weeks = new Hashtable<>();
-    private final static Dictionary<Integer, String> weekDates = new Hashtable<>();
+    private final static Hashtable<Integer, ObservableList<Appointment>> months = new Hashtable<>();
+    private final static Hashtable<Integer, ObservableList<Appointment>> weeks = new Hashtable<>();
+    private final static Hashtable<Integer, String> weekDates = new Hashtable<>();
     private final String[] monthNames = { Translator.ln.get("January"),  Translator.ln.get("February"),  Translator.ln.get("March"),  Translator.ln.get("April"),  Translator.ln.get("May"),  Translator.ln.get("June"),  Translator.ln.get("July"),  Translator.ln.get("August"),  Translator.ln.get("September"),  Translator.ln.get("October"),  Translator.ln.get("November"),  Translator.ln.get("December") };
 
     /**
@@ -135,7 +135,7 @@ public class ScheduleController {
         String tempKey = null;
         int weekDatesLocation = 0;
 
-        for (int i=0; i<calendar.getMaximum(Calendar.DAY_OF_YEAR)-1; i++) {
+        for (int i=0; i<calendar.getMaximum(Calendar.DAY_OF_YEAR) - 1; i++) {
             // Check for the beginning of the week
             if(tempKey == null) {
                 // Some small stuff
