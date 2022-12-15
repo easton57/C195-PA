@@ -135,10 +135,10 @@ B.  Write at least two different lambda expressions to improve your code.
 ~~C.  Write code that provides the ability to track user activity by recording all user log-in attempts, dates, and time stamps and whether each attempt was successful in a file named login_activity.txt. Append each new record to the existing file, and save to the root folder of the application.~~
 
 
-D.  Provide descriptive Javadoc comments for at least 70 percent of the classes and their members throughout the code, and create an index.html file of your comments to include with your submission based on Oracle’s guidelines for the Javadoc tool best practices. Your comments should include a justification for each lambda expression in the method where it is used.
+~~D.  Provide descriptive Javadoc comments for at least 70 percent of the classes and their members throughout the code, and create an index.html file of your comments to include with your submission based on Oracle’s guidelines for the Javadoc tool best practices. Your comments should include a justification for each lambda expression in the method where it is used.~~
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Note: The comments on the lambda need to be located in the comments describing the method where it is located for it to export properly.
+~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Note: The comments on the lambda need to be located in the comments describing the method where it is located for it to export properly.~~
 
 
 ~~E.  Create a README.txt file that includes the following information:~~
