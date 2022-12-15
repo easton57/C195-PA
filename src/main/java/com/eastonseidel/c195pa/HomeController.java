@@ -12,6 +12,9 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+/**
+ * Home page to house the options for the program
+ */
 public class HomeController {
 
     // FXML objects

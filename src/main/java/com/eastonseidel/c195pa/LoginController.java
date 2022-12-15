@@ -16,6 +16,9 @@ import java.sql.Statement;
 import java.time.ZoneId;
 import java.util.Hashtable;
 
+/**
+ * Queries the database to log in a user into the application w/ a specified account
+ */
 public class LoginController {
     @FXML
     private TextField username;

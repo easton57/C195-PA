@@ -20,6 +20,9 @@ import java.util.Hashtable;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Displays a selected report with the appropriate data in the tableview
+ */
 public class OpenedReportController {
     @FXML Button cancelButton;
     @FXML ComboBox contactIdBox;

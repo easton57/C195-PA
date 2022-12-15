@@ -9,6 +9,9 @@ import java.sql.Statement;
 import java.util.Dictionary;
 import java.util.Hashtable;
 
+/**
+ * Creates customer objects for use in assigning appointments
+ */
 public class Customer {
     private int customerId;
     private String name;

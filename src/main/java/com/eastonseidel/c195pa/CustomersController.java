@@ -19,6 +19,9 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
+/**
+ * Displays a list of currently saved users and actions that can be performed on them
+ */
 public class CustomersController {
 
     @FXML private Button cancelButton;

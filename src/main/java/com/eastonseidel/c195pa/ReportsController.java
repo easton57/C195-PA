@@ -12,6 +12,9 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * Houses options for various types of reports as well as the code to display those reports in a pop-up window
+ */
 public class ReportsController {
 
     @FXML Button rptByType;

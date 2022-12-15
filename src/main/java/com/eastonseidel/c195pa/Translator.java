@@ -3,6 +3,9 @@ package com.eastonseidel.c195pa;
 import java.util.Dictionary;
 import java.util.Hashtable;
 
+/**
+ * A class of dictionaries that stores the appropriate language text for the application and the users region
+ */
 public class Translator {
     public static Dictionary<String, String> ln = new Hashtable();
 

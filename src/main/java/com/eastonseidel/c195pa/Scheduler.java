@@ -8,7 +8,9 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Locale;
 
-
+/**
+ * Initializer for scheduler application
+ */
 public class Scheduler extends Application {
 
     /**

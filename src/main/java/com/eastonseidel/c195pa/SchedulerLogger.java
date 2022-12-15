@@ -4,6 +4,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.logging.*;
 
+/**
+ * Quick and simple logger for the scheduler application
+ */
 public class SchedulerLogger {
     // Define our logger
     static Handler fileHandler = null;

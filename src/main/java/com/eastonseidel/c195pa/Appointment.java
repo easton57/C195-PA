@@ -6,6 +6,9 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
+/**
+ * Creates appointment objects for use in displaying a schedule
+ */
 public class Appointment {
     private int appointmentId;
     private String title;

@@ -21,6 +21,9 @@ import java.time.format.DateTimeFormatter;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Allows for modification of appointment objects then saves them in the database
+ */
 public class AppointmentActionsController {
     @FXML private TextField appointmentIdInput;
     @FXML private TextField appointmentTitleInput;

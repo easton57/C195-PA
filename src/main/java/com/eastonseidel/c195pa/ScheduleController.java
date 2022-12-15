@@ -19,6 +19,9 @@ import java.io.IOException;
 import java.sql.*;
 import java.util.*;
 
+/**
+ * Controls the schedule pages for the program, grabs information from the application database and sets it up to be displayed
+ */
 public class ScheduleController {
 
     @FXML private RadioButton weekRadio;

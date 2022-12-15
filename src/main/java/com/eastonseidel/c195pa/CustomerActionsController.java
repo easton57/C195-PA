@@ -23,6 +23,9 @@ import java.util.Hashtable;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Allows modifications to be done to customer objects and writes them to the database
+ */
 public class CustomerActionsController {
     @FXML private Button saveButton;
     @FXML private Button cancelButton;
