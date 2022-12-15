@@ -42,7 +42,7 @@ public class LoginController {
     }
 
     /**
-     * Initializer class for text and language on the page
+     * Initializer method for text and language on the page
      */
     public void initialize() {
         // Set the location var based on the zoneID

@@ -201,9 +201,15 @@ public class Translator {
         ln.put("NoApptText", "No upcoming appointments");
 
         // Reports buttons
-        ln.put("apptsByType", "Total Appt. By Type");
-        ln.put("apptsByType", "Total Appt. By Type");
-        ln.put("apptsByType", "Total Appt. By Type");
+        ln.put("rptByType", "Total Appt. By Type");
+        ln.put("rptByContact", "Schedule By Contact");
+        ln.put("rptByMonth", "Total Appt. Per Month");
+
+        // report text
+        ln.put("monthType", "Month and Type");
+        ln.put("totalType", "Total By Type");
+
+        ln.put("totalAppt", "Total Appointments");
     }
 
     public static void French() {
@@ -398,5 +404,16 @@ public class Translator {
         // no appointments
         ln.put("NoApptHeader", "Pas de rendez-vous");
         ln.put("NoApptText", "Aucun rendez-vous à venir");
+
+        // Reports buttons
+        ln.put("rptByType", "Total rv par type");
+        ln.put("rptByContact", "Horaire par contact");
+        ln.put("rptByMonth", "Total rv par mois");
+
+        // report text
+        ln.put("monthType", "Mois et Type");
+        ln.put("totalType", "Total par Type");
+
+        ln.put("totalAppt", "Total Rendez-vous");
     }
 }
