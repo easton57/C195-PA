@@ -216,50 +216,60 @@ public class CustomersController {
      */
     @FXML
     protected void onDeleteButtonClick() {
-        Customer oldCustomer = null;
 
         // Get the table position and call the edit window
         try {
             TablePosition pos = customerTable.getSelectionModel().getSelectedCells().get(0);
             int row = pos.getRow();
 
-            oldCustomer = customerTable.getItems().get(row);
-        }
-        catch (Exception e) {
-            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
-            errorAlert.setHeaderText(Translator.ln.get("editCustomerTitleError"));
-            errorAlert.setContentText(Translator.ln.get("editCustomerErrorText") + e);
-            errorAlert.showAndWait();
+            final Customer oldCustomer = customerTable.getItems().get(row);
 
-            // Log the error
-            SchedulerLogger.addToLog("There was an error attempting to edit a customer" + e, "warning");
-        }
+            // Delete the selected user
+            Connection localDb;
+            try {
+                // Grab the country Id's
+                Class.forName("com.mysql.cj.jdbc.Driver");
+                localDb = DriverManager.getConnection(
+                        "jdbc:mysql://localhost:3306/client_schedule",
+                        "sqlUser", "Passw0rd!"
+                );
 
-        // Delete the selected user
-        Connection localDb;
-        try {
-            // Grab the country Id's
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            localDb = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/client_schedule",
-                    "sqlUser", "Passw0rd!"
-            );
+                Statement statement;
+                statement = localDb.createStatement();
+                boolean result;
+                assert oldCustomer != null;
+                result = statement.execute(
+                        "DELETE FROM customers WHERE Customer_ID=" + oldCustomer.getCustomerId()
+                );
 
-            Statement statement;
-            statement = localDb.createStatement();
-            boolean result;
-            assert oldCustomer != null;
-            result = statement.execute(
-                    "DELETE FROM customers WHERE Customer_ID=" + oldCustomer.getCustomerId()
-            );
+                if (!result) {
+                    // Refresh the table
+                    customers.removeIf( p -> (p.getCustomerId() == oldCustomer.getCustomerId()));
+                }
+                else {
+                    String errorString = Translator.ln.get("WriteCustomerError");
 
-            if (!result) {
-                // Refresh the table
-                customerTable.getItems().clear();
-                customerTableRefresh();
-            }
-            else {
-                String errorString = Translator.ln.get("WriteCustomerError");
+                    // Log the error
+                    SchedulerLogger.addToLog(errorString, "severe");
+
+                    // Alert that an error occured
+                    // Create a popup
+                    Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+                    errorAlert.setHeaderText("Database Error!");
+                    errorAlert.setContentText(errorString);
+                    errorAlert.showAndWait();
+                }
+
+                statement.close();
+                localDb.close();
+
+                // Notify of the action
+                Alert deleteSuccess = new Alert(Alert.AlertType.INFORMATION);
+                deleteSuccess.setHeaderText(Translator.ln.get("deleteCustomerTitleAlert"));
+                deleteSuccess.setContentText(Translator.ln.get("deleteCustomerAlertText") + oldCustomer.getName());
+                deleteSuccess.showAndWait();
+            } catch (Exception exception) {
+                String errorString = Translator.ln.get("dbFailed") + exception;
 
                 // Log the error
                 SchedulerLogger.addToLog(errorString, "severe");
@@ -271,27 +281,15 @@ public class CustomersController {
                 errorAlert.setContentText(errorString);
                 errorAlert.showAndWait();
             }
-
-            statement.close();
-            localDb.close();
-
-            // Notify of the action
-            Alert deleteSuccess = new Alert(Alert.AlertType.INFORMATION);
-            deleteSuccess.setHeaderText(Translator.ln.get("deleteCustomerTitleAlert"));
-            deleteSuccess.setContentText(Translator.ln.get("deleteCustomerAlertText") + oldCustomer.getName());
-            deleteSuccess.showAndWait();
-        } catch (Exception exception) {
-            String errorString = Translator.ln.get("dbFailed") + exception;
+        }
+        catch (Exception e) {
+            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+            errorAlert.setHeaderText(Translator.ln.get("editCustomerTitleError"));
+            errorAlert.setContentText(Translator.ln.get("editCustomerErrorText") + e);
+            errorAlert.showAndWait();
 
             // Log the error
-            SchedulerLogger.addToLog(errorString, "severe");
-
-            // Alert that an error occured
-            // Create a popup
-            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
-            errorAlert.setHeaderText("Database Error!");
-            errorAlert.setContentText(errorString);
-            errorAlert.showAndWait();
+            SchedulerLogger.addToLog("There was an error attempting to edit a customer" + e, "warning");
         }
     }
 
