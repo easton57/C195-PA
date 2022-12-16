@@ -34,3 +34,37 @@
 [2022-12-16 11:31:20] [INFO] Successfully connected to DB 
 [2022-12-16 11:31:20] [INFO] Log in successful by: admin 
 [2022-12-16 11:31:34] [INFO] App closed 
+[2022-12-16 11:32:07] [INFO] App launched successfully! 
+[2022-12-16 11:32:11] [INFO] Successfully connected to DB 
+[2022-12-16 11:32:11] [INFO] Log in successful by: admin 
+[2022-12-16 11:33:45] [INFO] App closed 
+[2022-12-16 11:34:19] [INFO] App launched successfully! 
+[2022-12-16 11:34:22] [INFO] Successfully connected to DB 
+[2022-12-16 11:34:22] [INFO] Log in successful by: admin 
+[2022-12-16 11:34:32] [INFO] App closed 
+[2022-12-16 11:36:15] [INFO] App launched successfully! 
+[2022-12-16 11:36:19] [INFO] Successfully connected to DB 
+[2022-12-16 11:36:19] [INFO] Log in successful by: admin 
+[2022-12-16 11:36:38] [INFO] App closed 
+[2022-12-16 11:36:59] [INFO] App launched successfully! 
+[2022-12-16 11:37:02] [INFO] Successfully connected to DB 
+[2022-12-16 11:37:02] [INFO] Log in successful by: admin 
+[2022-12-16 11:37:26] [SEVERE] Please verify the local database is running and accessible!
+java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`client_schedule`.`appointments`, CONSTRAINT `fk_customer_id` FOREIGN KEY (`Customer_ID`) REFERENCES `customers` (`Customer_ID`) ON DELETE RESTRICT ON UPDATE CASCADE) 
+[2022-12-16 11:37:37] [SEVERE] Please verify the local database is running and accessible!
+java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`client_schedule`.`appointments`, CONSTRAINT `fk_customer_id` FOREIGN KEY (`Customer_ID`) REFERENCES `customers` (`Customer_ID`) ON DELETE RESTRICT ON UPDATE CASCADE) 
+[2022-12-16 11:40:37] [INFO] App launched successfully! 
+[2022-12-16 11:40:41] [INFO] Successfully connected to DB 
+[2022-12-16 11:40:41] [INFO] Log in successful by: admin 
+[2022-12-16 11:41:11] [INFO] App launched successfully! 
+[2022-12-16 11:41:14] [INFO] Successfully connected to DB 
+[2022-12-16 11:41:14] [INFO] Log in successful by: admin 
+[2022-12-16 11:41:57] [INFO] App closed 
+[2022-12-16 11:42:01] [INFO] App launched successfully! 
+[2022-12-16 11:42:04] [INFO] Successfully connected to DB 
+[2022-12-16 11:42:04] [INFO] Log in successful by: admin 
+[2022-12-16 11:42:12] [INFO] App closed 
+[2022-12-16 11:45:24] [INFO] App launched successfully! 
+[2022-12-16 11:45:27] [INFO] Successfully connected to DB 
+[2022-12-16 11:45:27] [INFO] Log in successful by: admin 
+[2022-12-16 11:45:41] [INFO] App closed 

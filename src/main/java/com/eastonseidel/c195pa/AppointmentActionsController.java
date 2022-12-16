@@ -354,18 +354,20 @@ public class AppointmentActionsController {
                 return;
             }
 
-            // Make sure times aren't overlapping with another appointment
-            while (resultSet.next()) {
-                Timestamp dbStart = resultSet.getTimestamp("Start");
-                Timestamp dbEnd = resultSet.getTimestamp("End");
+            if (!title.contains("Edit") || !title.contains("Éditer")) {
+                // Make sure times aren't overlapping with another appointment
+                while (resultSet.next()) {
+                    Timestamp dbStart = resultSet.getTimestamp("Start");
+                    Timestamp dbEnd = resultSet.getTimestamp("End");
 
-                if (!(start.after(dbEnd) || end.before(dbStart)) && !appointmentIdInput.getText().equals(resultSet.getString("Appointment_ID"))) {
-                    String errorString = Translator.ln.get("conflictingApptText");
-                    Alert errorAlert = new Alert(Alert.AlertType.ERROR);
-                    errorAlert.setHeaderText(Translator.ln.get("conflictingApptHeader"));
-                    errorAlert.setContentText(errorString);
-                    errorAlert.showAndWait();
-                    return;
+                    if (!(start.after(dbEnd) || end.before(dbStart)) && !appointmentIdInput.getText().equals(resultSet.getString("Appointment_ID"))) {
+                        String errorString = Translator.ln.get("conflictingApptText");
+                        Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+                        errorAlert.setHeaderText(Translator.ln.get("conflictingApptHeader"));
+                        errorAlert.setContentText(errorString);
+                        errorAlert.showAndWait();
+                        return;
+                    }
                 }
             }
 
@@ -433,6 +435,9 @@ public class AppointmentActionsController {
                 appointmentTypeInput.getText(), start, end, Integer.parseInt(appointmentCustomerIdInput.getText()),
                 Integer.parseInt(appointmentUserIdInput.getText()), Integer.parseInt(appointmentContactIdComboBox.getValue().toString())
                 );
+
+        // clear contact ID
+        contactIds = new LinkedList<>();
 
         // refresh db on previous page?
         ScheduleController.addAppointment(newAppointment);

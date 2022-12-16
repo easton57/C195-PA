@@ -214,8 +214,10 @@ public class Translator {
         // report text
         ln.put("monthType", "Month and Type");
         ln.put("totalType", "Total By Type");
-
         ln.put("totalAppt", "Total Appointments");
+
+        ln.put("rptByContactErrTitle", "No Appointments!");
+        ln.put("rptByContactErrText", "There are currently no appointments available for this report.");
     }
 
     /**
@@ -422,7 +424,9 @@ public class Translator {
         // report text
         ln.put("monthType", "Mois et Type");
         ln.put("totalType", "Total par Type");
-
         ln.put("totalAppt", "Total Rendez-vous");
+
+        ln.put("rptByContactErrTitle", "Aucun rendez-vous!");
+        ln.put("rptByContactErrText", "Il n'y a actuellement aucun rendez-vous disponible pour ce rapport.");
     }
 }

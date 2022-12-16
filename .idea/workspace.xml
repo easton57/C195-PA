@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="867856f0-013f-4852-b0f1-1ecf452cb8ba" name="Changes" comment="Missed some translated text">
+    <list default="true" id="867856f0-013f-4852-b0f1-1ecf452cb8ba" name="Changes" comment="Cleaned up the add function and fixed the edit function for customers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login_activity.txt" beforeDir="false" afterPath="$PROJECT_DIR$/login_activity.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomerActionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomerActionsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/ScheduleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/ScheduleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/AppointmentActionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/AppointmentActionsController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,14 +192,7 @@
       <workItem from="1671081965500" duration="2688000" />
       <workItem from="1671084680077" duration="2284000" />
       <workItem from="1671156823310" duration="8776000" />
-      <workItem from="1671217329779" duration="1597000" />
-    </task>
-    <task id="LOCAL-00010" summary="Created and started implementing logger.">
-      <created>1666754000405</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1666754000405</updated>
+      <workItem from="1671217329779" duration="2298000" />
     </task>
     <task id="LOCAL-00011" summary="Created next set of app files">
       <created>1666914813557</created>
@@ -539,7 +530,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671174531854</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Cleaned up the add function and fixed the edit function for customers">
+      <created>1671219120895</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1671219120896</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -557,7 +555,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Oh gosh, so many changes. I've really slacked on this commit." />
     <MESSAGE value="A little cleanup" />
     <MESSAGE value="A little more cleanup" />
     <MESSAGE value="Updated Todo list on README" />
@@ -582,33 +579,8 @@
     <MESSAGE value="Javadoc update" />
     <MESSAGE value="Removed FXML version warnings" />
     <MESSAGE value="Missed some translated text" />
-    <option name="LAST_COMMIT_MESSAGE" value="Missed some translated text" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomerActionsController.java</url>
-          <line>231</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomerActionsController.java</url>
-          <line>232</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomerActionsController.java</url>
-          <line>143</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomerActionsController.java</url>
-          <line>108</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Cleaned up the add function and fixed the edit function for customers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up the add function and fixed the edit function for customers" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

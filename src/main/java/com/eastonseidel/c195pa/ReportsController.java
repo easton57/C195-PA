@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.text.Text;
@@ -91,7 +92,18 @@ public class ReportsController {
             title = Translator.ln.get("rptByMonth");
         }
 
-        // Open the report
-        OpenedReportController.OpenedReportWindow(sqlCommand, title);
+        try {
+            // Open the report
+            OpenedReportController.OpenedReportWindow(sqlCommand, title);
+        }
+        catch (Exception e) {
+            if (buttonText.contains("id=rptByContact")) {
+                // Create a popup
+                Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+                errorAlert.setHeaderText(Translator.ln.get("rptByContactErrTitle"));
+                errorAlert.setContentText(Translator.ln.get("rptByContactErrText"));
+                errorAlert.showAndWait();
+            }
+        }
     }
 }
