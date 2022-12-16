@@ -349,7 +349,7 @@ public class ScheduleController {
 
     /**
      * Deletes the selected customer in the table
-     * Lambda: prevents the need to query database and refresh weeks and months lists
+     * Embedded Lambda statements on 383 and 384 prevents the need to query database and refresh weeks and months lists
      */
     @FXML
     protected void onDeleteButtonClick() {
@@ -380,13 +380,8 @@ public class ScheduleController {
 
                 if (!result) {
                     // remove the appointment from the respective lists
-                    for (int i=0; i<weeks.size(); i++) {
-                        weeks.get(i).removeIf( p -> (p.getAppointmentId() == oldAppointment.getAppointmentId()));
-                    }
-
-                    for (int i=0; i<months.size(); i++) {
-                        months.get(i).removeIf( p -> (p.getAppointmentId() == oldAppointment.getAppointmentId()));
-                    }
+                    weeks.forEach( (i, a) -> { a.removeIf( p -> (p.getAppointmentId() == oldAppointment.getAppointmentId())); });
+                    months.forEach( (i, a) -> { a.removeIf( p -> (p.getAppointmentId() == oldAppointment.getAppointmentId())); });
                 }
                 else {
                     String errorString = Translator.ln.get("writeApptError");
