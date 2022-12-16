@@ -222,8 +222,8 @@ public class OpenedReportController {
      */
     public static class TableEvent {
 
-        private final String left;
-        private final String right;
+        private String left;
+        private String right;
 
         /**
          * Constructor for the table event class
@@ -232,6 +232,22 @@ public class OpenedReportController {
          */
         public TableEvent (String left, String right) {
             this.left = left;
+            this.right = right;
+        }
+
+        public String getLeft() {
+            return left;
+        }
+
+        public String getRight() {
+            return right;
+        }
+
+        public void setLeft(String left) {
+            this.left = left;
+        }
+
+        public void setRight(String right) {
             this.right = right;
         }
     }
