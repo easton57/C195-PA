@@ -213,6 +213,7 @@ public class CustomersController {
 
     /**
      * Deletes the selected customer from the application and database
+     * Lambda expression on 243. Prevents the need to query the database to rebuild the table data and customer list
      */
     @FXML
     protected void onDeleteButtonClick() {
