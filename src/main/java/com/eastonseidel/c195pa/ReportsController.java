@@ -17,6 +17,7 @@ import java.io.IOException;
  */
 public class ReportsController {
 
+    @FXML Text rptText;
     @FXML Button rptByType;
     @FXML Button rptByContact;
     @FXML Button rptByMonth;
@@ -39,6 +40,7 @@ public class ReportsController {
      * Initializer method for text and language on the page
      */
     public void initialize() {
+        rptText.setText(Translator.ln.get("reports"));
         rptByType.setText(Translator.ln.get("rptByType"));
         rptByContact.setText(Translator.ln.get("rptByContact"));
         rptByMonth.setText(Translator.ln.get("rptByMonth"));
