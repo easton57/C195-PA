@@ -4,46 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="867856f0-013f-4852-b0f1-1ecf452cb8ba" name="Changes" comment="Removed more alert bloat">
+    <list default="true" id="867856f0-013f-4852-b0f1-1ecf452cb8ba" name="Changes" comment="Missed some translated text">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/allclasses-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/allpackages-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/Appointment.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/Appointment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/AppointmentActionsController.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/AppointmentActionsController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/Customer.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/Customer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/CustomerActionsController.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/CustomerActionsController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/CustomersController.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/CustomersController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/HomeController.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/HomeController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/LoginController.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/LoginController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/OpenedReportController.TableEvent.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/OpenedReportController.TableEvent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/OpenedReportController.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/OpenedReportController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/ReportsController.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/ReportsController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/ScheduleController.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/ScheduleController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/Scheduler.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/Scheduler.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/SchedulerLogger.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/SchedulerLogger.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/Translator.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/Translator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/module-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/module-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-13.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-14.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/member-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/member-search-index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/overview-tree.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login_activity.txt" beforeDir="false" afterPath="$PROJECT_DIR$/login_activity.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomerActionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomerActionsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomersController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/ScheduleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/ScheduleController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +50,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Program Files (x86)/MySQL/Connector J 8.0/mysql-connector-j-8.0.31.jar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Nextcloud2/Code/GitHub/C195-PA&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -228,35 +193,8 @@
       <workItem from="1670944263773" duration="33820000" />
       <workItem from="1671081965500" duration="2688000" />
       <workItem from="1671084680077" duration="2284000" />
-      <workItem from="1671156823310" duration="8206000" />
-    </task>
-    <task id="LOCAL-00006" summary="Uhhh don't know why this is here but why not have consistency between my editors?">
-      <created>1666144190925</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1666144190925</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Created Login Files">
-      <created>1666371218418</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1666371218418</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Started the code for login controller and app">
-      <created>1666381489936</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1666381489936</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Created login page functions and actions">
-      <created>1666657511598</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1666657511598</updated>
+      <workItem from="1671156823310" duration="8776000" />
+      <workItem from="1671217329779" duration="1597000" />
     </task>
     <task id="LOCAL-00010" summary="Created and started implementing logger.">
       <created>1666754000405</created>
@@ -573,7 +511,35 @@
       <option name="project" value="LOCAL" />
       <updated>1671173748712</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Condensed lambda statements">
+      <created>1671174206614</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1671174206614</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Javadoc update">
+      <created>1671174385767</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1671174385767</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Removed FXML version warnings">
+      <created>1671174444865</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1671174444865</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Missed some translated text">
+      <created>1671174531854</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1671174531854</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -591,10 +557,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Cleaned up customer id and added more variables to array" />
-    <MESSAGE value="Chagned schedule key for translator array" />
-    <MESSAGE value="Added columns and fx:id" />
-    <MESSAGE value="Might be missing something here..." />
     <MESSAGE value="Oh gosh, so many changes. I've really slacked on this commit." />
     <MESSAGE value="A little cleanup" />
     <MESSAGE value="A little more cleanup" />
@@ -616,7 +578,37 @@
     <MESSAGE value="removed some bloat for the alert" />
     <MESSAGE value="removed extra sql query, simplified adding appointment to the table." />
     <MESSAGE value="Removed more alert bloat" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed more alert bloat" />
+    <MESSAGE value="Condensed lambda statements" />
+    <MESSAGE value="Javadoc update" />
+    <MESSAGE value="Removed FXML version warnings" />
+    <MESSAGE value="Missed some translated text" />
+    <option name="LAST_COMMIT_MESSAGE" value="Missed some translated text" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomerActionsController.java</url>
+          <line>231</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomerActionsController.java</url>
+          <line>232</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomerActionsController.java</url>
+          <line>143</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/CustomerActionsController.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

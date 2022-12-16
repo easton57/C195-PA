@@ -273,13 +273,8 @@ public class ScheduleController {
 
     public static void addAppointment(Appointment newAppointment) {
         // remove the appointment from the respective lists
-        for (int i=0; i<weeks.size(); i++) {
-            weeks.get(i).removeIf( p -> (p.getAppointmentId() == newAppointment.getAppointmentId()));
-        }
-
-        for (int i=0; i<months.size(); i++) {
-            months.get(i).removeIf( p -> (p.getAppointmentId() == newAppointment.getAppointmentId()));
-        }
+        weeks.forEach( (i, a) -> { a.removeIf( p -> (p.getAppointmentId() == newAppointment.getAppointmentId())); });
+        months.forEach( (i, a) -> { a.removeIf( p -> (p.getAppointmentId() == newAppointment.getAppointmentId())); });
 
         for(int i=0; i<weeks.size(); i++) {
             String m1 = weekDates.get(i).split("/")[0];
@@ -333,8 +328,6 @@ public class ScheduleController {
             Appointment oldAppointment = appointmentTable.getItems().get(row);
 
             AppointmentActionsController.EditAppointment(oldAppointment);
-
-            //appointmentTable.getItems().clear();
         }
         catch (Exception e) {
             Alert errorAlert = new Alert(Alert.AlertType.ERROR);

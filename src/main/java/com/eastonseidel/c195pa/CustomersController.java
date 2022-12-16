@@ -155,6 +155,12 @@ public class CustomersController {
         }
     }
 
+    public static void addCustomer(Customer newCustomer) {
+        customers.removeIf( p -> (p.getCustomerId() == newCustomer.getCustomerId()));
+
+        customers.add(newCustomer);
+    }
+
     /**
      * Method to close the pop-up
      * @param event used to close the window without further action
@@ -174,13 +180,6 @@ public class CustomersController {
      */
     @FXML
     protected void onNewButtonClick() throws IOException {
-        try {
-            customerTable.getItems().clear();
-        }
-        catch (NullPointerException e) {
-            SchedulerLogger.addToLog("Table is Empty" + e, "info");
-        }
-
         CustomerActionsController.NewCustomer();
     }
 
@@ -197,8 +196,6 @@ public class CustomersController {
             Customer oldCustomer = customerTable.getItems().get(row);
 
             CustomerActionsController.EditCustomer(oldCustomer);
-
-            customerTable.getItems().clear();
         }
         catch (Exception e) {
             Alert errorAlert = new Alert(Alert.AlertType.ERROR);

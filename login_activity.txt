@@ -2,3 +2,35 @@
 [2022-12-15 23:05:36] [INFO] Successfully connected to DB 
 [2022-12-15 23:05:36] [INFO] Log in successful by: admin 
 [2022-12-15 23:05:57] [INFO] App closed 
+[2022-12-16 11:14:26] [INFO] App launched successfully! 
+[2022-12-16 11:14:32] [INFO] Successfully connected to DB 
+[2022-12-16 11:14:32] [INFO] Log in successful by: admin 
+[2022-12-16 11:15:48] [INFO] App closed 
+[2022-12-16 11:15:52] [INFO] App launched successfully! 
+[2022-12-16 11:15:56] [INFO] Successfully connected to DB 
+[2022-12-16 11:15:56] [INFO] Log in successful by: admin 
+[2022-12-16 11:16:02] [INFO] App closed 
+[2022-12-16 11:16:07] [INFO] App launched successfully! 
+[2022-12-16 11:16:10] [INFO] Successfully connected to DB 
+[2022-12-16 11:16:10] [INFO] Log in successful by: admin 
+[2022-12-16 11:17:11] [INFO] App closed 
+[2022-12-16 11:17:20] [INFO] App launched successfully! 
+[2022-12-16 11:17:23] [INFO] Successfully connected to DB 
+[2022-12-16 11:17:23] [INFO] Log in successful by: admin 
+[2022-12-16 11:18:35] [INFO] App launched successfully! 
+[2022-12-16 11:18:39] [INFO] Successfully connected to DB 
+[2022-12-16 11:18:39] [INFO] Log in successful by: admin 
+[2022-12-16 11:20:27] [INFO] App launched successfully! 
+[2022-12-16 11:22:15] [INFO] Successfully connected to DB 
+[2022-12-16 11:22:15] [INFO] Log in successful by: admin 
+[2022-12-16 11:22:28] [WARNING] There was an error attempting to edit a customerjava.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "javafx.scene.control.ComboBox.getValue()" is null 
+[2022-12-16 11:22:30] [WARNING] There was an error attempting to edit a customerjava.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "javafx.scene.control.ComboBox.getValue()" is null 
+[2022-12-16 11:23:32] [WARNING] There was an error attempting to edit a customerjava.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "javafx.scene.control.ComboBox.getValue()" is null 
+[2022-12-16 11:24:26] [WARNING] There was an error attempting to edit a customerjava.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "javafx.scene.control.ComboBox.getValue()" is null 
+[2022-12-16 11:26:08] [INFO] App launched successfully! 
+[2022-12-16 11:26:12] [INFO] Successfully connected to DB 
+[2022-12-16 11:26:12] [INFO] Log in successful by: admin 
+[2022-12-16 11:31:17] [INFO] App launched successfully! 
+[2022-12-16 11:31:20] [INFO] Successfully connected to DB 
+[2022-12-16 11:31:20] [INFO] Log in successful by: admin 
+[2022-12-16 11:31:34] [INFO] App closed 
