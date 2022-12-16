@@ -129,7 +129,7 @@ Performance Assessment for Software II at WGU
 ~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  an additional report of your choice that is different from the two other required reports in this prompt and from the user log-in date and time stamp that will be tracked in part C~~
 
 
-B.  Write at least two different lambda expressions to improve your code.
+~~B.  Write at least two different lambda expressions to improve your code.~~
 
 
 ~~C.  Write code that provides the ability to track user activity by recording all user log-in attempts, dates, and time stamps and whether each attempt was successful in a file named login_activity.txt. Append each new record to the existing file, and save to the root folder of the application.~~
