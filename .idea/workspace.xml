@@ -4,8 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="867856f0-013f-4852-b0f1-1ecf452cb8ba" name="Changes" comment="More javadoc">
+    <list default="true" id="867856f0-013f-4852-b0f1-1ecf452cb8ba" name="Changes" comment="Removed more alert bloat">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/allclasses-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/allpackages-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/Appointment.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/Appointment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/AppointmentActionsController.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/AppointmentActionsController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/Customer.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/Customer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/CustomerActionsController.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/CustomerActionsController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/CustomersController.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/CustomersController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/HomeController.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/HomeController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/LoginController.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/LoginController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/OpenedReportController.TableEvent.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/OpenedReportController.TableEvent.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/OpenedReportController.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/OpenedReportController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/ReportsController.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/ReportsController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/ScheduleController.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/ScheduleController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/Scheduler.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/Scheduler.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/SchedulerLogger.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/SchedulerLogger.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/Translator.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/Translator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/com/eastonseidel/c195pa/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/module-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/com.eastonseidel.c195pa/module-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-13.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-14.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index-files/index-9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/member-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/member-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadoc/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login_activity.txt" beforeDir="false" afterPath="$PROJECT_DIR$/login_activity.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/ScheduleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eastonseidel/c195pa/ScheduleController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -189,42 +227,8 @@
       <workItem from="1670900650502" duration="6000000" />
       <workItem from="1670944263773" duration="33820000" />
       <workItem from="1671081965500" duration="2688000" />
-      <workItem from="1671084680077" duration="1172000" />
-    </task>
-    <task id="LOCAL-00001" summary="Initial Project Commit">
-      <created>1664908358832</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1664908358832</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Added project description to README.md">
-      <created>1664909794630</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1664909794630</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Some GUI Views">
-      <created>1665444630300</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1665444630300</updated>
-    </task>
-    <task id="LOCAL-00004" summary="More Views uploaded">
-      <created>1666130864641</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1666130864641</updated>
-    </task>
-    <task id="LOCAL-00005" summary="More Views uploaded and added a cute little 420 easter-egg">
-      <created>1666144033654</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1666144033654</updated>
+      <workItem from="1671084680077" duration="2284000" />
+      <workItem from="1671156823310" duration="8206000" />
     </task>
     <task id="LOCAL-00006" summary="Uhhh don't know why this is here but why not have consistency between my editors?">
       <created>1666144190925</created>
@@ -499,7 +503,77 @@
       <option name="project" value="LOCAL" />
       <updated>1671085155707</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="readability">
+      <created>1671086364486</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1671086364486</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Very light warning cleanup">
+      <created>1671158586857</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1671158586857</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Added lambda statement to deletebuttonclick">
+      <created>1671169272626</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1671169272626</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Added lambda javadoc">
+      <created>1671170783824</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1671170783824</updated>
+    </task>
+    <task id="LOCAL-00049" summary="removed additional sql query">
+      <created>1671170899867</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1671170899867</updated>
+    </task>
+    <task id="LOCAL-00050" summary="last check off">
+      <created>1671170912560</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1671170912560</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Simplified adding appointments">
+      <created>1671173573848</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1671173573848</updated>
+    </task>
+    <task id="LOCAL-00052" summary="removed some bloat for the alert">
+      <created>1671173588591</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1671173588591</updated>
+    </task>
+    <task id="LOCAL-00053" summary="removed extra sql query, simplified adding appointment to the table.">
+      <created>1671173654180</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1671173654180</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Removed more alert bloat">
+      <created>1671173748712</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1671173748712</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -517,16 +591,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Home page bilingual" />
-    <MESSAGE value="Made some var's more friendly to use aside from their original purpose" />
-    <MESSAGE value="Uploading stuff, files created, code added to view existing customers in a table and in the edit window." />
-    <MESSAGE value="Customer Controller finalized, udpates, creates and deletes customer objects in the database." />
-    <MESSAGE value="Added dynamic combo box. Created Deleted customer prompt." />
-    <MESSAGE value="Customer Addresses properly formatted in table view, tableview shows all customer info." />
-    <MESSAGE value="Can now edit on the main customers table" />
-    <MESSAGE value="updated readme" />
-    <MESSAGE value="Made Translator a little nicer to work with by declaring explicit dictionary types" />
-    <MESSAGE value="Created appointment class" />
     <MESSAGE value="Cleaned up customer id and added more variables to array" />
     <MESSAGE value="Chagned schedule key for translator array" />
     <MESSAGE value="Added columns and fx:id" />
@@ -542,14 +606,24 @@
     <MESSAGE value="Created reports page" />
     <MESSAGE value="Javadoc for days" />
     <MESSAGE value="More javadoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="More javadoc" />
+    <MESSAGE value="readability" />
+    <MESSAGE value="Very light warning cleanup" />
+    <MESSAGE value="Added lambda statement to deletebuttonclick" />
+    <MESSAGE value="Added lambda javadoc" />
+    <MESSAGE value="removed additional sql query" />
+    <MESSAGE value="last check off" />
+    <MESSAGE value="Simplified adding appointments" />
+    <MESSAGE value="removed some bloat for the alert" />
+    <MESSAGE value="removed extra sql query, simplified adding appointment to the table." />
+    <MESSAGE value="Removed more alert bloat" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed more alert bloat" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/C195_PA$Scheduler.ic" NAME="Scheduler Coverage Results" MODIFIED="1671080284029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/C195_PA$Scheduler.ic" NAME="Scheduler Coverage Results" MODIFIED="1671173046480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.eastonseidel.c195pa.*</FILTER>
     </SUITE>
   </component>
