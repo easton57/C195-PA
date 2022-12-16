@@ -38,27 +38,30 @@ public class HomeController {
         // Check for any incoming appointments
         ObservableList<Appointment> warning = AppointmentActionsController.appointmentWarning();
         LocalDateTime now = LocalDateTime.now();
+        Alert apptAlert = new Alert(Alert.AlertType.INFORMATION);
 
         if (!warning.isEmpty()) {
             for (Appointment i : warning) {
                 LocalDateTime startTime = LocalDateTime.parse(i.getStart(), DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss a"));
 
                 if (startTime.isBefore(now.plusMinutes(15)) && startTime.isAfter(now)) {
-                    Alert apptAlert = new Alert(Alert.AlertType.INFORMATION);
                     apptAlert.setHeaderText(Translator.ln.get("15MinuteHeader"));
                     apptAlert.setContentText(Translator.ln.get("15MinuteText") +
                             "ID: " + i.getAppointmentId() +
                             "\n" + Translator.ln.get("startDateTime") + ": " + i.getStart());
-                    apptAlert.showAndWait();
+                }
+                else {
+                    apptAlert.setHeaderText(Translator.ln.get("NoApptHeader"));
+                    apptAlert.setContentText(Translator.ln.get("NoApptText"));
                 }
             }
         }
         else {
-            Alert apptAlert = new Alert(Alert.AlertType.INFORMATION);
             apptAlert.setHeaderText(Translator.ln.get("NoApptHeader"));
             apptAlert.setContentText(Translator.ln.get("NoApptText"));
-            apptAlert.showAndWait();
         }
+
+        apptAlert.showAndWait();
     }
 
     /**
