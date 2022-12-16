@@ -16,6 +16,7 @@ public class Appointment {
     private String location;
     private String type;
     private String start;
+    private Timestamp startTimestamp;
     private String end;
     private int customerId;
     private int userId;
@@ -41,6 +42,7 @@ public class Appointment {
         this.location = location;
         this.type = type;
         this.start = convertFromUtc(start, "local");
+        this.startTimestamp = convertFromUtcTimeStamp(start, "local");
         this.end = convertFromUtc(end, "local");
         this.customerId = customerId;
         this.userId = userId;
@@ -128,11 +130,20 @@ public class Appointment {
     }
 
     /**
+     * retriever for startTimestamp
+     * @return startTimestamp
+     */
+    public Timestamp getStartTimestamp() {
+        return startTimestamp;
+    }
+
+    /**
      * setter for start
      * @param start for new appointment property value
      */
     public void setStart(Timestamp start) {
         this.start = convertFromUtc(start, "local");
+        this.startTimestamp = start;
     }
 
     /**

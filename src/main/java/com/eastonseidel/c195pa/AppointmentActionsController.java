@@ -13,10 +13,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.sql.*;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.LinkedList;
 import java.util.List;
@@ -428,9 +425,17 @@ public class AppointmentActionsController {
             errorAlert.setContentText(errorString);
             errorAlert.showAndWait();
         }
+        Timestamp start = Appointment.convertToUtc(startDateInput.getValue() + " " + startTimeInput.getText(), "local");
+        Timestamp end = Appointment.convertToUtc(endDateInput.getValue() + " " + endTimeInput.getText(), "local");
+
+        Appointment newAppointment = new Appointment(Integer.parseInt(appointmentIdInput.getText()),
+                appointmentTitleInput.getText(), appointmentDescriptionInput.getText(), appointmentLocationInput.getText(),
+                appointmentTypeInput.getText(), start, end, Integer.parseInt(appointmentCustomerIdInput.getText()),
+                Integer.parseInt(appointmentUserIdInput.getText()), Integer.parseInt(appointmentContactIdComboBox.getValue().toString())
+                );
 
         // refresh db on previous page?
-        ScheduleController.appointmentTableRefresh();
+        ScheduleController.addAppointment(newAppointment);
     }
 
     /**
@@ -441,7 +446,6 @@ public class AppointmentActionsController {
     protected void onCancelButtonClick(ActionEvent event) {
         // clear contact ID
         contactIds = new LinkedList<>();
-        ScheduleController.appointmentTableRefresh();
 
         // close the active window
         Node node = (Node) event.getSource();
