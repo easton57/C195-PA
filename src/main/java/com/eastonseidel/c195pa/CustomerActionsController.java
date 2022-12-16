@@ -98,6 +98,9 @@ public class CustomerActionsController {
 
         customerIdInput.setDisable(true);
 
+        // list to be filled
+        List<String> countryList = new LinkedList<>();
+
         // find the new customer ID
         if (title.contains("Create") || title.contains("Créer")) {
             List<Integer> customerIds = new LinkedList<>();
@@ -122,6 +125,37 @@ public class CustomerActionsController {
                 while (resultSet.next()) {
                     // Add username and password to dictionary
                     customerIds.add(resultSet.getInt("Customer_ID"));
+                }
+
+                // Next query for country information
+                resultSet = statement.executeQuery(
+                        "SELECT Country_ID, Country FROM countries"
+                );
+                while (resultSet.next()) {
+                    // Add username and password to dictionary
+                    countryIds.put(resultSet.getString("Country_ID"), resultSet.getString("Country"));
+                    countryList.add(resultSet.getString("Country"));
+                }
+
+                // grab the division ID's
+                resultSet = statement.executeQuery(
+                        "SELECT Division_ID, Division, Country_ID FROM first_level_divisions"
+                );
+                while (resultSet.next()) {
+                    // Add username and password to dictionary
+                    divisionNames.put(resultSet.getString("Division"), resultSet.getString("Division_ID"));
+                    divisionIds.put(resultSet.getString("Division_ID"), resultSet.getString("Division"));
+                    divisionToCountryId.put(resultSet.getString("Division_ID"), countryIds.get(resultSet.getString("Country_ID")));
+
+                    if (resultSet.getInt("Country_ID") == 1) {
+                        usDivisions.add(resultSet.getString("Division"));
+                    }
+                    else if (resultSet.getInt("Country_ID") == 2) {
+                        ukDivisions.add(resultSet.getString("Division"));
+                    }
+                    else {
+                        canadaDivisions.add(resultSet.getString("Division"));
+                    }
                 }
 
                 resultSet.close();
@@ -151,69 +185,6 @@ public class CustomerActionsController {
 
             customerIdInput.setText(Integer.toString(maxValue + 1));
         }
-
-        List<String> countryList = new LinkedList<>();
-
-        // grab the id's and divisions from the db
-        Connection localDb;
-        try {
-            // Grab the country Id's
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            localDb = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/client_schedule",
-                    "sqlUser", "Passw0rd!"
-            );
-
-            Statement statement;
-            statement = localDb.createStatement();
-            ResultSet resultSet;
-            resultSet = statement.executeQuery(
-                    "SELECT Country_ID, Country FROM countries"
-            );
-            while (resultSet.next()) {
-                // Add username and password to dictionary
-                countryIds.put(resultSet.getString("Country_ID"), resultSet.getString("Country"));
-                countryList.add(resultSet.getString("Country"));
-            }
-
-            // grab the division ID's
-            resultSet = statement.executeQuery(
-                    "SELECT Division_ID, Division, Country_ID FROM first_level_divisions"
-            );
-            while (resultSet.next()) {
-                // Add username and password to dictionary
-                divisionNames.put(resultSet.getString("Division"), resultSet.getString("Division_ID"));
-                divisionIds.put(resultSet.getString("Division_ID"), resultSet.getString("Division"));
-                divisionToCountryId.put(resultSet.getString("Division_ID"), countryIds.get(resultSet.getString("Country_ID")));
-
-                if (resultSet.getInt("Country_ID") == 1) {
-                    usDivisions.add(resultSet.getString("Division"));
-                }
-                else if (resultSet.getInt("Country_ID") == 2) {
-                    ukDivisions.add(resultSet.getString("Division"));
-                }
-                else {
-                    canadaDivisions.add(resultSet.getString("Division"));
-                }
-            }
-
-            resultSet.close();
-            statement.close();
-            localDb.close();
-        } catch (Exception exception) {
-            String errorString = Translator.ln.get("dbFailed") + exception;
-
-            // Log the error
-            SchedulerLogger.addToLog(errorString, "severe");
-
-            // Alert that an error occured
-            // Create a popup
-            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
-            errorAlert.setHeaderText("Database Error!");
-            errorAlert.setContentText(errorString);
-            errorAlert.showAndWait();
-        }
-
 
         // Set the country id
         countryIdBox.setItems(FXCollections.observableArrayList(countryList));
