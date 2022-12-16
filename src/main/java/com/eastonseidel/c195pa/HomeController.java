@@ -39,6 +39,8 @@ public class HomeController {
         ObservableList<Appointment> warning = AppointmentActionsController.appointmentWarning();
         LocalDateTime now = LocalDateTime.now();
         Alert apptAlert = new Alert(Alert.AlertType.INFORMATION);
+        apptAlert.setHeaderText(Translator.ln.get("NoApptHeader"));
+        apptAlert.setContentText(Translator.ln.get("NoApptText"));
 
         if (!warning.isEmpty()) {
             for (Appointment i : warning) {
@@ -50,15 +52,7 @@ public class HomeController {
                             "ID: " + i.getAppointmentId() +
                             "\n" + Translator.ln.get("startDateTime") + ": " + i.getStart());
                 }
-                else {
-                    apptAlert.setHeaderText(Translator.ln.get("NoApptHeader"));
-                    apptAlert.setContentText(Translator.ln.get("NoApptText"));
-                }
             }
-        }
-        else {
-            apptAlert.setHeaderText(Translator.ln.get("NoApptHeader"));
-            apptAlert.setContentText(Translator.ln.get("NoApptText"));
         }
 
         apptAlert.showAndWait();
