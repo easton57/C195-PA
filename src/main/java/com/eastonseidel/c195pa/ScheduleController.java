@@ -44,8 +44,8 @@ public class ScheduleController {
     @FXML private TableColumn<Appointment, String> userId;
     @FXML private TableColumn<Appointment, String> appointmentContact;
     @FXML private TableView<Appointment> appointmentTable;
-    private final static Hashtable<Integer, ObservableList<Appointment>> months = new Hashtable<>();
-    private final static Hashtable<Integer, ObservableList<Appointment>> weeks = new Hashtable<>();
+    private static Hashtable<Integer, ObservableList<Appointment>> months = new Hashtable<>();
+    private static Hashtable<Integer, ObservableList<Appointment>> weeks = new Hashtable<>();
     private final static Hashtable<Integer, String> weekDates = new Hashtable<>();
     private final String[] monthNames = { Translator.ln.get("January"),  Translator.ln.get("February"),  Translator.ln.get("March"),  Translator.ln.get("April"),  Translator.ln.get("May"),  Translator.ln.get("June"),  Translator.ln.get("July"),  Translator.ln.get("August"),  Translator.ln.get("September"),  Translator.ln.get("October"),  Translator.ln.get("November"),  Translator.ln.get("December") };
 
@@ -109,20 +109,23 @@ public class ScheduleController {
         monthRadio.setSelected(true);
 
         // fill the table view variable
-        appointmentTableCreation();
+        appointmentTableRefresh();
 
         // get the local date
         LocalDateTime now = LocalDateTime.now();
 
         // set the table list
-        appointmentTable.setItems(months.get(now.getMonthValue()-1));
-        rangeText.setText(monthNames[now.getMonthValue()-1]);
+        appointmentTable.setItems(months.get(now.getMonthValue() - 1));
+        rangeText.setText(monthNames[now.getMonthValue() - 1]);
     }
 
     /**
      * Creates the table data and populates the arrays for the schedule
      */
-    public static void appointmentTableCreation() {
+    public static void appointmentTableRefresh() {
+        months = new Hashtable<>();
+        weeks = new Hashtable<>();
+
         // Create the observable list for the months array
         for (int i=0; i<12; i++) {
             ObservableList<Appointment> temp = FXCollections.observableArrayList();
@@ -268,87 +271,33 @@ public class ScheduleController {
         }
     }
 
-    /**
-     * Method to refresh the table and retrieve fresh data from the database after edits
-     */
-    public static void appointmentTableRefresh() {
-        Connection localDb;
-        try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            localDb = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/client_schedule",
-                    "sqlUser", "Passw0rd!"
-            );
-
-            Statement statement;
-            statement = localDb.createStatement();
-            ResultSet resultSet;
-            resultSet = statement.executeQuery(
-                    "SELECT * FROM appointments"
-            );
-
-            while (resultSet.next()) {
-                // Add customer to array
-                Appointment temp = new Appointment(resultSet.getInt("Appointment_ID"), resultSet.getString("Title"),
-                        resultSet.getString("Description"), resultSet.getString("Location"), resultSet.getString("Type"),
-                        resultSet.getTimestamp("Start"), resultSet.getTimestamp("End"), resultSet.getInt("Customer_ID"),
-                        resultSet.getInt("User_ID"), resultSet.getInt("Contact_ID"));
-
-                // separate appointments month
-                for (int i = 0; i < months.size(); i++) {
-                    int j = 0;
-
-                    while (!months.get(i).isEmpty()) {
-                        try {
-                            if (months.get(i).get(j).getAppointmentId() == temp.getAppointmentId()) {
-                                months.get(i).set(j, temp);
-                                break;
-                            }
-                            else {
-                                j += 1;
-                            }
-                        }
-                        catch (Exception e) {
-                            break;
-                        }
-                    }
-                }
-
-                // separate appointments by week
-                for (int i = 0; i < weeks.size(); i++) {
-                    int j = 0;
-
-                    while (!weeks.get(i).isEmpty()) {
-                        try {
-                            if (weeks.get(i).get(j).getAppointmentId() == temp.getAppointmentId()) {
-                                weeks.get(i).set(j, temp);
-                                break;
-                            } else {
-                                j += 1;
-                            }
-                        }
-                        catch (Exception e) {
-                            break;
-                        }
-                    }
-                }
-            }
-            resultSet.close();
-            statement.close();
-            localDb.close();
-        } catch (Exception exception) {
-            String errorString = Translator.ln.get("dbFailed") + exception;
-
-            // Log the error
-            SchedulerLogger.addToLog(errorString, "severe");
-
-            // Alert that an error occured
-            // Create a popup
-            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
-            errorAlert.setHeaderText("Database Error!");
-            errorAlert.setContentText(errorString);
-            errorAlert.showAndWait();
+    public static void addAppointment(Appointment newAppointment) {
+        // remove the appointment from the respective lists
+        for (int i=0; i<weeks.size(); i++) {
+            weeks.get(i).removeIf( p -> (p.getAppointmentId() == newAppointment.getAppointmentId()));
         }
+
+        for (int i=0; i<months.size(); i++) {
+            months.get(i).removeIf( p -> (p.getAppointmentId() == newAppointment.getAppointmentId()));
+        }
+
+        for(int i=0; i<weeks.size(); i++) {
+            String m1 = weekDates.get(i).split("/")[0];
+            String m2 = weekDates.get(i).split("/")[1].split("-")[1];
+            int d1 = Integer.parseInt(weekDates.get(i).split("/")[1].split("-")[0]);
+            int d2 = Integer.parseInt(weekDates.get(i).split("/")[2]);
+            int evalDay = Integer.parseInt(newAppointment.getStart().split("-")[2].split(" ")[0]);
+
+            // Some logic to consider if each week is indexed as M1/D1-M2/D2... if M1==resultSetMonth OR M2==resultSetMonth AND D1 <= resultSetDay <= D2, add to array
+            if ((newAppointment.getStart().contains("-" + m1 + "-") && (d1 <= evalDay && evalDay <= d2)) ||
+                    (newAppointment.getStart().contains("-" + m1 + "-") && !newAppointment.getStart().contains("-" + m2 + "-")) && (d1 >= evalDay && evalDay >= d2) ||
+                    (!newAppointment.getStart().contains("-" + m1 + "-") && newAppointment.getStart().contains("-" + m2 + "-")) && (d1 >= evalDay && evalDay <= d2)) {
+                weeks.get(i).add(newAppointment);
+                break;
+            }
+        }
+
+        months.get(newAppointment.getStartTimestamp().toLocalDateTime().getMonthValue() - 1).add(newAppointment);
     }
 
     /**
@@ -368,13 +317,6 @@ public class ScheduleController {
      */
     @FXML
     protected void onNewButtonClick() throws IOException {
-        try {
-            //appointmentTable.getItems().clear();
-        }
-        catch (NullPointerException e) {
-            SchedulerLogger.addToLog("Table is Empty" + e, "info");
-        }
-
         AppointmentActionsController.NewAppointment();
     }
 
@@ -407,53 +349,70 @@ public class ScheduleController {
 
     /**
      * Deletes the selected customer in the table
+     * Lambda: prevents the need to query database and refresh weeks and months lists
      */
     @FXML
     protected void onDeleteButtonClick() {
-        Appointment oldAppointment = null;
-
         // Get the table position and call the edit window
         try {
             TablePosition pos = appointmentTable.getSelectionModel().getSelectedCells().get(0);
             int row = pos.getRow();
 
-            oldAppointment = appointmentTable.getItems().get(row);
-        }
-        catch (Exception e) {
-            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
-            errorAlert.setHeaderText(Translator.ln.get("editApptTitleError"));
-            errorAlert.setContentText(Translator.ln.get("editApptErrorText") + e);
-            errorAlert.showAndWait();
+            final Appointment oldAppointment = appointmentTable.getItems().get(row);
 
-            // Log the error
-            SchedulerLogger.addToLog("There was an error attempting to edit a customer" + e, "warning");
-        }
+            // Delete the selected user
+            Connection localDb;
+            try {
+                // Grab the country Id's
+                Class.forName("com.mysql.cj.jdbc.Driver");
+                localDb = DriverManager.getConnection(
+                        "jdbc:mysql://localhost:3306/client_schedule",
+                        "sqlUser", "Passw0rd!"
+                );
 
-        // Delete the selected user
-        Connection localDb;
-        try {
-            // Grab the country Id's
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            localDb = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/client_schedule",
-                    "sqlUser", "Passw0rd!"
-            );
+                Statement statement;
+                statement = localDb.createStatement();
+                boolean result;
+                assert oldAppointment != null;
+                result = statement.execute(
+                        "DELETE FROM appointments WHERE Appointment_ID=" + oldAppointment.getAppointmentId()
+                );
 
-            Statement statement;
-            statement = localDb.createStatement();
-            boolean result;
-            assert oldAppointment != null;
-            result = statement.execute(
-                    "DELETE FROM appointments WHERE Appointment_ID=" + oldAppointment.getAppointmentId()
-            );
+                if (!result) {
+                    // remove the appointment from the respective lists
+                    for (int i=0; i<weeks.size(); i++) {
+                        weeks.get(i).removeIf( p -> (p.getAppointmentId() == oldAppointment.getAppointmentId()));
+                    }
 
-            if (!result) {
-                // Refresh the table
-                appointmentTable.getItems().clear();
-                appointmentTableRefresh();
+                    for (int i=0; i<months.size(); i++) {
+                        months.get(i).removeIf( p -> (p.getAppointmentId() == oldAppointment.getAppointmentId()));
+                    }
+                }
+                else {
+                    String errorString = Translator.ln.get("writeApptError");
+
+                    // Log the error
+                    SchedulerLogger.addToLog(errorString, "severe");
+
+                    // Alert that an error occured
+                    // Create a popup
+                    Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+                    errorAlert.setHeaderText("Database Error!");
+                    errorAlert.setContentText(errorString);
+                    errorAlert.showAndWait();
+                }
+
+                statement.close();
+                localDb.close();
+
+                // Notify of the action
+                Alert deleteSuccess = new Alert(Alert.AlertType.INFORMATION);
+                deleteSuccess.setHeaderText(Translator.ln.get("deleteApptTitleAlert"));
+                deleteSuccess.setContentText(Translator.ln.get("deleteApptAlertText") + oldAppointment.getAppointmentId() + " " + oldAppointment.getType());
+                deleteSuccess.showAndWait();
             }
-            else {
-                String errorString = Translator.ln.get("writeApptError");
+            catch (Exception exception) {
+                String errorString = Translator.ln.get("dbFailed") + exception;
 
                 // Log the error
                 SchedulerLogger.addToLog(errorString, "severe");
@@ -465,28 +424,15 @@ public class ScheduleController {
                 errorAlert.setContentText(errorString);
                 errorAlert.showAndWait();
             }
-
-            statement.close();
-            localDb.close();
-
-            // Notify of the action
-            Alert deleteSuccess = new Alert(Alert.AlertType.INFORMATION);
-            deleteSuccess.setHeaderText(Translator.ln.get("deleteApptTitleAlert"));
-            deleteSuccess.setContentText(Translator.ln.get("deleteApptAlertText") + oldAppointment.getAppointmentId() + " " + oldAppointment.getType());
-            deleteSuccess.showAndWait();
         }
-        catch (Exception exception) {
-            String errorString = Translator.ln.get("dbFailed") + exception;
+        catch (Exception e) {
+            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+            errorAlert.setHeaderText(Translator.ln.get("editApptTitleError"));
+            errorAlert.setContentText(Translator.ln.get("editApptErrorText") + e);
+            errorAlert.showAndWait();
 
             // Log the error
-            SchedulerLogger.addToLog(errorString, "severe");
-
-            // Alert that an error occured
-            // Create a popup
-            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
-            errorAlert.setHeaderText("Database Error!");
-            errorAlert.setContentText(errorString);
-            errorAlert.showAndWait();
+            SchedulerLogger.addToLog("There was an error attempting to edit a customer" + e, "warning");
         }
     }
 
