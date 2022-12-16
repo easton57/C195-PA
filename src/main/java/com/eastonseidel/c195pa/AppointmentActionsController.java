@@ -354,20 +354,18 @@ public class AppointmentActionsController {
                 return;
             }
 
-            if (!title.contains("Edit") || !title.contains("Éditer")) {
-                // Make sure times aren't overlapping with another appointment
-                while (resultSet.next()) {
-                    Timestamp dbStart = resultSet.getTimestamp("Start");
-                    Timestamp dbEnd = resultSet.getTimestamp("End");
+            // Make sure times aren't overlapping with another appointment
+            while (resultSet.next()) {
+                Timestamp dbStart = resultSet.getTimestamp("Start");
+                Timestamp dbEnd = resultSet.getTimestamp("End");
 
-                    if (!(start.after(dbEnd) || end.before(dbStart)) && !appointmentIdInput.getText().equals(resultSet.getString("Appointment_ID"))) {
-                        String errorString = Translator.ln.get("conflictingApptText");
-                        Alert errorAlert = new Alert(Alert.AlertType.ERROR);
-                        errorAlert.setHeaderText(Translator.ln.get("conflictingApptHeader"));
-                        errorAlert.setContentText(errorString);
-                        errorAlert.showAndWait();
-                        return;
-                    }
+                if (!(start.after(dbEnd) || end.before(dbStart)) && !appointmentIdInput.getText().equals(resultSet.getString("Appointment_ID"))) {
+                    String errorString = Translator.ln.get("conflictingApptText");
+                    Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+                    errorAlert.setHeaderText(Translator.ln.get("conflictingApptHeader"));
+                    errorAlert.setContentText(errorString);
+                    errorAlert.showAndWait();
+                    return;
                 }
             }
 
