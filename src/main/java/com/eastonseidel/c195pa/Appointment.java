@@ -10,7 +10,7 @@ import java.time.format.DateTimeFormatter;
  * Creates appointment objects for use in displaying a schedule
  */
 public class Appointment {
-    private int appointmentId;
+    private final int appointmentId;
     private String title;
     private String description;
     private String location;
@@ -23,16 +23,16 @@ public class Appointment {
 
     /**
      * Constructor for the appointment object type
-     * @param appointmentId
-     * @param title
-     * @param description
-     * @param location
-     * @param type
-     * @param start
-     * @param end
-     * @param customerId
-     * @param userId
-     * @param contactId
+     * @param appointmentId The auto-generated id for the appointment
+     * @param title Title for the appointment
+     * @param description Description of what will be done at the appointment
+     * @param location Location that the appointment will take place
+     * @param type Type of appointment
+     * @param start start date and time of the appointment as Timestamp
+     * @param end end date and time of the appointment as Timestamp
+     * @param customerId associated customer ID
+     * @param userId associated user ID
+     * @param contactId associated contact ID
      */
     public Appointment(int appointmentId, String title, String description, String location, String type, Timestamp start, Timestamp end, int customerId, int userId, int contactId) {
         this.appointmentId = appointmentId;
@@ -132,7 +132,7 @@ public class Appointment {
      * @param start for new appointment property value
      */
     public void setStart(Timestamp start) {
-        this.start = convertFromUtc(start, "local");;
+        this.start = convertFromUtc(start, "local");
     }
 
     /**

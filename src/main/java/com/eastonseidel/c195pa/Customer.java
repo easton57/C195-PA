@@ -13,7 +13,7 @@ import java.util.Hashtable;
  * Creates customer objects for use in assigning appointments
  */
 public class Customer {
-    private int customerId;
+    private final int customerId;
     private String name;
     private String address;
     private String modifiedAddress;
@@ -27,12 +27,12 @@ public class Customer {
 
     /**
      * Constructor for customer object type
-     * @param id
-     * @param name
-     * @param address
-     * @param postalCode
-     * @param phone
-     * @param divisionId
+     * @param id auto-generated customer ID
+     * @param name customer first and last name
+     * @param address customer address
+     * @param postalCode address's postal code
+     * @param phone customers phone number
+     * @param divisionId customers division
      */
     public Customer(int id, String name, String address, String postalCode, String phone, int divisionId) {
         this.customerId = id;
