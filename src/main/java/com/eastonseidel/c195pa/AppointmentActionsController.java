@@ -105,7 +105,7 @@ public class AppointmentActionsController {
 
         // find the new appointment ID
         if (title.contains("Create") || title.contains("Créer")) {
-            List<Integer> customerIds = new LinkedList<>();
+            int maxValue = 0;
 
             // grab the id's and divisions from the db
             Connection localDb;
@@ -122,11 +122,10 @@ public class AppointmentActionsController {
                 statement = localDb.createStatement();
                 ResultSet resultSet;
                 resultSet = statement.executeQuery(
-                        "SELECT Appointment_ID FROM appointments"
+                        "SELECT AUTO_INCREMENT FROM information_schema.TABLES WHERE TABLE_SCHEMA = 'client_schedule' AND TABLE_NAME = 'appointments'"
                 );
                 while (resultSet.next()) {
-                    // Add username and password to dictionary
-                    customerIds.add(resultSet.getInt("Appointment_ID"));
+                    maxValue = resultSet.getInt("AUTO_INCREMENT");
                 }
 
                 resultSet.close();
@@ -147,14 +146,7 @@ public class AppointmentActionsController {
             }
 
             // Check maximum element using for loop
-            int maxValue = 0;
-
-            for (Integer integer : customerIds) {
-                if (integer > maxValue)
-                    maxValue = integer;
-            }
-
-            appointmentIdInput.setText(Integer.toString(maxValue + 1));
+            appointmentIdInput.setText(Integer.toString(maxValue));
         }
 
         // grab the id's and divisions from the db

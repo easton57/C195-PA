@@ -100,7 +100,7 @@ public class CustomerActionsController {
 
         // find the new customer ID
         if (title.contains("Create") || title.contains("Créer")) {
-            List<Integer> customerIds = new LinkedList<>();
+            int maxValue = 0;
 
             // grab the id's and divisions from the db
             Connection localDb;
@@ -117,11 +117,10 @@ public class CustomerActionsController {
                 statement = localDb.createStatement();
                 ResultSet resultSet;
                 resultSet = statement.executeQuery(
-                        "SELECT Customer_ID FROM customers"
+                        "SELECT AUTO_INCREMENT FROM information_schema.TABLES WHERE TABLE_SCHEMA = 'client_schedule' AND TABLE_NAME = 'customers'"
                 );
                 while (resultSet.next()) {
-                    // Add username and password to dictionary
-                    customerIds.add(resultSet.getInt("Customer_ID"));
+                    maxValue = resultSet.getInt("AUTO_INCREMENT");
                 }
 
                 resultSet.close();
@@ -141,15 +140,7 @@ public class CustomerActionsController {
                 errorAlert.showAndWait();
             }
 
-            // Check maximum element using for loop
-            int maxValue = 0;
-
-            for (Integer integer : customerIds) {
-                if (integer > maxValue)
-                    maxValue = integer;
-            }
-
-            customerIdInput.setText(Integer.toString(maxValue + 1));
+            customerIdInput.setText(Integer.toString(maxValue));
         }
 
         List<String> countryList = new LinkedList<>();
