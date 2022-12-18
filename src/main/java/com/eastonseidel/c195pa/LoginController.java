@@ -160,7 +160,7 @@ public class LoginController {
             }
             else {
                 // log failed password
-                SchedulerLogger.addToLog("Log in failed: Invalid Password", "warning");
+                SchedulerLogger.addToLog("Invalid Password: Log in failed for user: " + username.getText(), "warning");
 
                 // Wrong Password
                 Alert incorrectPassword = new Alert(Alert.AlertType.WARNING);
@@ -171,7 +171,7 @@ public class LoginController {
         }
         catch (Exception exception) {
             // log invalid username
-            SchedulerLogger.addToLog("Log in failed: Invalid Username", "warning");
+            SchedulerLogger.addToLog("Log in failed for invalid Username: " + username.getText(), "warning");
 
             // Print a username failure
             Alert invalidUser = new Alert(Alert.AlertType.WARNING);

@@ -155,3 +155,22 @@ java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a par
 [2022-12-18 15:47:31] [INFO] Successfully connected to DB 
 [2022-12-18 15:47:31] [INFO] Log in successful by: admin 
 [2022-12-18 15:48:46] [INFO] App closed 
+[2022-12-18 15:50:55] [INFO] App launched successfully! 
+[2022-12-18 15:51:14] [INFO] Successfully connected to DB 
+[2022-12-18 15:51:14] [INFO] Log in successful by: admin 
+[2022-12-18 15:51:20] [INFO] App closed 
+[2022-12-18 15:51:27] [INFO] App launched successfully! 
+[2022-12-18 15:51:46] [INFO] Successfully connected to DB 
+[2022-12-18 15:51:46] [WARNING] Log in failed: Invalid Username 
+[2022-12-18 15:52:51] [WARNING] Log in failed: Invalid Username 
+[2022-12-18 15:53:41] [INFO] App launched successfully! 
+[2022-12-18 15:53:44] [INFO] Successfully connected to DB 
+[2022-12-18 15:53:44] [INFO] Log in successful by: admin 
+[2022-12-18 15:53:47] [INFO] App closed 
+[2022-12-18 15:54:15] [INFO] App launched successfully! 
+[2022-12-18 15:54:19] [INFO] Successfully connected to DB 
+[2022-12-18 15:54:19] [WARNING] Log in failed: Invalid Username: fdsafdsa 
+[2022-12-18 15:55:59] [INFO] App launched successfully! 
+[2022-12-18 15:56:22] [INFO] Successfully connected to DB 
+[2022-12-18 15:56:22] [WARNING] Invalid Password: Log in failed for user: admin 
+[2022-12-18 15:56:34] [INFO] Login Cancelled 
