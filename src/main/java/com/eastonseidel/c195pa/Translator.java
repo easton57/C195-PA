@@ -201,6 +201,10 @@ public class Translator {
         ln.put("businessHoursHeader", "Out of Business Hours!");
         ln.put("buisnessHoursText", "Please verify that your appointment is scheduled between 8am and 10pm EST");
 
+        // start after end
+        ln.put("startAfterEndHeader", "End before Start!");
+        ln.put("startAfterEndText", "Appointment end time is after start! Please correct and try again.");
+
         // 15 minute warning
         ln.put("15MinuteHeader", "15 Minutes!");
         ln.put("15MinuteText", "You have an appointment within the next 15 minutes for:\n");
@@ -413,6 +417,9 @@ public class Translator {
         // outside of business hours
         ln.put("businessHoursHeader", "En dehors des heures d'ouverture!");
         ln.put("buisnessHoursText", "Veuillez vérifier que votre rendez-vous est prévu entre 8am et 10pm EST");
+
+        ln.put("startAfterEndHeader", "Fin avant le début!");
+        ln.put("startAfterEndText", "L'heure de fin du rendez-vous est après le début! Veuillez corriger et réessayer.");
 
         // 15 minute warning
         ln.put("15MinuteHeader", "15 Minutes!");

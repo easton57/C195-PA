@@ -361,6 +361,16 @@ public class AppointmentActionsController {
                 }
             }
 
+            // Make sure start and end time are before and after eachother
+            if (!start.toLocalDateTime().isBefore(end.toLocalDateTime())) {
+                String errorString = Translator.ln.get("startAfterEndText");
+                Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+                errorAlert.setHeaderText(Translator.ln.get("startAfterEndHeader"));
+                errorAlert.setContentText(errorString);
+                errorAlert.showAndWait();
+                return;
+            }
+
             if (title.contains("Edit") || title.contains("Modifier")) {
                 sqlStatement = "UPDATE appointments SET Title=\"" + appointmentTitleInput.getText() +
                         "\", Description=\"" + appointmentDescriptionInput.getText() +
