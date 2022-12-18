@@ -68,3 +68,90 @@ java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child 
 [2022-12-16 11:45:27] [INFO] Successfully connected to DB 
 [2022-12-16 11:45:27] [INFO] Log in successful by: admin 
 [2022-12-16 11:45:41] [INFO] App closed 
+[2022-12-16 11:47:20] [INFO] App launched successfully! 
+[2022-12-16 11:47:23] [INFO] Successfully connected to DB 
+[2022-12-16 11:47:23] [INFO] Log in successful by: admin 
+[2022-12-16 11:49:57] [INFO] App launched successfully! 
+[2022-12-16 11:50:12] [INFO] Successfully connected to DB 
+[2022-12-16 11:50:12] [INFO] Log in successful by: admin 
+[2022-12-16 11:52:57] [INFO] App closed 
+[2022-12-16 11:53:41] [INFO] App launched successfully! 
+[2022-12-16 11:53:45] [INFO] Successfully connected to DB 
+[2022-12-16 11:53:45] [INFO] Log in successful by: admin 
+[2022-12-16 11:55:54] [INFO] App launched successfully! 
+[2022-12-16 11:55:57] [INFO] Successfully connected to DB 
+[2022-12-16 11:55:57] [INFO] Log in successful by: admin 
+[2022-12-16 11:57:17] [INFO] App launched successfully! 
+[2022-12-16 11:57:25] [INFO] Successfully connected to DB 
+[2022-12-16 11:57:25] [INFO] Log in successful by: admin 
+[2022-12-16 12:00:21] [INFO] App launched successfully! 
+[2022-12-16 12:00:24] [INFO] Successfully connected to DB 
+[2022-12-16 12:00:24] [INFO] Log in successful by: admin 
+[2022-12-16 12:00:56] [INFO] App launched successfully! 
+[2022-12-16 12:01:00] [INFO] Successfully connected to DB 
+[2022-12-16 12:01:00] [INFO] Log in successful by: admin 
+[2022-12-16 12:01:43] [INFO] App launched successfully! 
+[2022-12-16 12:01:46] [INFO] Successfully connected to DB 
+[2022-12-16 12:01:46] [INFO] Log in successful by: admin 
+[2022-12-16 12:03:34] [INFO] App launched successfully! 
+[2022-12-16 12:03:37] [INFO] Successfully connected to DB 
+[2022-12-16 12:03:37] [INFO] Log in successful by: admin 
+[2022-12-16 12:05:11] [INFO] App launched successfully! 
+[2022-12-16 12:05:14] [INFO] Successfully connected to DB 
+[2022-12-16 12:05:14] [INFO] Log in successful by: admin 
+[2022-12-16 12:08:33] [INFO] App closed 
+[2022-12-16 12:19:59] [INFO] App launched successfully! 
+[2022-12-16 12:20:02] [INFO] Successfully connected to DB 
+[2022-12-16 12:20:02] [INFO] Log in successful by: admin 
+[2022-12-16 12:20:11] [INFO] App closed 
+[2022-12-16 12:24:00] [INFO] App launched successfully! 
+[2022-12-16 12:24:04] [INFO] Successfully connected to DB 
+[2022-12-16 12:24:04] [INFO] Log in successful by: admin 
+[2022-12-16 12:26:55] [INFO] App launched successfully! 
+[2022-12-16 12:26:58] [INFO] Successfully connected to DB 
+[2022-12-16 12:26:58] [INFO] Log in successful by: admin 
+[2022-12-16 12:30:27] [INFO] App launched successfully! 
+[2022-12-16 12:30:30] [INFO] Successfully connected to DB 
+[2022-12-16 12:30:30] [INFO] Log in successful by: admin 
+[2022-12-18 14:55:55] [INFO] App launched successfully! 
+[2022-12-18 14:56:00] [INFO] Successfully connected to DB 
+[2022-12-18 14:56:00] [INFO] Log in successful by: admin 
+[2022-12-18 14:59:10] [INFO] App launched successfully! 
+[2022-12-18 14:59:14] [INFO] Successfully connected to DB 
+[2022-12-18 14:59:14] [INFO] Log in successful by: admin 
+[2022-12-18 15:05:37] [INFO] App launched successfully! 
+[2022-12-18 15:10:18] [INFO] Successfully connected to DB 
+[2022-12-18 15:10:18] [INFO] Log in successful by: admin 
+[2022-12-18 15:11:28] [SEVERE] Please verify the local database is running and accessible!
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`client_schedule`.`appointments`, CONSTRAINT `fk_customer_id` FOREIGN KEY (`Customer_ID`) REFERENCES `customers` (`Customer_ID`) ON DELETE RESTRICT ON UPDATE CASCADE) 
+[2022-12-18 15:11:34] [INFO] App closed 
+[2022-12-18 15:16:53] [INFO] App launched successfully! 
+[2022-12-18 15:16:56] [INFO] Successfully connected to DB 
+[2022-12-18 15:16:56] [INFO] Log in successful by: admin 
+[2022-12-18 15:17:01] [SEVERE] Please verify the local database is running and accessible!
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`client_schedule`.`appointments`, CONSTRAINT `fk_customer_id` FOREIGN KEY (`Customer_ID`) REFERENCES `customers` (`Customer_ID`) ON DELETE RESTRICT ON UPDATE CASCADE) 
+[2022-12-18 15:25:14] [INFO] App launched successfully! 
+[2022-12-18 15:25:18] [INFO] Successfully connected to DB 
+[2022-12-18 15:25:18] [INFO] Log in successful by: admin 
+[2022-12-18 15:25:24] [SEVERE] Please verify the local database is running and accessible!
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`client_schedule`.`appointments`, CONSTRAINT `fk_customer_id` FOREIGN KEY (`Customer_ID`) REFERENCES `customers` (`Customer_ID`) ON DELETE RESTRICT ON UPDATE CASCADE) 
+[2022-12-18 15:25:59] [SEVERE] Please verify the local database is running and accessible!
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`client_schedule`.`appointments`, CONSTRAINT `fk_customer_id` FOREIGN KEY (`Customer_ID`) REFERENCES `customers` (`Customer_ID`) ON DELETE RESTRICT ON UPDATE CASCADE) 
+[2022-12-18 15:26:06] [INFO] App launched successfully! 
+[2022-12-18 15:28:04] [INFO] Successfully connected to DB 
+[2022-12-18 15:28:04] [INFO] Log in successful by: admin 
+[2022-12-18 15:28:56] [SEVERE] Customer failed to delete! Please verify that there are no associated appointments then try again. 
+[2022-12-18 15:30:06] [INFO] App launched successfully! 
+[2022-12-18 15:30:11] [INFO] Successfully connected to DB 
+[2022-12-18 15:30:11] [INFO] Log in successful by: admin 
+[2022-12-18 15:30:15] [SEVERE] Customer failed to delete! Please verify that there are no associated appointments then try again. 
+[2022-12-18 15:30:22] [SEVERE] Customer failed to delete! Please verify that there are no associated appointments then try again. 
+[2022-12-18 15:30:24] [SEVERE] Customer failed to delete! Please verify that there are no associated appointments then try again. 
+[2022-12-18 15:30:30] [INFO] App closed 
+[2022-12-18 15:46:28] [INFO] App launched successfully! 
+[2022-12-18 15:46:35] [INFO] Successfully connected to DB 
+[2022-12-18 15:46:35] [INFO] Log in successful by: admin 
+[2022-12-18 15:47:27] [INFO] App launched successfully! 
+[2022-12-18 15:47:31] [INFO] Successfully connected to DB 
+[2022-12-18 15:47:31] [INFO] Log in successful by: admin 
+[2022-12-18 15:48:46] [INFO] App closed 
