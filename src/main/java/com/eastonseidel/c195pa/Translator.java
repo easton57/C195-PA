@@ -143,6 +143,9 @@ public class Translator {
         ln.put("deleteCustomerTitleAlert", "Customer Deleted");
         ln.put("deleteCustomerAlertText", "Successfully deleted the following customer: ");
 
+        // Delete customer Error
+        ln.put("deleteConstraint", "Customer failed to delete! Please verify that there are no associated appointments then try again.");
+
         // Current Month
         ln.put("currentMonth", "Current Month");
 
@@ -353,6 +356,9 @@ public class Translator {
         // Customer Deleted Alert Text
         ln.put("deleteCustomerTitleAlert", "Client supprimé");
         ln.put("deleteCustomerAlertText", "Le client suivant a bien été supprimé: ");
+
+        // Delete customer Error
+        ln.put("deleteConstraint", "Le client n'a pas réussi à supprimer! Veuillez vérifier qu'il n'y a pas de rendez-vous associés, puis réessayez.");
 
         // Current Month
         ln.put("currentMonth", "Mois en Cours");

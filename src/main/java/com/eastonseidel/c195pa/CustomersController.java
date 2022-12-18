@@ -241,7 +241,7 @@ public class CustomersController {
                 );
 
                 if (!result) {
-                    // Refresh the table
+                    // Remove the customer from the array
                     customers.removeIf( p -> (p.getCustomerId() == oldCustomer.getCustomerId()));
                 }
                 else {
@@ -267,14 +267,24 @@ public class CustomersController {
                 deleteSuccess.setContentText(Translator.ln.get("deleteCustomerAlertText") + oldCustomer.getName());
                 deleteSuccess.showAndWait();
             } catch (Exception exception) {
-                String errorString = Translator.ln.get("dbFailed") + exception;
+                String errorString;
+                Alert errorAlert;
+
+                if (exception.toString().contains("foreign key constraint")) {
+                    errorString = Translator.ln.get("deleteConstraint");
+                    errorAlert = new Alert(Alert.AlertType.WARNING);
+                }
+                else {
+                    errorString = Translator.ln.get("dbFailed") + exception;
+                    errorAlert = new Alert(Alert.AlertType.ERROR);
+                }
+
 
                 // Log the error
                 SchedulerLogger.addToLog(errorString, "severe");
 
                 // Alert that an error occured
                 // Create a popup
-                Alert errorAlert = new Alert(Alert.AlertType.ERROR);
                 errorAlert.setHeaderText("Database Error!");
                 errorAlert.setContentText(errorString);
                 errorAlert.showAndWait();
