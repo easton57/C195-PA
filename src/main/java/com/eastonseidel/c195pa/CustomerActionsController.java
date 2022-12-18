@@ -356,8 +356,11 @@ public class CustomerActionsController {
      */
     @FXML
     protected void onCancelButtonClick(ActionEvent event) {
-        // refresh db on previous page?
-        divisionList = new LinkedList<>();
+        // Empty division list
+        divisionList.clear();
+        usDivisions.clear();
+        canadaDivisions.clear();
+        ukDivisions.clear();
 
         // close the active window
         Node node = (Node) event.getSource();
